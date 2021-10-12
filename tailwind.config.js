@@ -1,12 +1,80 @@
+const defaultTheme = require("tailwindcss/defaultTheme");
+
 module.exports = {
-  mode: 'jit',
-  purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
+  mode: "jit",
+  purge: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        sans: [
+          "Gontserrat",
+          "Montserrat",
+          "Roboto",
+          "bitter",
+          "Momcake",
+          "Open Sans",
+          ...defaultTheme.fontFamily.sans,
+        ],
+      },
+      colors: {
+        "dark-pink": {
+          DEFAULT: "#820552",
+          50: "#FA73C6",
+          100: "#F95ABC",
+          200: "#F729A8",
+          300: "#E40990",
+          400: "#B30771",
+          500: "#820552",
+          600: "#510333",
+          700: "#200114",
+          800: "#000000",
+          900: "#000000",
+        },
+        "light-pink": {
+          DEFAULT: "#B9074E",
+          50: "#FCAACA",
+          100: "#FB91BB",
+          200: "#F9609D",
+          300: "#F72F7F",
+          400: "#EA0963",
+          500: "#B9074E",
+          600: "#880539",
+          700: "#570325",
+          800: "#260110",
+          900: "#000000",
+        },
+        "back-pink": {
+          DEFAULT: "#FBF6F9",
+          50: "#FFFFFF",
+          100: "#FFFFFF",
+          200: "#FFFFFF",
+          300: "#FFFFFF",
+          400: "#FFFFFF",
+          500: "#FBF6F9",
+          600: "#EBD3E1",
+          700: "#DCAFCA",
+          800: "#CC8CB2",
+          900: "#BC699B",
+        },
+        "back-color": {
+          DEFAULT: "#383737",
+          50: "#ABA9A9",
+          100: "#9E9D9D",
+          200: "#858383",
+          300: "#6B6A6A",
+          400: "#525050",
+          500: "#383737",
+          600: "#1E1E1E",
+          700: "#050404",
+          800: "#000000",
+          900: "#000000",
+        },
+      },
+    },
   },
   variants: {
     extend: {},
   },
   plugins: [],
-}
+};
