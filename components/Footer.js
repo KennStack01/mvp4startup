@@ -101,14 +101,14 @@ const Footer = () => {
           </div>
           <div onClick={() => setDarkMode(!darkMode)}>
             {!darkMode ? (
-              <div className="flex flex-row justify-between text-sm cursor-pointer">
+              <div className="flex flex-row justify-between text-sm cursor-pointer hover:bg-back-color-500 p-2 rounded">
                 <FaMoon className="my-auto mx-2" />
-                <h3 className="my-auto"> Light mode</h3>
+                <h3 className="my-auto"> Dark mode</h3>
               </div>
             ) : (
-              <div className="flex flex-row justify-between text-sm cursor-pointer">
+              <div className="flex flex-row justify-between text-sm cursor-pointer hover:bg-back-color-500 p-2 rounded">
                 <BsSunFill className="my-auto mx-2" />
-                <h3 className="my-auto"> Dark mode</h3>
+                <h3 className="my-auto"> Light mode</h3>
               </div>
             )}
           </div>

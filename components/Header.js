@@ -62,9 +62,9 @@ export default function Header() {
             <li
               className={`${
                 router.pathname == route
-                  ? "active bg-light-pink-500 hover:text-gray-100 text-white"
+                  ? "active bg-light-pink-500 hover:text-gray-900 text-white"
                   : ""
-              } mt-3 md:mt-0 md:ml-6 font-bold hover:text-gray-600 p-2 my-2 rounded`}
+              } mt-3 md:mt-0 md:ml-6 font-bold hover:bg-gray-100 p-2 my-2 rounded`}
               key={title}
             >
               <Link href={route}>
