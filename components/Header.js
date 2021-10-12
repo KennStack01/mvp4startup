@@ -11,7 +11,7 @@ export default function Header() {
   const router = useRouter();
 
   return (
-    <header className="flex flex-row justify-between md:sticky top-0 w-full text-back-color-600 ">
+    <header className="flex flex-row justify-between md:sticky top-0 w-full text-back-color-600 mt-2 md:mt-5">
       <div className="flex flex-wrap items-center justify-between w-full lg:container py-1 px-3 md:flex-no-wrap ">
         <div className="flex items-center">
           <Link href="/">
@@ -62,9 +62,9 @@ export default function Header() {
             <li
               className={`${
                 router.pathname == route
-                  ? "active bg-light-pink-500 hover:text-gray-100 text-white"
+                  ? "active bg-light-pink-500 hover:text-gray-900 text-white"
                   : ""
-              } mt-3 md:mt-0 md:ml-6 font-bold hover:text-gray-600 p-2 my-2 rounded`}
+              } mt-3 md:mt-0 md:ml-6 font-bold hover:bg-gray-100 p-2 my-2 rounded`}
               key={title}
             >
               <Link href={route}>

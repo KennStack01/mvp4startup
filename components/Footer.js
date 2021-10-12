@@ -101,14 +101,14 @@ const Footer = () => {
           </div>
           <div onClick={() => setDarkMode(!darkMode)}>
             {!darkMode ? (
-              <div className="flex flex-row justify-between text-sm cursor-pointer">
+              <div className="flex flex-row justify-between text-sm cursor-pointer hover:bg-back-color-500 p-2 rounded">
                 <FaMoon className="my-auto mx-2" />
-                <h3 className="my-auto"> Light mode</h3>
+                <h3 className="my-auto"> Dark mode</h3>
               </div>
             ) : (
-              <div className="flex flex-row justify-between text-sm cursor-pointer">
+              <div className="flex flex-row justify-between text-sm cursor-pointer hover:bg-back-color-500 p-2 rounded">
                 <BsSunFill className="my-auto mx-2" />
-                <h3 className="my-auto"> Dark mode</h3>
+                <h3 className="my-auto"> Light mode</h3>
               </div>
             )}
           </div>
@@ -116,14 +116,17 @@ const Footer = () => {
         <div className="mt-4">
           <p className="mx-auto mt-2 md:mt-5 w-4/5 text-center text-xs md:text-md my-auto">
             © 2021 MVP4Startup, LLC. All rights reserved.{" "}
-            <span className="hidden md:block"> Built by </span>
-            <a
-              href="https://www.webcontract.io"
-              target="__blank"
-              className="hover:text-yellow-400 font-semibold hidden md:block"
-            >
-              WebContract.io
-            </a>{" "}
+            {/* <div className="flex flex-row">
+              <span className="hidden md:block"> Built by </span>
+              <a
+                href="https://www.webcontract.io"
+                target="__blank"
+                className="hover:text-yellow-400 font-semibold hidden md:block"
+              >
+                {" "}
+                WebContract.io
+              </a>{" "}
+            </div> */}
           </p>
         </div>
       </div>
