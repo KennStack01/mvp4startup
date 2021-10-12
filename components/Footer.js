@@ -7,11 +7,13 @@ const Footer = () => {
   const [darkMode, setDarkMode] = useState(false);
 
   return (
-    <div className="divide-y divide-white text-white bg-back-color-600 py-5 px-20 w-full">
+    <div className="divide-y divide-white text-white bg-back-color-600 py-2 md:py-5 px-2 md:px-20 w-full">
       <div className="flex flex-col mx-auto justify-items-center ">
-        <div className="flex flex-row justify-between text-sm">
-          <div className="flex flex-col">
-            <h1 className="text-xl font-semibold my-3">Company</h1>
+        <div className="grid grid-cols-2 place-content-center md:flex flex-row justify-between text-sm">
+          <div className="flex flex-col my-2">
+            <h1 className="text-md md:text-xl font-semibold my-1 md:my-3">
+              Company
+            </h1>
             <div className="flex flex-col">
               <Link href="/">
                 <a>About us</a>
@@ -24,8 +26,10 @@ const Footer = () => {
               </Link>
             </div>
           </div>
-          <div className="flex flex-col">
-            <h1 className="text-xl font-semibold my-3">Learn</h1>
+          <div className="flex flex-col my-2">
+            <h1 className="text-md md:text-xl font-semibold my-1 md:my-3">
+              Learn
+            </h1>
             <div className="flex flex-col">
               <Link href="/">
                 <a>Projects</a>
@@ -38,8 +42,10 @@ const Footer = () => {
               </Link>
             </div>
           </div>
-          <div className="flex flex-col">
-            <h1 className="text-xl font-semibold my-3">Support</h1>
+          <div className="flex flex-col my-2">
+            <h1 className="text-md md:text-xl font-semibold my-1 md:my-3">
+              Support
+            </h1>
             <div className="flex flex-col">
               <Link href="/">
                 <a>Pricing</a>
@@ -49,8 +55,10 @@ const Footer = () => {
               </Link>
             </div>
           </div>
-          <div className="flex flex-col">
-            <h1 className="text-xl font-semibold my-3">Légal</h1>
+          <div className="flex flex-col my-2">
+            <h1 className="text-md md:text-xl font-semibold my-1 md:my-3">
+              Légal
+            </h1>
             <div className="flex flex-col">
               <Link href="/">
                 <a>Politique de confidentialité</a>
@@ -107,11 +115,12 @@ const Footer = () => {
         </div>
         <div className="mt-4">
           <p className="mx-auto mt-2 md:mt-5 w-4/5 text-center text-xs md:text-md my-auto">
-            © 2021 MVP4Startup, LLC. All rights reserved. Built by{" "}
+            © 2021 MVP4Startup, LLC. All rights reserved.{" "}
+            <span className="hidden md:block"> Built by </span>
             <a
               href="https://www.webcontract.io"
               target="__blank"
-              className="hover:text-yellow-400 font-semibold"
+              className="hover:text-yellow-400 font-semibold hidden md:block"
             >
               WebContract.io
             </a>{" "}
