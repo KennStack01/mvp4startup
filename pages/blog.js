@@ -1,11 +1,11 @@
 import Head from "next/head";
 import Layout from "../components/Layout";
 
-export default function Home() {
+export default function Blog() {
   return (
     <div>
       <Head>
-        <title>Accueil - MVP4Startup</title>
+        <title>Blog - MVP4Startup</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 

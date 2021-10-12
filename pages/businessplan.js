@@ -1,11 +1,11 @@
 import Head from "next/head";
 import Layout from "../components/Layout";
 
-export default function Home() {
+export default function BusinessPlan() {
   return (
     <div>
       <Head>
-        <title>Accueil - MVP4Startup</title>
+        <title>Busines Plan - MVP4Startup</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
