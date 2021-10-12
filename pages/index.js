@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Accueil - MVP4Startup</title>
+        <title>Accueil | MVP4Startup</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 

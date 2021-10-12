@@ -5,7 +5,7 @@ export default function BusinessPlan() {
   return (
     <div>
       <Head>
-        <title>Busines Plan - MVP4Startup</title>
+        <title>Busines Plan | MVP4Startup</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
