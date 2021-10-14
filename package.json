@@ -3,7 +3,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "server": "json-server --watch data/db.json --port 3002"
   },
   "dependencies": {
     "@headlessui/react": "^1.4.1",

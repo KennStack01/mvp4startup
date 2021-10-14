@@ -3,9 +3,49 @@
     {
       "id": 1,
       "slug": "learn-react-js",
-      "imageSrc": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fmedium.com%2F%40gmonne%2Fsimple-app-layout-with-office-ui-fabric-react-2eac6361e1b4&psig=AOvVaw3hfbrCeQcwX1QNhDk5LqQ1&ust=1634299218822000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCNjS9prtyfMCFQAAAAAdAAAAABAD",
-      "title": "Learn Modern ReactJS",
-      "lessons": 10,
+      "imageSrc": "http://www.freecoursesonline.me/wp-content/uploads/2018/12/React-Cover.jpg",
+      "title": "Learn React JS for Absolute Beginners",
+      "lessons": 13,
+      "duration": "10h 30min"
+    },
+    {
+      "id": 2,
+      "slug": "learn-react-js",
+      "imageSrc": "http://www.freecoursesonline.me/wp-content/uploads/2018/12/React-Cover.jpg",
+      "title": "Learn React JS for Absolute Beginners",
+      "lessons": 13,
+      "duration": "10h 30min"
+    },
+    {
+      "id": 3,
+      "slug": "learn-react-js",
+      "imageSrc": "http://www.freecoursesonline.me/wp-content/uploads/2018/12/React-Cover.jpg",
+      "title": "Learn React JS for Absolute Beginners",
+      "lessons": 13,
+      "duration": "10h 30min"
+    },
+    {
+      "id": 4,
+      "slug": "learn-react-js",
+      "imageSrc": "https://danilowoz.com/images/atomic-design-with-react/cover.jpg",
+      "title": "Learn React JS for Absolute Beginners",
+      "lessons": 13,
+      "duration": "10h 30min"
+    },
+    {
+      "id": 5,
+      "slug": "learn-react-js",
+      "imageSrc": "https://danilowoz.com/images/atomic-design-with-react/cover.jpg",
+      "title": "Learn React JS for Absolute Beginners",
+      "lessons": 13,
+      "duration": "10h 30min"
+    },
+    {
+      "id": 6,
+      "slug": "learn-react-js",
+      "imageSrc": "http://www.freecoursesonline.me/wp-content/uploads/2018/12/React-Cover.jpg",
+      "title": "Learn React JS for Absolute Beginners",
+      "lessons": 13,
       "duration": "10h 30min"
     }
   ]
