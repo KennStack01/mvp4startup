@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Hero from "../components/Home/Hero";
 import Layout from "../components/Layout";
 
 export default function Home() {
@@ -10,7 +11,7 @@ export default function Home() {
       </Head>
 
       <Layout>
-        <h1 className="font-bold text-xl">Hello, World!</h1>
+        <Hero />
       </Layout>
     </div>
   );

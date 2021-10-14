@@ -9,9 +9,7 @@ export default function Forum() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Layout>
-        <h1 className="font-bold text-xl">Hello, World!</h1>
-      </Layout>
+      <Layout></Layout>
     </div>
   );
 }
