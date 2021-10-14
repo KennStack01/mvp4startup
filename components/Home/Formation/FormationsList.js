@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
+import Link from "next/link";
 import Formation from "./Formation";
-import imgSrc from "../../../public/formation.jpg";
+import { BsArrowRightShort } from "react-icons/bs";
 
 const FormationsList = () => {
   const [formations, setFormations] = useState([]);
@@ -48,6 +49,12 @@ const FormationsList = () => {
           ))
         )}
       </div>
+      <Link href="/projects">
+        <a className="flex flex-row justify-end text-md md:text-xl text-right font-bold my-8 hover:underline">
+          <h5>En savoir plus</h5>
+          <BsArrowRightShort className="my-auto text-xl" />
+        </a>
+      </Link>
     </div>
   );
 };
