@@ -38,7 +38,7 @@ const Hero = () => {
       <div className=" mr-72"></div>
       <div className="hidden md:block">
         {/* <HeroImage className="w-5/6 -mt-48 -mr-36" /> */}
-        <HeroImage className="w-1/2 -mt-48 ml-96" />
+        <HeroImage className="w-1/2 -mt-48 ml-96 object-cover" />
       </div>
     </div>
   );

@@ -14,10 +14,10 @@ export default function Signup() {
 
       <Layout>
         <div className="flex flex-row mx-auto">
-          <div className="md:w-2/4">
+          <div className="md:w-2/4 md:my-auto">
             <CreateAccount />
           </div>
-          <LoginImage className="hidden md:block w-2/4 ml-20" />
+          <LoginImage className="hidden md:block w-2/4 ml-20 md:my-auto" />
         </div>
       </Layout>
     </div>

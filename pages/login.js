@@ -13,8 +13,8 @@ export default function Login() {
 
       <Layout>
         <div className="flex flex-row mx-auto">
-          <LoginImage className="hidden md:block w-2/4 ml-20" />
-          <div className="md:w-2/4">
+          <LoginImage className="hidden md:block w-2/4 ml-20 md:my-auto" />
+          <div className="md:w-2/4 md:my-auto">
             <Auth />
           </div>
         </div>
