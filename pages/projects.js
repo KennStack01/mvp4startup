@@ -6,7 +6,7 @@ export default function Projects() {
     <div>
       <Head>
         <title>Projets - MVP4Startup</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.png" />
       </Head>
 
       <Layout></Layout>
