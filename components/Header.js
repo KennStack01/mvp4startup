@@ -67,18 +67,20 @@ export default function Header() {
         </ul>
         <div
           className={cn(
-            "grid grid-cols-2 place-content-center mx-20 md:mx-2 md:flex md:flex-row md:items-center md:justify-center text-sm font-bold  w-full md:w-auto my-auto",
+            "grid grid-cols-2 place-content-center mx-12 md:mx-2 md:flex md:flex-row md:items-center md:justify-center text-sm font-bold  w-full md:w-auto my-auto",
             mobileMenuIsOpen ? `block` : `hidden`
           )}
         >
           <Link href="/login">
             <a // onClick={openModal}
-              className="md:mx-2 mx-auto my-auto cursor-pointer hover:bg-gray-100 p-2 rounded"
+              className={`${
+                router.pathname == "/login" ? "active underline" : ""
+              } md:mx-2 mx-auto my-auto cursor-pointer hover:bg-gray-100 p-2 rounded`}
             >
               SE CONNECTER
             </a>
           </Link>
-          <Link href="/">
+          <Link href="/signup">
             <a className="text-white mx-auto bg-light-pink-500 p-2 w-auto rounded-md">
               S'INSCRIRE
             </a>
