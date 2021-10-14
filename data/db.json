@@ -1,0 +1,52 @@
+{
+  "formations": [
+    {
+      "id": 1,
+      "slug": "learn-react-js",
+      "imageSrc": "http://www.freecoursesonline.me/wp-content/uploads/2018/12/React-Cover.jpg",
+      "title": "Learn React JS for Absolute Beginners",
+      "lessons": 13,
+      "duration": "10h 30min"
+    },
+    {
+      "id": 2,
+      "slug": "learn-react-js",
+      "imageSrc": "http://www.freecoursesonline.me/wp-content/uploads/2018/12/React-Cover.jpg",
+      "title": "Learn React JS for Absolute Beginners",
+      "lessons": 13,
+      "duration": "10h 30min"
+    },
+    {
+      "id": 3,
+      "slug": "learn-react-js",
+      "imageSrc": "http://www.freecoursesonline.me/wp-content/uploads/2018/12/React-Cover.jpg",
+      "title": "Learn React JS for Absolute Beginners",
+      "lessons": 13,
+      "duration": "10h 30min"
+    },
+    {
+      "id": 4,
+      "slug": "learn-react-js",
+      "imageSrc": "https://danilowoz.com/images/atomic-design-with-react/cover.jpg",
+      "title": "Learn React JS for Absolute Beginners",
+      "lessons": 13,
+      "duration": "10h 30min"
+    },
+    {
+      "id": 5,
+      "slug": "learn-react-js",
+      "imageSrc": "https://danilowoz.com/images/atomic-design-with-react/cover.jpg",
+      "title": "Learn React JS for Absolute Beginners",
+      "lessons": 13,
+      "duration": "10h 30min"
+    },
+    {
+      "id": 6,
+      "slug": "learn-react-js",
+      "imageSrc": "http://www.freecoursesonline.me/wp-content/uploads/2018/12/React-Cover.jpg",
+      "title": "Learn React JS for Absolute Beginners",
+      "lessons": 13,
+      "duration": "10h 30min"
+    }
+  ]
+}
