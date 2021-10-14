@@ -61,7 +61,7 @@ export default function Auth() {
                     type="checkbox"
                   />
                   <span className="text-sm my-auto">
-                    Send me your newsletter!
+                    S'inscrire à la newsletter
                   </span>
                 </label>
               </div>
