@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import HeroImage from "../../public/svg/homeHero.svg";
+import HeroImage from "-!svg-react-loader!../../public/svg/homeHero.svg";
 import { BsArrowRight, BsArrowDown } from "react-icons/bs";
 
 const Hero = () => {

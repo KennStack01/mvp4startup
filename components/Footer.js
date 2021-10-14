@@ -16,13 +16,15 @@ const Footer = () => {
             </h1>
             <div className="flex flex-col">
               <Link href="/">
-                <a>About us</a>
+                <a className="hover:bg-back-color-500 p-1 rounded">About us</a>
               </Link>
               <Link href="/">
-                <a>Contact us</a>
+                <a className="hover:bg-back-color-500 p-1 rounded">
+                  Contact us
+                </a>
               </Link>
               <Link href="/">
-                <a>Blog</a>
+                <a className="hover:bg-back-color-500 p-1 rounded">Blog</a>
               </Link>
             </div>
           </div>
@@ -32,13 +34,17 @@ const Footer = () => {
             </h1>
             <div className="flex flex-col">
               <Link href="/">
-                <a>Projects</a>
+                <a className="hover:bg-back-color-500 p-1 rounded">Projects</a>
               </Link>
               <Link href="/">
-                <a>Formations</a>
+                <a className="hover:bg-back-color-500 p-1 rounded">
+                  Formations
+                </a>
               </Link>
               <Link href="/">
-                <a>Business Plan</a>
+                <a className="hover:bg-back-color-500 p-1 rounded">
+                  Business Plan
+                </a>
               </Link>
             </div>
           </div>
@@ -48,10 +54,12 @@ const Footer = () => {
             </h1>
             <div className="flex flex-col">
               <Link href="/">
-                <a>Pricing</a>
+                <a className="hover:bg-back-color-500 p-1 rounded">Pricing</a>
               </Link>
               <Link href="/">
-                <a>Témoignages</a>
+                <a className="hover:bg-back-color-500 p-1 rounded">
+                  Témoignages
+                </a>
               </Link>
             </div>
           </div>
@@ -61,10 +69,14 @@ const Footer = () => {
             </h1>
             <div className="flex flex-col">
               <Link href="/">
-                <a>Politique de confidentialité</a>
+                <a className="hover:underline p-1 rounded">
+                  Politique de confidentialité
+                </a>
               </Link>
               <Link href="/">
-                <a>Conditions d’utilisation</a>
+                <a className="hover:underline p-1 rounded">
+                  Conditions d’utilisation
+                </a>
               </Link>
             </div>
           </div>

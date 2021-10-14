@@ -7,7 +7,7 @@ export default function Home() {
     <div>
       <Head>
         <title>Accueil - MVP4Startup</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.png" />
       </Head>
 
       <Layout>

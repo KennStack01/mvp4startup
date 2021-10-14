@@ -6,7 +6,7 @@ export default function Forum() {
     <div>
       <Head>
         <title>Forum - MVP4Startup</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.png" />
       </Head>
 
       <Layout></Layout>
