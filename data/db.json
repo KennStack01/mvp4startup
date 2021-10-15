@@ -48,5 +48,107 @@
       "lessons": 13,
       "duration": "10h 30min"
     }
+  ],
+
+  "projects": [
+    {
+      "id": 1,
+      "slug": "amazon-clone",
+      "imageSrc": "https://res.cloudinary.com/dt9okciwh/image/upload/v1590756522/employcoder/amazon-clone.jpg",
+      "title": "Amazon Clone",
+      "lessons": 13,
+      "duration": "10h 30min",
+      "technologies": "HTML, CSS, JavaScript, Python",
+      "note": 4,
+      "price": 75
+    },
+    {
+      "id": 2,
+      "slug": "amazon-clone",
+      "imageSrc": "https://res.cloudinary.com/dt9okciwh/image/upload/v1590756522/employcoder/amazon-clone.jpg",
+      "title": "Amazon Clone",
+      "lessons": 13,
+      "duration": "10h 30min",
+      "technologies": "HTML, CSS, JavaScript, Python",
+      "note": 4,
+      "price": 75
+    },
+    {
+      "id": 3,
+      "slug": "amazon-clone",
+      "imageSrc": "https://res.cloudinary.com/dt9okciwh/image/upload/v1590756522/employcoder/amazon-clone.jpg",
+      "title": "Amazon Clone",
+      "lessons": 13,
+      "duration": "10h 30min",
+      "technologies": "HTML, CSS, JavaScript, Python",
+      "note": 4,
+      "price": 75
+    },
+    {
+      "id": 4,
+      "slug": "amazon-clone",
+      "imageSrc": "https://res.cloudinary.com/dt9okciwh/image/upload/v1590756522/employcoder/amazon-clone.jpg",
+      "title": "Amazon Clone",
+      "lessons": 13,
+      "duration": "10h 30min",
+      "technologies": "HTML, CSS, JavaScript, Python",
+      "note": 4,
+      "price": 75
+    },
+    {
+      "id": 5,
+      "slug": "amazon-clone",
+      "imageSrc": "https://res.cloudinary.com/dt9okciwh/image/upload/v1590756522/employcoder/amazon-clone.jpg",
+      "title": "Amazon Clone",
+      "lessons": 13,
+      "duration": "10h 30min",
+      "technologies": "HTML, CSS, JavaScript, Python",
+      "note": 4,
+      "price": 75
+    },
+    {
+      "id": 6,
+      "slug": "amazon-clone",
+      "imageSrc": "https://res.cloudinary.com/dt9okciwh/image/upload/v1590756522/employcoder/amazon-clone.jpg",
+      "title": "Amazon Clone",
+      "lessons": 13,
+      "duration": "10h 30min",
+      "technologies": "HTML, CSS, JavaScript, Python",
+      "note": 4,
+      "price": 75
+    },
+    {
+      "id": 7,
+      "slug": "amazon-clone",
+      "imageSrc": "https://res.cloudinary.com/dt9okciwh/image/upload/v1590756522/employcoder/amazon-clone.jpg",
+      "title": "Amazon Clone",
+      "lessons": 13,
+      "duration": "10h 30min",
+      "technologies": "HTML, CSS, JavaScript, Python",
+      "note": 4,
+      "price": 75
+    },
+    {
+      "id": 8,
+      "slug": "amazon-clone",
+      "imageSrc": "https://res.cloudinary.com/dt9okciwh/image/upload/v1590756522/employcoder/amazon-clone.jpg",
+      "title": "Amazon Clone",
+      "lessons": 13,
+      "duration": "10h 30min",
+      "technologies": "HTML, CSS, JavaScript, Python",
+      "note": 4,
+      "price": 75
+    },
+    {
+      "id": 9,
+      "slug": "amazon-clone",
+      "imageSrc": "https://res.cloudinary.com/dt9okciwh/image/upload/v1590756522/employcoder/amazon-clone.jpg",
+      "title": "Amazon Clone",
+      "lessons": 13,
+      "duration": "10h 30min",
+      "technologies": "HTML, CSS, JavaScript, Python",
+      "note": 4,
+      "price": 75
+    }
   ]
 }

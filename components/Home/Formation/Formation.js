@@ -54,7 +54,7 @@ const Formation = ({
           </div>
         </div>
         <Link href={slug}>
-          <a className="flex justify-evenly mx-5 md:mx-20 my-2 font-semibold text-md md:text-lg md:my-2 cursor-pointer bg-light-pink-500 hover:bg-light-pink-600 text-white p-1 rounded">
+          <a className="flex justify-evenly mx-5 md:mx-20 my-2 font-semibold text-md md:my-2 cursor-pointer bg-light-pink-500 hover:bg-light-pink-600 text-white p-1 rounded">
             <h5 className="mx-auto"> Découvrir </h5>
           </a>
         </Link>
