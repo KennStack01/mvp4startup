@@ -1,4 +1,5 @@
 import Head from "next/head";
+import BusinessPlansList from "../components/Home/BusinessPlan/BusinessPlansList";
 import FormationsList from "../components/Home/Formation/FormationsList";
 import Hero from "../components/Home/Hero";
 import ProjectsList from "../components/Home/Projects/ProjectsList";
@@ -16,6 +17,7 @@ export default function Home() {
         <Hero />
         <FormationsList />
         <ProjectsList />
+        <BusinessPlansList />
       </Layout>
     </div>
   );
