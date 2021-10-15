@@ -6,7 +6,11 @@ import { BsFacebook } from "react-icons/bs";
 import Link from "next/link";
 
 export default function Auth() {
-  const { register, handleSubmit } = useForm();
+  const {
+    register,
+    formState: { errors },
+    handleSubmit,
+  } = useForm();
   const [result, setResult] = useState("");
   const onSubmit = (data) => setResult(JSON.stringify(data));
 
@@ -35,7 +39,7 @@ export default function Auth() {
               <div className="md:flex md:items-center mb-2 mt-5">
                 <div className="w-full">
                   <input
-                    {...register("userName")}
+                    {...register("userName", { required: true })}
                     className="bg-gray-200 appearance-none border-2 my-auto border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-back-color-500"
                     id="inline-full-name"
                     type="text"
@@ -43,18 +47,22 @@ export default function Auth() {
                     placeholder="Nom d'utilisateur"
                     required
                   />
+                  {errors.userName?.type === "required" &&
+                    "Le nom d'Utilisateur est requis"}
                 </div>
               </div>
               <div className="md:flex md:items-center mb-6">
                 <div className="w-full">
                   <input
-                    {...register("password")}
+                    {...register("password", { required: true })}
                     className="bg-gray-200 appearance-none border-2 my-auto border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-back-color-500"
                     id="inline-password"
                     type="password"
                     placeholder="******************"
                     required
                   />
+                  {errors.userName?.type === "required" &&
+                    "Le mot de passe est requis"}
                 </div>
               </div>
 

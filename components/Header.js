@@ -9,7 +9,7 @@ export default function Header() {
   const router = useRouter();
 
   return (
-    <header className="flex flex-row justify-between md:sticky top-0 z-50 w-full bg-white text-back-color-600 mt-2 md:mt-5">
+    <header className="flex flex-row justify-between md:sticky top-0 z-50 w-full text-back-color-600 mt-2 md:mt-5 bg-white">
       <div className="flex flex-wrap items-center justify-between w-full lg:container py-1 px-3 md:flex-row ">
         <div className="flex items-center">
           <Link href="/">
