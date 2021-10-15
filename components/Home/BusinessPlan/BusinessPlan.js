@@ -18,30 +18,30 @@ const BusinessPlan = ({
   };
 
   return (
-    <div className="flex flex-col bg-white shadow-md rounded-xl my-3 md:my-5 mx-3 md:mx-6 hover:shadow-xl">
+    <div className="flex flex-col bg-white shadow-md rounded-xl my-3 md:my-5 mx-3 md:mx-2 hover:shadow-xl">
       <img
         src={imageSrc}
         alt="Picture of the training"
         width={250}
         height={100}
-        className="h-3/6 rounded-xl w-full object-cover"
+        className="h-4/6 rounded-xl w-full object-cover"
       />
       <div className="flex flex-col justify-center text-gray-900 h-2/6">
         <Link href={slug}>
-          <a className="text-lg md:text-xl text-center font-bold mx-auto mt-2 mb-5 hover:text-gray-900">
+          <a className="text-lg md:text-xl text-center font-bold mx-auto mt-4 mb-1 hover:text-gray-900 hover:underline">
             {title}
           </a>
         </Link>
-        <div className="flex flex-col mx-3 md:mx-4 my-2">
+        <div className="flex flex-col mx-3 md:mx-4 my-4">
           <h3 className="text-md font-semibold">Détails:</h3>
-          <p className="text-sm text-justify"> {details} </p>
+          <p className="text-xs text-justify"> {details} </p>
         </div>
       </div>
 
-      <div className="flex flex-row justify-between bg-gray-900 text-white mt-4 px-3 py-2 md:px-5 md:py-3 rounded-b-xl w-full">
+      <div className="flex flex-row justify-between bg-gray-900 text-white mt-1 px-3 py-2 md:px-5 md:py-2 rounded-b-xl w-full">
         <h1 className="my-auto text-xl font-semibold"> ${price.toString()} </h1>
         <Link href={slug}>
-          <a className="p-1 md:p-3 font-semibold text-xl cursor-pointer bg-white hover:bg-gray-100 text-gray-800 rounded">
+          <a className="p-1 md:p-1 md:px-2 font-semibold text-xl cursor-pointer bg-white hover:bg-gray-100 text-gray-800 rounded">
             <h5 className="mx-auto md:my-auto "> Acheter </h5>
           </a>
         </Link>
