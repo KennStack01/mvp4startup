@@ -1,30 +1,23 @@
 import { useState } from "react";
-// import { supabase } from "../utils/supabaseClient";
+import { useForm } from "react-hook-form";
 import { FcGoogle } from "react-icons/fc";
 import { FaGithub } from "react-icons/fa";
 import { BsFacebook } from "react-icons/bs";
 import Link from "next/link";
 
 export default function Auth() {
-  //   const [loading, setLoading] = useState(false);
+  const { register, handleSubmit } = useForm();
+  const [result, setResult] = useState("");
+  const onSubmit = (data) => setResult(JSON.stringify(data));
 
-  //   const handleLoading = () => {
-  //     setLoading(!loading);
-  //   };
+  // Données à envoyer dans le Backend: result
+  // C'est composé de Username and Password
 
-  //   const handleLogin = async () => {
-  //     try {
-  //       setLoading(true);
-  //       const { user, session, error } = await supabase.auth.signIn({
-  //         provider: "github",
-  //       });
-  //       notify();
-  //     } catch (error) {
-  //       console.log(error.message);
-  //     } finally {
-  //       setLoading(false);
-  //     }
-  //   };
+  // Function pour Authentification via les réseaux sociaux
+  const handleSocialAuth = (e) => {
+    e.preventDefault();
+    console.log("Social Auth");
+  };
 
   return (
     <div className="md:flex flex-row my-4 md:my-6 mx-auto p-4">
@@ -33,15 +26,20 @@ export default function Auth() {
           <h1 className="my-3 text-center text-lg md:text-3xl font-semibold text-gray-700">
             Se Connecter
           </h1>
+          <p>{result}</p>
           <div className="grid grid-cols-1 divide-y divide-gray-400">
-            <form className="w-full max-w-sm mb-5">
+            <form
+              onSubmit={handleSubmit(onSubmit)}
+              className="w-full max-w-sm mb-5"
+            >
               <div className="md:flex md:items-center mb-2 mt-5">
                 <div className="w-full">
                   <input
+                    {...register("userName")}
                     className="bg-gray-200 appearance-none border-2 my-auto border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-back-color-500"
                     id="inline-full-name"
                     type="text"
-                    value=""
+                    // value=""
                     placeholder="Nom d'utilisateur"
                     required
                   />
@@ -50,6 +48,7 @@ export default function Auth() {
               <div className="md:flex md:items-center mb-6">
                 <div className="w-full">
                   <input
+                    {...register("password")}
                     className="bg-gray-200 appearance-none border-2 my-auto border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-back-color-500"
                     id="inline-password"
                     type="password"
@@ -77,7 +76,10 @@ export default function Auth() {
             </form>
             <div className="flex flex-col mb-2">
               {/* Google */}
-              <button className="bg-white outline-none shadow-sm hover:shadow-lg mx-auto px-10 font-semibold py-2 my-3 rounded-lg">
+              <button
+                onClick={handleSocialAuth}
+                className="bg-white outline-none shadow-sm hover:shadow-lg mx-auto px-10 font-semibold py-2 my-3 rounded-lg"
+              >
                 <div className="flex flex-row ">
                   <FcGoogle className="my-auto text-3xl" />
                   <h3 className="text-gray-800 text-md font-medium my-auto mx-2">
@@ -91,6 +93,7 @@ export default function Auth() {
 
               {/* Facebook */}
               <button
+                onClick={handleSocialAuth}
                 className="bg-white outline-none shadow-sm hover:shadow-lg mx-auto px-10 font-semibold py-2 my-3 rounded-lg"
                 style={{ background: "#3b5998" }}
               >
@@ -107,7 +110,7 @@ export default function Auth() {
 
               {/* Github */}
               <button
-                //   onClick={handleLogin}
+                onClick={handleSocialAuth}
                 className="bg-white outline-none shadow-sm hover:shadow-lg mx-auto px-10 font-semibold py-2 my-3 mt-4 rounded-lg"
                 style={{ background: "#211F1F" }}
               >

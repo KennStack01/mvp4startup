@@ -21,7 +21,7 @@ const Project = ({
   };
 
   return (
-    <div className="flex flex-col bg-white shadow-md rounded-xl my-3 md:my-5 md:mx-6 hover:shadow-xl">
+    <div className="flex flex-col bg-white shadow-md rounded-xl my-3 md:my-5 mx-3 md:mx-6 hover:shadow-xl">
       <div className="flex flex-col justify-center text-gray-900 h-2/6">
         <Link href={slug}>
           <a className="text-xl md:text-2xl text-center font-bold mx-auto mt-2 mb-5 hover:text-dark-pink-500">
