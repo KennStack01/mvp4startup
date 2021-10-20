@@ -33,7 +33,7 @@ const BusinessPlan = ({
           </a>
         </Link>
         <div className="flex flex-col mx-3 md:mx-4 my-2">
-          <h3 className="text-md font-semibold">Détails:</h3>
+          <h3 className="text-sm font-semibold">Détails:</h3>
           <p className="text-xs text-justify">
             {" "}
             {details.substring(0, 100)}
