@@ -18,7 +18,7 @@ const BusinessPlan = ({
   };
 
   return (
-    <div className="flex flex-col bg-white shadow-md rounded-xl my-3 md:my-5 mx-3 md:mx-2 hover:shadow-xl">
+    <div className="flex flex-col bg-white shadow-md rounded-xl my-3 md:my-5 mx-3 md:mx-2 hover:shadow-xl transform transition duration-500 hover:scale-110">
       <img
         src={imageSrc}
         alt="Picture of the training"
@@ -32,9 +32,13 @@ const BusinessPlan = ({
             {title}
           </a>
         </Link>
-        <div className="flex flex-col mx-3 md:mx-4 my-4">
+        <div className="flex flex-col mx-3 md:mx-4 my-2">
           <h3 className="text-md font-semibold">Détails:</h3>
-          <p className="text-xs text-justify"> {details} </p>
+          <p className="text-xs text-justify">
+            {" "}
+            {details.substring(0, 100)}
+            {"..."}{" "}
+          </p>
         </div>
       </div>
 

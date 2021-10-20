@@ -31,7 +31,7 @@ const FormationsList = () => {
       <h1 className="text-xl md:text-3xl font-bold mt-8 mb-4 md:mb-2">
         Formations Gratuites
       </h1>
-      <div className="flex flex-col md:grid grid-cols-3">
+      <div className="flex flex-col sm:grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
         {loading ? (
           <h1 className="text-gray-700 text-center justify-self-center mx-auto text-xl font-bold">
             Loading...
