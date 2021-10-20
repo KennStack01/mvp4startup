@@ -6,7 +6,7 @@ import { BsArrowRight, BsArrowDown } from "react-icons/bs";
 
 const Hero = () => {
   return (
-    <div className="flex flex-col md:flex-row justify-between bg-back-pink-500 p-5 rounded-md">
+    <div className="flex flex-col md:flex-row justify-between bg-back-pink-500 p-5 rounded-xl">
       <div className="flex flex-col lg:absolute md:z-20 md:mt-14">
         <h1 className="font-bold text-4xl md:text-6xl text-dark-pink-500 w-full lg:w-4/5">
           Apprendre à coder autrement
@@ -38,7 +38,11 @@ const Hero = () => {
       <div className="md:mr-72"></div>
       <div className="hidden lg:block">
         {/* <HeroImage className="w-5/6 -mt-48 -mr-36" /> */}
-        <HeroImage className="w-1/2 -mt-48 ml-96 object-cover" />
+        {/* <HeroImage className="w-1/2 -mt-48 ml-96 object-cover" /> */}
+        <HeroImage
+          className="w-1/2 ml-60 object-cover"
+          style={{ width: "70%", height: "inherit" }}
+        />
       </div>
     </div>
   );
