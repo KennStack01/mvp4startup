@@ -8,7 +8,7 @@ const FormationsList = () => {
   const [loading, setLoading] = useState(true);
 
   const fetchFormations = async () => {
-    let URL = "http://localhost:3002/formations";
+    let URL = "http://localhost:4000/home/index_formations";
 
     try {
       const res = await fetch(URL);

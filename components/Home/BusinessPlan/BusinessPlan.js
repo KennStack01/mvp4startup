@@ -28,7 +28,7 @@ const BusinessPlan = ({
       />
       <div className="flex flex-col justify-center text-gray-900 h-2/6">
         <Link href={slug}>
-          <a className="text-lg md:text-xl text-center font-bold mx-auto mt-4 mb-1 hover:text-gray-900 hover:underline">
+          <a className="text-md md:text-lg text-center font-bold mx-auto mt-4 mb-1 hover:text-gray-900 hover:underline">
             {title}
           </a>
         </Link>

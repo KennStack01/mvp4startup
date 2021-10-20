@@ -8,7 +8,7 @@ const ProjectsList = () => {
   const [loading, setLoading] = useState(true);
 
   const fetchProjects = async () => {
-    let URL = "http://localhost:3002/projects";
+    let URL = "http://localhost:4000/home/index_projects";
 
     try {
       const res = await fetch(URL);
