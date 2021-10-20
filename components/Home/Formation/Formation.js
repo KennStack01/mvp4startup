@@ -18,13 +18,13 @@ const Formation = ({
   };
 
   return (
-    <div className="flex flex-row bg-back-pink-500 rounded-lg my-3 md:my-5 md:mx-1 hover:shadow-lg">
+    <div className="flex flex-col bg-back-pink-500 rounded-lg my-3 md:my-5 sm:mx-2 md:mx-1 hover:shadow-lg">
       <img
         src={imageSrc}
         alt="Picture of the training"
         width={250}
         height={100}
-        className="w-2/6 rounded-l-xl object-cover"
+        className="h-2/6 w-full rounded-t-xl lg:rounded-l-xl lg:h-full object-cover"
       />
       {/* <Image
         loader={myLoader}
@@ -35,13 +35,13 @@ const Formation = ({
         height={100}
         className="w-1/4 rounded-l-xl object-cover"
       /> */}
-      <div className="flex flex-col justify-center text-gray-900 w-4/6">
+      <div className="flex flex-col justify-center text-gray-900 h-4/6 md:mt-2">
         <Link href={slug}>
           <a className="text-md md:text-md text-center font-bold mx-auto my-2 hover:text-dark-pink-500">
             {title}
           </a>
         </Link>
-        <div className="flex flex-row justify-evenly md:my-auto text-sm md:text-xs my-2">
+        <div className="flex flex-row justify-evenly md:my-auto text-sm md:text-xs my-4">
           <div className="flex flex-row">
             {" "}
             <BsFillCollectionPlayFill className="text-md md:text-xl my-auto" />{" "}
@@ -54,7 +54,7 @@ const Formation = ({
           </div>
         </div>
         <Link href={slug}>
-          <a className="flex justify-evenly mx-5 md:mx-20 my-2 font-semibold text-md md:my-2 cursor-pointer bg-light-pink-500 hover:bg-light-pink-600 text-white p-1 rounded">
+          <a className="flex justify-evenly mx-5 md:mx-10 my-2 font-semibold text-md md:my-2 cursor-pointer bg-light-pink-500 hover:bg-light-pink-600 text-white p-1 rounded">
             <h5 className="mx-auto"> Découvrir </h5>
           </a>
         </Link>

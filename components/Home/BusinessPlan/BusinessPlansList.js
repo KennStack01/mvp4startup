@@ -8,7 +8,7 @@ const BusinessPlansList = () => {
   const [loading, setLoading] = useState(true);
 
   const fetchBusinessPlans = async () => {
-    let URL = "http://localhost:3002/businessPlans";
+    let URL = "http://localhost:4000/home/index_bsp";
 
     try {
       const res = await fetch(URL);
@@ -31,7 +31,7 @@ const BusinessPlansList = () => {
       <h1 className="text-xl md:text-3xl font-bold mt-8 mb-4 md:mb-2">
         Business Plans
       </h1>
-      <div className="flex flex-col md:grid grid-cols-4">
+      <div className="flex flex-col sm:grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
         {loading ? (
           <h1 className="text-gray-700 text-center justify-self-center mx-auto text-xl font-bold">
             Loading...

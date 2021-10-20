@@ -18,7 +18,7 @@ const BusinessPlan = ({
   };
 
   return (
-    <div className="flex flex-col bg-white shadow-md rounded-xl my-3 md:my-5 mx-3 md:mx-2 hover:shadow-xl">
+    <div className="flex flex-col bg-white shadow-md rounded-xl my-3 md:my-5 mx-3 md:mx-2 hover:shadow-xl transform transition duration-500 hover:scale-110">
       <img
         src={imageSrc}
         alt="Picture of the training"
@@ -28,13 +28,17 @@ const BusinessPlan = ({
       />
       <div className="flex flex-col justify-center text-gray-900 h-2/6">
         <Link href={slug}>
-          <a className="text-lg md:text-xl text-center font-bold mx-auto mt-4 mb-1 hover:text-gray-900 hover:underline">
+          <a className="text-md md:text-lg text-center font-bold mx-auto mt-4 mb-1 hover:text-gray-900 hover:underline">
             {title}
           </a>
         </Link>
-        <div className="flex flex-col mx-3 md:mx-4 my-4">
+        <div className="flex flex-col mx-3 md:mx-4 my-2">
           <h3 className="text-md font-semibold">Détails:</h3>
-          <p className="text-xs text-justify"> {details} </p>
+          <p className="text-xs text-justify">
+            {" "}
+            {details.substring(0, 100)}
+            {"..."}{" "}
+          </p>
         </div>
       </div>
 

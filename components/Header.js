@@ -9,68 +9,59 @@ export default function Header() {
   const router = useRouter();
 
   return (
-    <header className="flex flex-row justify-between md:sticky top-0 z-50 w-full text-back-color-600 mt-2 md:mt-5 bg-white">
-      <div className="flex flex-wrap items-center justify-between w-full lg:container py-1 px-3 md:flex-row ">
+    // <header className="flex flex-row justify-between md:sticky top-0 z-50 w-full text-back-color-600 mt-2 md:mt-5 bg-white">
+    <header className="sticky top-0 z-50 w-full text-back-color-600 bg-white p-2">
+      <div className="flex flex-row justify-between mx-2 md:mx-4">
         <div className="flex items-center">
           <Link href="/">
-            <a className="flex flex-row text-lg font-bold ml-3">
+            <a className="flex flex-row text-md font-bold">
               {/* Logo */}
-              <h4 className="text-white text-center bg-light-pink-500 rounded-full h-12 w-12 pt-3">
+              <h4 className="text-white text-center bg-light-pink-500 rounded-full h-10 w-10 pt-2">
                 MVP
               </h4>
-              <h4 className="mt-3">4STARTUP</h4>
+              <h4 className="mt-2">4STARTUP</h4>
             </a>
           </Link>
         </div>
 
         <button
-          className="flex items-center block px-3 py-2  border rounded md:hidden"
+          className="items-center block px-3 py-2 my-auto  border rounded lg:hidden"
           onClick={() => setMobileMenuIsOpen(!mobileMenuIsOpen)}
         >
           {mobileMenuIsOpen ? <CgClose /> : <CgMenuCheese />}
-          {/* <svg
-            className="w-3 h-3 fill-current"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <title>Menu</title>
-            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-          </svg> */}
         </button>
 
-        <ul
-          className={cn(
-            "grid grid-cols-2 my-auto md:mt-2 z-10 md:flex md:flex-row md:items-center md:justify-center text-sm w-full md:w-auto",
-            mobileMenuIsOpen ? `block` : `hidden`
-          )}
-        >
-          {[
-            { title: "ACCUEIL", route: "/" },
-            { title: "PROJETS", route: "/projects" },
-            { title: "BUSINESS PLAN", route: "/businessplan" },
-            { title: "FORUM", route: "/forum" },
-            { title: "BLOG", route: "/blog" },
-          ].map(({ route, title }) => (
-            <li
-              className={`${
-                router.pathname == route
-                  ? "active bg-light-pink-500 hover:text-gray-900 hover:bg-light-pink-500 text-white"
-                  : ""
-              } mt-3 md:mt-0 md:ml-6 font-bold hover:bg-gray-100 p-2 my-2 mx-5 md:mx-3 rounded`}
-              key={title}
-            >
-              <Link href={route}>
-                <a className="block">{title}</a>
-              </Link>
-            </li>
-          ))}
-        </ul>
-        <div
-          className={cn(
-            "grid grid-cols-2 place-content-center mx-12 md:mx-2 md:flex md:flex-row md:items-center md:justify-center text-sm font-bold  w-full md:w-auto my-auto",
-            mobileMenuIsOpen ? `block` : `hidden`
-          )}
-        >
+        <div className="my-auto hidden lg:flex flex-row justify-between">
+          <ul
+            className={cn(
+              // "sm:grid grid-cols-2 my-auto md:mt-2 z-10 hidden lg:flex lg:flex-row lg:items-center md:justify-center text-sm w-full md:w-auto",
+              "flex flex-row items-center justify-center text-xs mt-2"
+              // mobileMenuIsOpen ? `block` : `hidden`
+            )}
+          >
+            {[
+              { title: "ACCUEIL", route: "/" },
+              { title: "PROJETS", route: "/projects" },
+              { title: "BUSINESS PLAN", route: "/businessplan" },
+              { title: "FORUM", route: "/forum" },
+              { title: "BLOG", route: "/blog" },
+            ].map(({ route, title }) => (
+              <li
+                className={`${
+                  router.pathname == route
+                    ? "active bg-light-pink-500 hover:text-gray-900 hover:bg-light-pink-500 text-white"
+                    : ""
+                } mt-3 md:mt-0 md:ml-6 font-bold hover:bg-gray-100 p-2 my-2 mx-1 rounded`}
+                key={title}
+              >
+                <Link href={route}>
+                  <a className="block">{title}</a>
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+        <div className="hidden lg:flex flex-row text-xs font-bold">
           <Link href="/login">
             <a // onClick={openModal}
               className={`${
@@ -81,10 +72,63 @@ export default function Header() {
             </a>
           </Link>
           <Link href="/signup">
-            <a className="text-white mx-auto bg-light-pink-500 p-2 w-auto rounded-md">
+            <a className="bg-light-pink-500 hover:bg-light-pink-400 p-2 text-white rounded-md my-auto">
               S'INSCRIRE
             </a>
           </Link>
+        </div>
+
+        <div
+          className={
+            mobileMenuIsOpen
+              ? "absolute z-20 mt-10 flex flex-col bg-white mx-auto w-full py-3 px-2 text-sm"
+              : "hidden"
+          }
+        >
+          <ul
+            className={
+              mobileMenuIsOpen
+                ? `grid grid-cols-2 place-content-center`
+                : `hidden`
+            }
+          >
+            {[
+              { title: "ACCUEIL", route: "/" },
+              { title: "PROJETS", route: "/projects" },
+              { title: "BUSINESS PLAN", route: "/businessplan" },
+              { title: "FORUM", route: "/forum" },
+              { title: "BLOG", route: "/blog" },
+            ].map(({ route, title }) => (
+              <li
+                className={`${
+                  router.pathname == route
+                    ? "active bg-light-pink-500 hover:text-gray-900 hover:bg-light-pink-500 text-white"
+                    : ""
+                } mt-3 md:mt-0 md:ml-6 font-bold hover:bg-gray-100 p-2 my-2 mx-1 rounded`}
+                key={title}
+              >
+                <Link href={route}>
+                  <a className="block">{title}</a>
+                </Link>
+              </li>
+            ))}
+          </ul>
+          <div className="mx-auto flex flex-row text-xs font-bold">
+            <Link href="/login">
+              <a // onClick={openModal}
+                className={`${
+                  router.pathname == "/login" ? "active underline" : ""
+                } md:mx-2 mx-3 my-auto cursor-pointer hover:bg-gray-100 p-2 rounded`}
+              >
+                SE CONNECTER
+              </a>
+            </Link>
+            <Link href="/signup">
+              <a className="md:mx-2 mx-3 bg-light-pink-500 hover:bg-light-pink-400 p-2 text-white rounded-md my-auto">
+                S'INSCRIRE
+              </a>
+            </Link>
+          </div>
         </div>
       </div>
     </header>

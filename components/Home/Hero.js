@@ -7,11 +7,11 @@ import { BsArrowRight, BsArrowDown } from "react-icons/bs";
 const Hero = () => {
   return (
     <div className="flex flex-col md:flex-row justify-between bg-back-pink-500 p-5 rounded-md">
-      <div className="flex flex-col md:absolute md:z-20 md:mt-14">
-        <h1 className="font-bold text-4xl md:text-6xl text-dark-pink-500 md:w-4/5">
+      <div className="flex flex-col lg:absolute md:z-20 md:mt-14">
+        <h1 className="font-bold text-4xl md:text-6xl text-dark-pink-500 w-full lg:w-4/5">
           Apprendre à coder autrement
         </h1>
-        <p className="text-md font-semibold my-4 md:w-2/3">
+        <p className="text-md font-semibold my-4 lg:w-2/3">
           en codant des clones des meilleures startups en vogue ( clone Udemy,
           leboncoin, fiverr, airbnb, instagram, Uber ….)
         </p>
@@ -22,7 +22,7 @@ const Hero = () => {
             </a>
           </Link>
           <Link href="/">
-            <a className="flex flex-row my-auto font-semibold mx-4">
+            <a className="flex flex-row my-auto text-sm font-semibold mx-4">
               {" "}
               <h3>Voir les Projets</h3>{" "}
               <BsArrowRight className="my-auto text-sm md:text-2xl mx-1" />{" "}
@@ -35,8 +35,8 @@ const Hero = () => {
           <BsArrowDown className="my-auto text-md md:text-xl" />{" "}
         </div>
       </div>
-      <div className=" mr-72"></div>
-      <div className="hidden md:block">
+      <div className="md:mr-72"></div>
+      <div className="hidden lg:block">
         {/* <HeroImage className="w-5/6 -mt-48 -mr-36" /> */}
         <HeroImage className="w-1/2 -mt-48 ml-96 object-cover" />
       </div>
