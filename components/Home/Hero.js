@@ -6,7 +6,7 @@ import { BsArrowRight, BsArrowDown } from "react-icons/bs";
 
 const Hero = () => {
   return (
-    <div className="flex flex-col md:flex-row justify-between bg-back-pink-500 p-5 rounded-xl">
+    <div className="flex flex-col md:flex-row justify-between bg-back-pink-500 px-5 py-6 md:pb-20 rounded-xl">
       <div className="flex flex-col lg:absolute md:z-20 md:mt-14">
         <h1 className="font-bold text-4xl md:text-6xl text-dark-pink-500 w-full lg:w-4/5">
           Apprendre à coder autrement
