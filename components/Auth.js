@@ -105,7 +105,7 @@ export default function Auth() {
               {/* Facebook */}
               <button
                 // onClick={handleSocialAuth}
-                // onClick={() => signIn()}
+                onClick={() => signIn()}
                 className="bg-white outline-none shadow-sm hover:shadow-lg mx-auto px-10 font-semibold py-2 my-3 rounded-lg"
                 style={{ background: "#3b5998" }}
               >
