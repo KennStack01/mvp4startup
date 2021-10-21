@@ -4,6 +4,7 @@ import { FcGoogle } from "react-icons/fc";
 import { FaGithub } from "react-icons/fa";
 import { BsFacebook } from "react-icons/bs";
 import Link from "next/link";
+import { signIn } from "next-auth/react";
 
 export default function Auth() {
   const {
@@ -69,6 +70,7 @@ export default function Auth() {
               <div className="md:flex">
                 <div className="flex flex-row justify-items-center">
                   <button
+                    onClick={() => signIn()}
                     className="shadow bg-light-pink-500 hover:bg-light-pink-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"
                     type="submit"
                   >
@@ -85,7 +87,8 @@ export default function Auth() {
             <div className="flex flex-col mb-2">
               {/* Google */}
               <button
-                onClick={handleSocialAuth}
+                // onClick={handleSocialAuth}
+                onClick={() => signIn()}
                 className="bg-white outline-none shadow-sm hover:shadow-lg mx-auto px-10 font-semibold py-2 my-3 rounded-lg"
               >
                 <div className="flex flex-row ">
@@ -101,7 +104,8 @@ export default function Auth() {
 
               {/* Facebook */}
               <button
-                onClick={handleSocialAuth}
+                // onClick={handleSocialAuth}
+                // onClick={() => signIn()}
                 className="bg-white outline-none shadow-sm hover:shadow-lg mx-auto px-10 font-semibold py-2 my-3 rounded-lg"
                 style={{ background: "#3b5998" }}
               >
@@ -118,7 +122,8 @@ export default function Auth() {
 
               {/* Github */}
               <button
-                onClick={handleSocialAuth}
+                // onClick={handleSocialAuth}
+                // onClick={() => signIn()}
                 className="bg-white outline-none shadow-sm hover:shadow-lg mx-auto px-10 font-semibold py-2 my-3 mt-4 rounded-lg"
                 style={{ background: "#211F1F" }}
               >

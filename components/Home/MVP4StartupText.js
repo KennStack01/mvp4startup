@@ -4,9 +4,9 @@ const MVP4StartupText = () => {
   return (
     <div className="flex flex-col md:flex-row my-14 md:my-20 mx-2 md:mx-5 text-dark-pink-800 bg-back-pink-500 p-5 rounded-lg">
       <div className="my-8 md:my-auto mx-auto md:w-1/2">
-        <div className="flex flex-row text-3xl md:text-6xl font-bold">
+        <div className="flex flex-row text-3xl md:text-5xl font-bold">
           {/* Logo */}
-          <h4 className="text-white text-center bg-light-pink-500 rounded-full h-20 w-20 md:h-36 md:w-36 pt-6 md:pt-10">
+          <h4 className="text-white text-center bg-light-pink-500 rounded-full h-20 w-20 md:h-32 md:w-32 pt-6 md:pt-10">
             MVP
           </h4>
           <h4 className="mt-6 md:mt-10">4STARTUP</h4>

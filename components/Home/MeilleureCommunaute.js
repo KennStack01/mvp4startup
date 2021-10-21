@@ -1,5 +1,5 @@
 import React from "react";
-import TeamProject from "-!svg-react-loader!../../public/svg/teamProject.svg";
+import Collaborators from "-!svg-react-loader!../../public/svg/collaborators.svg";
 import Link from "next/link";
 
 const MeilleureCommunaute = () => {
@@ -23,7 +23,7 @@ const MeilleureCommunaute = () => {
         </div>
       </div>
       <div className="my-auto md:w-1/2">
-        <TeamProject style={{ width: "90%", height: "inherit" }} />
+        <Collaborators style={{ width: "90%", height: "inherit" }} />
       </div>
     </div>
   );
