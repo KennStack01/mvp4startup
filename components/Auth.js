@@ -123,7 +123,7 @@ export default function Auth() {
               {/* Github */}
               <button
                 // onClick={handleSocialAuth}
-                // onClick={() => signIn()}
+                onClick={() => signIn()}
                 className="bg-white outline-none shadow-sm hover:shadow-lg mx-auto px-10 font-semibold py-2 my-3 mt-4 rounded-lg"
                 style={{ background: "#211F1F" }}
               >

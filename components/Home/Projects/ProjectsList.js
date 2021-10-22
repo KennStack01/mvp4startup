@@ -15,7 +15,7 @@ const ProjectsList = () => {
       const projects = await res.json();
       setProjects(projects);
       setLoading(false);
-      console.log(projects);
+      // console.log(projects);
     } catch (err) {
       console.log(err);
     }
@@ -23,7 +23,7 @@ const ProjectsList = () => {
 
   useEffect(() => {
     fetchProjects();
-    console.log("ProjectsList", projects);
+    // console.log("ProjectsList", projects);
   }, []);
 
   return (

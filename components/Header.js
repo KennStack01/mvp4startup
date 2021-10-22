@@ -10,8 +10,7 @@ export default function Header() {
   const router = useRouter();
 
   return (
-    // <header className="flex flex-row justify-between md:sticky top-0 z-50 w-full text-back-color-600 mt-2 md:mt-5 bg-white">
-    <header className="sticky top-0 z-50 w-full text-back-color-600 bg-white p-2">
+    <header className="sticky top-0 z-50 w-full text-back-color-600 bg-white shadow-sm p-2">
       <div className="flex flex-row justify-between mx-2 md:mx-4">
         <div className="flex items-center">
           <Link href="/">

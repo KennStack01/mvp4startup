@@ -5,19 +5,20 @@ import { useSession, signOut } from "next-auth/react";
 
 const UserAuthButtons = () => {
   const router = useRouter();
+
   const { data: session } = useSession();
-  console.log(session);
+
   if (session) {
     return (
       <div className="mx-auto flex flex-row text-xs font-bold">
         <div className="flex flex-row">
-          {/* <img
-            className="h-8 w-8 my-auto lg:mt-2"
-            src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg"
+          <img
+            className="h-8 w-8 rounded-full my-auto mx-2 lg:mt-2"
+            src={session.user.image}
             alt="Workflow"
-          /> */}
+          />
         </div>
-        <h3>{session.user.email}</h3>
+        <h3 className="my-auto">{session.user.name}</h3>
         <button
           className="md:mx-2 mx-3 bg-gray-200 hover:bg-gray-400 font-semibold p-2 text-gray-900 rounded-md my-auto"
           onClick={() => signOut()}

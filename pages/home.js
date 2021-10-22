@@ -35,7 +35,7 @@ export default function Home({ user }) {
         <Hero />
 
         <h1 className="text-3xl font-bold text-center">
-          welcome to {user.email} or {user.name}!
+          Welcome, {session.user.name} !
         </h1>
         {/* <FormationsList />
         <ProjectsList />

@@ -13,7 +13,7 @@ const ProjectALaUne = () => {
       const businessPlans = await res.json();
       setBusinessPlans(businessPlans);
       setLoading(false);
-      console.log(businessPlans);
+      // console.log(businessPlans);
     } catch (err) {
       console.log(err);
     }
@@ -21,7 +21,7 @@ const ProjectALaUne = () => {
 
   useEffect(() => {
     fetchBusinessPlans();
-    console.log("BusinessPlansList", businessPlans);
+    // console.log("BusinessPlansList", businessPlans);
   }, []);
 
   // console.log("Project", businessPlans[0]);

@@ -12,7 +12,7 @@ const ProjectALaUneBanner = () => {
         <div className="md:w-2/4">
           <ProjectALaUne />
         </div>
-        <div classNamemd="hidden md:block">
+        <div className="hidden md:block">
           <TeamProject style={{ width: "90%", height: "inherit" }} />
         </div>
       </div>

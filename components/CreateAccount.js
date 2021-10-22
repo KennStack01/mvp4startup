@@ -17,8 +17,6 @@ export default function CreateAccount() {
     console.log("Social Auth");
   };
 
-  // const [session, loadingSession] = useSession();
-
   return (
     <div className="md:flex flex-row my-4 md:my-6 mx-auto p-4">
       <div className="items-center mx-auto justify-center rounded-lg py-5 px-4 sm:px-6 lg:px-8">
