@@ -3,7 +3,7 @@ import { useState } from "react";
 import cn from "classnames";
 import { useRouter } from "next/router";
 import { CgMenuCheese, CgClose } from "react-icons/cg";
-import UserAuthButtons from "./userAuthButtons";
+import UserAuthButtons from "./UserAuthButtons";
 
 export default function Header() {
   const [mobileMenuIsOpen, setMobileMenuIsOpen] = useState(false);
