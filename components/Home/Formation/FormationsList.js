@@ -15,7 +15,7 @@ const FormationsList = () => {
       const formations = await res.json();
       setFormations(formations);
       setLoading(false);
-      console.log(formations);
+      // console.log(formations);
     } catch (err) {
       console.log(err);
     }
@@ -23,7 +23,7 @@ const FormationsList = () => {
 
   useEffect(() => {
     fetchFormations();
-    console.log("FormationsList", formations);
+    // console.log("FormationsList", formations);
   }, []);
 
   return (

@@ -13,7 +13,7 @@ const ProjectALaUne = () => {
       const businessPlans = await res.json();
       setBusinessPlans(businessPlans);
       setLoading(false);
-      console.log(businessPlans);
+      // console.log(businessPlans);
     } catch (err) {
       console.log(err);
     }
@@ -21,7 +21,7 @@ const ProjectALaUne = () => {
 
   useEffect(() => {
     fetchBusinessPlans();
-    console.log("BusinessPlansList", businessPlans);
+    // console.log("BusinessPlansList", businessPlans);
   }, []);
 
   // console.log("Project", businessPlans[0]);
@@ -68,7 +68,8 @@ const ProjectALaUne = () => {
         </div>
 
         <div className="bg-light-pink-500 mx-auto my-2 md:my-5 p-3 text-white font-semibold rounded-xl  transform transition duration-500 hover:scale-110">
-          <Link href={project.slug}>
+          {/* <Link href={project.slug}> */}
+          <Link href="/">
             <a className="">
               <h5 className="mx-auto md:my-auto "> Voir plus de Détails </h5>
             </a>

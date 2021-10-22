@@ -4,14 +4,12 @@ import { FcGoogle } from "react-icons/fc";
 import { FaGithub } from "react-icons/fa";
 import { BsFacebook } from "react-icons/bs";
 import Link from "next/link";
+import { signIn, useSession } from "next-auth/react";
 
 export default function CreateAccount() {
   const { register, handleSubmit } = useForm();
   const [result, setResult] = useState("");
   const onSubmit = (data) => setResult(JSON.stringify(data));
-
-  // Données à envoyer dans le Backend: result
-  // C'est composé de Username and Password
 
   // Function pour L'inscription via les réseaux sociaux
   const handleSocialAuth = (e) => {
@@ -52,7 +50,7 @@ export default function CreateAccount() {
                     className="bg-gray-200 appearance-none border-2 my-auto border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-back-color-500"
                     id="inline-password"
                     type="password"
-                    placeholder="Entrer Mot de passe"
+                    placeholder="Entrer le Mot de passe"
                     required
                   />
                 </div>
@@ -64,7 +62,7 @@ export default function CreateAccount() {
                     className="bg-gray-200 appearance-none border-2 my-auto border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-back-color-500"
                     id="inline-password"
                     type="password"
-                    placeholder="Répéter Mot de passe"
+                    placeholder="Répéter le Mot de passe"
                     required
                   />
                 </div>
@@ -84,6 +82,7 @@ export default function CreateAccount() {
               <div className="md:flex">
                 <div className="flex flex-row justify-items-center">
                   <button
+                    onClick={() => signIn()}
                     className="shadow bg-light-pink-500 hover:bg-light-pink-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"
                     type="submit"
                   >
@@ -97,26 +96,27 @@ export default function CreateAccount() {
                 </div>
               </div>
             </form>
+
             <div className="flex flex-col mb-2">
               {/* Google */}
               <button
-                onClick={handleSocialAuth}
+                // onClick={handleSocialAuth}
+                onClick={() => signIn()}
                 className="bg-white outline-none shadow-sm hover:shadow-lg mx-auto px-10 font-semibold py-2 my-3 rounded-lg"
               >
                 <div className="flex flex-row ">
                   <FcGoogle className="my-auto text-3xl" />
                   <h3 className="text-gray-800 text-md font-medium my-auto mx-2">
+                    {/* {loadingSession ? "Loading..." : "Se connecter avec Google"} */}
                     S'inscrire avec Google{" "}
-                    {/* <span className="text-xs italic text-black bg-gray-300 px-1 rounded">
-                        soon
-                    </span> */}
                   </h3>
                 </div>
               </button>
 
               {/* Facebook */}
               <button
-                onClick={handleSocialAuth}
+                // onClick={handleSocialAuth}
+                // onClick={() => signIn()}
                 className="bg-white outline-none shadow-sm hover:shadow-lg mx-auto px-10 font-semibold py-2 my-3 rounded-lg"
                 style={{ background: "#3b5998" }}
               >
@@ -133,7 +133,8 @@ export default function CreateAccount() {
 
               {/* Github */}
               <button
-                onClick={handleSocialAuth}
+                // onClick={handleSocialAuth}
+                onClick={() => signIn()}
                 className="bg-white outline-none shadow-sm hover:shadow-lg mx-auto px-10 font-semibold py-2 my-3 mt-4 rounded-lg"
                 style={{ background: "#211F1F" }}
               >

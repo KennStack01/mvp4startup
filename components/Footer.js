@@ -9,7 +9,7 @@ const Footer = () => {
   return (
     <div className="divide-y divide-white text-white bg-back-color-600 py-2 md:py-5 px-2 md:px-20 w-full">
       <div className="flex flex-col mx-auto justify-items-center ">
-        <div className="grid grid-cols-2 place-content-center mx-auto md:mx-0 md:flex flex-row justify-between text-sm">
+        <div className="grid grid-cols-2 md:grid-cols-3 place-content-center mx-auto md:mx-0 md:flex flex-row justify-between text-sm">
           <div className="flex flex-col my-2">
             <h1 className="text-md md:text-xl font-semibold my-1 md:my-3">
               Company

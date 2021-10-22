@@ -3,14 +3,14 @@ import { useState } from "react";
 import cn from "classnames";
 import { useRouter } from "next/router";
 import { CgMenuCheese, CgClose } from "react-icons/cg";
+import UserAuthButtons from "./UserAuthButtons";
 
 export default function Header() {
   const [mobileMenuIsOpen, setMobileMenuIsOpen] = useState(false);
   const router = useRouter();
 
   return (
-    // <header className="flex flex-row justify-between md:sticky top-0 z-50 w-full text-back-color-600 mt-2 md:mt-5 bg-white">
-    <header className="sticky top-0 z-50 w-full text-back-color-600 bg-white p-2">
+    <header className="sticky top-0 z-50 w-full text-back-color-600 bg-white shadow-sm p-2">
       <div className="flex flex-row justify-between mx-2 md:mx-4">
         <div className="flex items-center">
           <Link href="/">
@@ -62,7 +62,8 @@ export default function Header() {
           </ul>
         </div>
         <div className="hidden lg:flex flex-row text-xs font-bold">
-          <Link href="/login">
+          <UserAuthButtons />
+          {/* <Link href="/login">
             <a // onClick={openModal}
               className={`${
                 router.pathname == "/login" ? "active underline" : ""
@@ -75,13 +76,13 @@ export default function Header() {
             <a className="bg-light-pink-500 hover:bg-light-pink-400 p-2 text-white rounded-md my-auto">
               S'INSCRIRE
             </a>
-          </Link>
+          </Link> */}
         </div>
 
         <div
           className={
             mobileMenuIsOpen
-              ? "absolute z-20 mt-10 flex flex-col bg-white mx-auto w-full py-3 px-2 text-sm"
+              ? "absolute z-20 mt-10 flex flex-col lg:hidden bg-white mx-auto w-full py-3 px-2 text-sm"
               : "hidden"
           }
         >
@@ -113,22 +114,7 @@ export default function Header() {
               </li>
             ))}
           </ul>
-          <div className="mx-auto flex flex-row text-xs font-bold">
-            <Link href="/login">
-              <a // onClick={openModal}
-                className={`${
-                  router.pathname == "/login" ? "active underline" : ""
-                } md:mx-2 mx-3 my-auto cursor-pointer hover:bg-gray-100 p-2 rounded`}
-              >
-                SE CONNECTER
-              </a>
-            </Link>
-            <Link href="/signup">
-              <a className="md:mx-2 mx-3 bg-light-pink-500 hover:bg-light-pink-400 p-2 text-white rounded-md my-auto">
-                S'INSCRIRE
-              </a>
-            </Link>
-          </div>
+          <UserAuthButtons />
         </div>
       </div>
     </header>
