@@ -2,10 +2,15 @@ import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import Formation from "./Formation";
 import { BsArrowRightShort } from "react-icons/bs";
+import FilterBar from "./FilterBar";
 
 const FormationsList = () => {
   const [formations, setFormations] = useState([]);
   const [loading, setLoading] = useState(true);
+
+  const [termToutes, setTermToutes] = useState("");
+  const [termGratuites, setTermGratuites] = useState("");
+  const [termPremium, setTermPremium] = useState("");
 
   const fetchFormations = async () => {
     // let URL = "http://localhost:4000/home/index_formations";
@@ -33,6 +38,7 @@ const FormationsList = () => {
         Les Formations
       </h1>
       {/* Filter */}
+      <FilterBar />
       <div className="flex flex-col sm:grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
         {loading ? (
           <h1 className="text-gray-700 text-center justify-self-center mx-auto text-xl font-bold">

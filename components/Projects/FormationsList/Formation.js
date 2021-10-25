@@ -11,10 +11,10 @@ const Formation = ({
   slug = "/projects",
   lessons,
   duration,
-  isFree = true,
+  isFree,
   price,
-  technologies = "HTML, CSS, JavaScript, Python",
-  showAll = true,
+  technologies,
+  showAll,
 }) => {
   let API = "http://localhost:3002/formations/"; //Image domain: to be set
   const myLoader = ({ src }) => {
@@ -23,7 +23,7 @@ const Formation = ({
 
   return (
     <div className="flex flex-col bg-back-pink-500 rounded-lg my-3 md:my-5 sm:mx-2 md:mx-1 hover:shadow-lg">
-      <div className="h-4/6 ">
+      <div className="h-3/6 ">
         <img
           src={imageSrc}
           alt="Picture of the training"
@@ -39,7 +39,7 @@ const Formation = ({
               : `block bg-red-600 absolute px-2 py-1 -mt-20 rounded-r text-white font-semibold`
           }
         >
-          Gratuit
+          Gratuite
         </p>
         <p
           className={

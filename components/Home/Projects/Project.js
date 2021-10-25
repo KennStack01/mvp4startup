@@ -8,12 +8,14 @@ import Link from "next/link";
 const Project = ({
   imageSrc = "https://www.google.com/url?sa=i&url=https%3A%2F%2Fmedium.com%2F%40gmonne%2Fsimple-app-layout-with-office-ui-fabric-react-2eac6361e1b4&psig=AOvVaw3hfbrCeQcwX1QNhDk5LqQ1&ust=1634299218822000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCNjS9prtyfMCFQAAAAAdAAAAABAD",
   title,
+  slug,
   lessons,
   duration,
-  technologies,
   notes,
+  technologies,
+  isFree,
   price,
-  slug = "/projects",
+  showAll,
 }) => {
   let API = "http://localhost:3002/projects/"; //Image domain: to be set
   const myLoader = ({ src }) => {
@@ -66,7 +68,10 @@ const Project = ({
         <h1 className="my-auto text-xl font-semibold"> ${price.toString()} </h1>
         <Link href={slug}>
           <a className="p-1 md:p-3 font-semibold text-xl cursor-pointer bg-white hover:bg-gray-100 text-gray-800 rounded">
-            <h5 className="mx-auto md:my-auto "> Acheter </h5>
+            <h5 className="mx-auto md:my-auto ">
+              {" "}
+              {isFree ? "Ouvrir" : "Acheter"}{" "}
+            </h5>
           </a>
         </Link>
       </div>
