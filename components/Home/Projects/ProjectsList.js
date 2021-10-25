@@ -24,7 +24,7 @@ const ProjectsList = () => {
 
   useEffect(() => {
     fetchProjects();
-    // console.log("ProjectsList", projects);
+    console.log("ProjectsList", projects);
   }, []);
 
   return (
@@ -43,12 +43,14 @@ const ProjectsList = () => {
               key={project.id}
               imageSrc={project.imageSrc}
               title={project.title}
+              slug={project.slug}
               lessons={project.lessons}
+              notes={project.note}
               duration={project.duration}
               price={project.price}
               technologies={project.technologies}
-              notes={project.note}
-              slug={project.slug}
+              isFree={project.isFree}
+              showAll={project.showAll}
             />
           ))
         )}

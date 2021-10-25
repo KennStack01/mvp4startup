@@ -96,8 +96,8 @@
       "duration": "10h 30min",
       "technologies": "HTML, CSS, JavaScript, Python",
       "note": 4,
-      "isFree": false,
-      "price": 75,
+      "isFree": true,
+      "price": 0,
       "showAll": true
     },
     {
@@ -135,8 +135,8 @@
       "duration": "10h 30min",
       "technologies": "HTML, CSS, JavaScript, Python",
       "note": 4,
-      "isFree": false,
-      "price": 75,
+      "isFree": true,
+      "price": 0,
       "showAll": true
     },
     {
