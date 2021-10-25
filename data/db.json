@@ -6,7 +6,11 @@
       "imageSrc": "http://www.freecoursesonline.me/wp-content/uploads/2018/12/React-Cover.jpg",
       "title": "Learn React JS for Absolute Beginners",
       "lessons": 13,
-      "duration": "10h 30min"
+      "duration": "10h 30min",
+      "isFree": true,
+      "price": 0,
+      "technologies": "HTML, CSS, JavaScript, Python",
+      "showAll": true
     },
     {
       "id": 2,
@@ -14,7 +18,11 @@
       "imageSrc": "http://www.freecoursesonline.me/wp-content/uploads/2018/12/React-Cover.jpg",
       "title": "Learn React JS for Absolute Beginners",
       "lessons": 13,
-      "duration": "10h 30min"
+      "duration": "10h 30min",
+      "isFree": false,
+      "price": 75,
+      "technologies": "HTML, CSS, JavaScript, Python",
+      "showAll": true
     },
     {
       "id": 3,
@@ -22,23 +30,35 @@
       "imageSrc": "http://www.freecoursesonline.me/wp-content/uploads/2018/12/React-Cover.jpg",
       "title": "Learn React JS for Absolute Beginners",
       "lessons": 13,
-      "duration": "10h 30min"
+      "duration": "10h 30min",
+      "isFree": false,
+      "price": 75,
+      "technologies": "HTML, CSS, JavaScript, Python",
+      "showAll": true
     },
     {
       "id": 4,
       "slug": "learn-react-js",
-      "imageSrc": "https://danilowoz.com/images/atomic-design-with-react/cover.jpg",
+      "imageSrc": "http://www.freecoursesonline.me/wp-content/uploads/2018/12/React-Cover.jpg",
       "title": "Learn React JS for Absolute Beginners",
       "lessons": 13,
-      "duration": "10h 30min"
+      "duration": "10h 30min",
+      "isFree": false,
+      "price": 75,
+      "technologies": "HTML, CSS, JavaScript, Python",
+      "showAll": true
     },
     {
       "id": 5,
       "slug": "learn-react-js",
-      "imageSrc": "https://danilowoz.com/images/atomic-design-with-react/cover.jpg",
+      "imageSrc": "http://www.freecoursesonline.me/wp-content/uploads/2018/12/React-Cover.jpg",
       "title": "Learn React JS for Absolute Beginners",
       "lessons": 13,
-      "duration": "10h 30min"
+      "duration": "10h 30min",
+      "isFree": false,
+      "price": 75,
+      "technologies": "HTML, CSS, JavaScript, Python",
+      "showAll": true
     },
     {
       "id": 6,
@@ -46,7 +66,23 @@
       "imageSrc": "http://www.freecoursesonline.me/wp-content/uploads/2018/12/React-Cover.jpg",
       "title": "Learn React JS for Absolute Beginners",
       "lessons": 13,
-      "duration": "10h 30min"
+      "duration": "10h 30min",
+      "isFree": false,
+      "price": 75,
+      "technologies": "HTML, CSS, JavaScript, Python",
+      "showAll": true
+    },
+    {
+      "id": 7,
+      "slug": "learn-react-js",
+      "imageSrc": "http://www.freecoursesonline.me/wp-content/uploads/2018/12/React-Cover.jpg",
+      "title": "Learn React JS for Absolute Beginners",
+      "lessons": 13,
+      "duration": "10h 30min",
+      "isFree": false,
+      "price": 75,
+      "technologies": "HTML, CSS, JavaScript, Python",
+      "showAll": true
     }
   ],
 
@@ -60,7 +96,9 @@
       "duration": "10h 30min",
       "technologies": "HTML, CSS, JavaScript, Python",
       "note": 4,
-      "price": 75
+      "isFree": false,
+      "price": 75,
+      "showAll": true
     },
     {
       "id": 2,
@@ -71,7 +109,9 @@
       "duration": "10h 30min",
       "technologies": "HTML, CSS, JavaScript, Python",
       "note": 4,
-      "price": 75
+      "isFree": false,
+      "price": 75,
+      "showAll": true
     },
     {
       "id": 3,
@@ -82,7 +122,9 @@
       "duration": "10h 30min",
       "technologies": "HTML, CSS, JavaScript, Python",
       "note": 4,
-      "price": 75
+      "isFree": false,
+      "price": 75,
+      "showAll": true
     },
     {
       "id": 4,
@@ -93,7 +135,9 @@
       "duration": "10h 30min",
       "technologies": "HTML, CSS, JavaScript, Python",
       "note": 4,
-      "price": 75
+      "isFree": false,
+      "price": 75,
+      "showAll": true
     },
     {
       "id": 5,
@@ -104,7 +148,9 @@
       "duration": "10h 30min",
       "technologies": "HTML, CSS, JavaScript, Python",
       "note": 4,
-      "price": 75
+      "isFree": false,
+      "price": 75,
+      "showAll": true
     },
     {
       "id": 6,
@@ -115,7 +161,9 @@
       "duration": "10h 30min",
       "technologies": "HTML, CSS, JavaScript, Python",
       "note": 4,
-      "price": 75
+      "isFree": false,
+      "price": 75,
+      "showAll": true
     },
     {
       "id": 7,
@@ -126,29 +174,9 @@
       "duration": "10h 30min",
       "technologies": "HTML, CSS, JavaScript, Python",
       "note": 4,
-      "price": 75
-    },
-    {
-      "id": 8,
-      "slug": "amazon-clone",
-      "imageSrc": "https://res.cloudinary.com/dt9okciwh/image/upload/v1590756522/employcoder/amazon-clone.jpg",
-      "title": "Amazon Clone",
-      "lessons": 13,
-      "duration": "10h 30min",
-      "technologies": "HTML, CSS, JavaScript, Python",
-      "note": 4,
-      "price": 75
-    },
-    {
-      "id": 9,
-      "slug": "amazon-clone",
-      "imageSrc": "https://res.cloudinary.com/dt9okciwh/image/upload/v1590756522/employcoder/amazon-clone.jpg",
-      "title": "Amazon Clone",
-      "lessons": 13,
-      "duration": "10h 30min",
-      "technologies": "HTML, CSS, JavaScript, Python",
-      "note": 4,
-      "price": 75
+      "isFree": false,
+      "price": 75,
+      "showAll": true
     }
   ],
 
@@ -159,7 +187,10 @@
       "imageSrc": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGJ1c2luZXNzJTIwcGxhbnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60",
       "title": "Business Plan MVP",
       "details": "Create an account and receive your first 100 points. Submit an article to earn more and unlock your first project. Enjoy learning about new CSS frameworks, animation libraries, and SEO.",
-      "price": 75
+      "category": "Agriculture",
+      "isFree": false,
+      "price": 75,
+      "showAll": true
     },
     {
       "id": 2,
@@ -167,7 +198,10 @@
       "imageSrc": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGJ1c2luZXNzJTIwcGxhbnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60",
       "title": "Business Plan MVP",
       "details": "Create an account and receive your first 100 points. Submit an article to earn more and unlock your first project. Enjoy learning about new CSS frameworks, animation libraries, and SEO.",
-      "price": 75
+      "category": "IT",
+      "isFree": false,
+      "price": 75,
+      "showAll": true
     },
     {
       "id": 3,
@@ -175,7 +209,10 @@
       "imageSrc": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGJ1c2luZXNzJTIwcGxhbnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60",
       "title": "Business Plan MVP",
       "details": "Create an account and receive your first 100 points. Submit an article to earn more and unlock your first project. Enjoy learning about new CSS frameworks, animation libraries, and SEO.",
-      "price": 75
+      "category": "Elevage",
+      "isFree": false,
+      "price": 75,
+      "showAll": true
     },
     {
       "id": 4,
@@ -183,7 +220,10 @@
       "imageSrc": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGJ1c2luZXNzJTIwcGxhbnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60",
       "title": "Business Plan MVP",
       "details": "Create an account and receive your first 100 points. Submit an article to earn more and unlock your first project. Enjoy learning about new CSS frameworks, animation libraries, and SEO.",
-      "price": 75
+      "category": "Industrielle",
+      "isFree": false,
+      "price": 75,
+      "showAll": true
     },
     {
       "id": 5,
@@ -191,7 +231,10 @@
       "imageSrc": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGJ1c2luZXNzJTIwcGxhbnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60",
       "title": "Business Plan MVP",
       "details": "Create an account and receive your first 100 points. Submit an article to earn more and unlock your first project. Enjoy learning about new CSS frameworks, animation libraries, and SEO.",
-      "price": 75
+      "category": "Agriculture",
+      "isFree": false,
+      "price": 75,
+      "showAll": true
     },
     {
       "id": 6,
@@ -199,7 +242,10 @@
       "imageSrc": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGJ1c2luZXNzJTIwcGxhbnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60",
       "title": "Business Plan MVP",
       "details": "Create an account and receive your first 100 points. Submit an article to earn more and unlock your first project. Enjoy learning about new CSS frameworks, animation libraries, and SEO.",
-      "price": 75
+      "category": "Elevage",
+      "isFree": true,
+      "price": 0,
+      "showAll": true
     },
     {
       "id": 7,
@@ -207,7 +253,10 @@
       "imageSrc": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGJ1c2luZXNzJTIwcGxhbnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60",
       "title": "Business Plan MVP",
       "details": "Create an account and receive your first 100 points. Submit an article to earn more and unlock your first project. Enjoy learning about new CSS frameworks, animation libraries, and SEO.",
-      "price": 75
+      "category": "Industrielle",
+      "isFree": false,
+      "price": 75,
+      "showAll": true
     },
     {
       "id": 8,
@@ -215,15 +264,10 @@
       "imageSrc": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGJ1c2luZXNzJTIwcGxhbnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60",
       "title": "Business Plan MVP",
       "details": "Create an account and receive your first 100 points. Submit an article to earn more and unlock your first project. Enjoy learning about new CSS frameworks, animation libraries, and SEO.",
-      "price": 75
-    },
-    {
-      "id": 9,
-      "slug": "business-plan-mvp",
-      "imageSrc": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGJ1c2luZXNzJTIwcGxhbnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60",
-      "title": "Business Plan MVP",
-      "details": "Create an account and receive your first 100 points. Submit an article to earn more and unlock your first project. Enjoy learning about new CSS frameworks, animation libraries, and SEO.",
-      "price": 75
+      "category": "Agriculture",
+      "isFree": false,
+      "price": 75,
+      "showAll": true
     }
   ]
 }

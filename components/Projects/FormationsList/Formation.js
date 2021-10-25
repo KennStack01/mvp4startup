@@ -12,7 +12,7 @@ const Formation = ({
   lessons,
   duration,
   isFree = true,
-  price = 0,
+  price,
   technologies = "HTML, CSS, JavaScript, Python",
   showAll = true,
 }) => {

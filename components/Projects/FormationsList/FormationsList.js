@@ -28,10 +28,11 @@ const FormationsList = () => {
   }, []);
 
   return (
-    <div className="mt-8 md:mt-14">
-      <h1 className="text-xl md:text-3xl font-bold mt-8 mb-4 md:mb-2">
-        Formations Gratuites
+    <div className="mt-8 md:mt-24 ">
+      <h1 className="text-xl md:text-3xl text-center font-bold mt-8 mb-4 md:mb-2">
+        Les Formations
       </h1>
+      {/* Filter */}
       <div className="flex flex-col sm:grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
         {loading ? (
           <h1 className="text-gray-700 text-center justify-self-center mx-auto text-xl font-bold">
@@ -53,12 +54,6 @@ const FormationsList = () => {
           ))
         )}
       </div>
-      <Link href="/projects">
-        <a className="flex flex-row justify-end text-md md:text-xl text-right font-bold my-8 hover:underline">
-          <h5>En savoir plus</h5>
-          <BsArrowRightShort className="my-auto text-xl" />
-        </a>
-      </Link>
     </div>
   );
 };
