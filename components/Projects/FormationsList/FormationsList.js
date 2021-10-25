@@ -8,6 +8,10 @@ const FormationsList = () => {
   const [formations, setFormations] = useState([]);
   const [loading, setLoading] = useState(true);
 
+  const [termToutes, setTermToutes] = useState("");
+  const [termGratuites, setTermGratuites] = useState("");
+  const [termPremium, setTermPremium] = useState("");
+
   const fetchFormations = async () => {
     // let URL = "http://localhost:4000/home/index_formations";
     let URL = "http://localhost:3002/formations";
