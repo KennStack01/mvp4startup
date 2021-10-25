@@ -8,7 +8,8 @@ const FormationsList = () => {
   const [loading, setLoading] = useState(true);
 
   const fetchFormations = async () => {
-    let URL = "http://localhost:4000/home/index_formations";
+    // let URL = "http://localhost:4000/home/index_formations";
+    let URL = "http://localhost:3002/formations";
 
     try {
       const res = await fetch(URL);
@@ -45,6 +46,9 @@ const FormationsList = () => {
               lessons={formation.lessons}
               duration={formation.duration}
               slug={formation.slug}
+              isFree={formation.isFree}
+              price={formation.price}
+              showAll={formation.showAll}
             />
           ))
         )}

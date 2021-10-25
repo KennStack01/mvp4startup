@@ -8,7 +8,8 @@ const BusinessPlansList = () => {
   const [loading, setLoading] = useState(true);
 
   const fetchBusinessPlans = async () => {
-    let URL = "http://localhost:4000/home/index_bsp";
+    // let URL = "http://localhost:4000/home/index_bsp";
+    let URL = "http://localhost:3002/businessPlans";
 
     try {
       const res = await fetch(URL);
