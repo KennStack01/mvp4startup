@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import Formation from "./Formation";
-import { BsArrowRightShort } from "react-icons/bs";
+import { TAGS } from "./searchedTags";
 
 const FormationsList = () => {
   const [formations, setFormations] = useState([]);
@@ -16,7 +16,6 @@ const FormationsList = () => {
       const formations = await res.json();
       setFormations(formations);
       setLoading(false);
-      // console.log(formations);
     } catch (err) {
       console.log(err);
     }
@@ -34,6 +33,7 @@ const FormationsList = () => {
     isPremiumCurrent: false,
   });
   const [searchTerm, setSearchTerm] = useState("");
+  const [tag, setTag] = useState("All");
 
   const getToutesValue = () => {
     const value = "Toutes";
@@ -47,6 +47,12 @@ const FormationsList = () => {
     const value = "Premium";
     setSearchTerm(value);
   };
+
+  const getTechnologiesValue = () => {
+    const value = "All";
+    setTag(value);
+  };
+
   const currentCSSStyles = "text-white bg-dark-pink-400";
   const normalStyle =
     "p-1 rounded-sm mx-2 cursor-pointer my-auto transition-all duration-300 ease-linear";
@@ -103,10 +109,29 @@ const FormationsList = () => {
         >
           Premium
         </h5>
-        <div className="p-1 rounded mx-2 cursor-pointer my-auto">
-          Par Technologie
+        <div className="flex flex-row p-1 rounded mx-2 cursor-pointer my-auto">
+          <h5 onClick={() => getTechnologiesValue()} className="my-auto">
+            Par Technologie
+          </h5>
+          <div className=" mx-2 ">
+            <label className="block text-sm">
+              <select
+                value={tag}
+                onChange={(e) => setTag(e.target.value)}
+                className="block bg-white border border-black-400 hover:border-gray-700 px-2 py-1 rounded focus:shadow leading-tight focus:outline-none focus:shadow-outline cursor-pointer"
+              >
+                <option className="cursor-pointer text-grey-100 text-italic">
+                  All
+                </option>
+                {TAGS.map((tag) => (
+                  <option className="cursor-pointer"> {tag} </option>
+                ))}
+              </select>
+            </label>
+          </div>
         </div>
       </div>
+
       <div className="flex flex-col sm:grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
         {loading ? (
           <h1 className="text-gray-700 text-center justify-self-center mx-auto text-xl font-bold">
@@ -129,6 +154,19 @@ const FormationsList = () => {
                 return !formation.isFree;
               }
             })
+            .filter((formation) => {
+              if (tag === "All") {
+                return formation;
+              }
+              if (
+                formation.technologies
+                  .toLowerCase()
+                  .trim()
+                  .includes(tag.toLowerCase().trim())
+              ) {
+                return formation;
+              }
+            })
             .map((formation) => (
               <Formation
                 key={formation.id}
@@ -140,6 +178,7 @@ const FormationsList = () => {
                 isFree={formation.isFree}
                 price={formation.price}
                 showAll={formation.showAll}
+                technologies={formation.technologies}
               />
             ))
         )}
