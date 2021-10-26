@@ -9,7 +9,7 @@
       "duration": "10h 30min",
       "isFree": true,
       "price": 0,
-      "technologies": "HTML, CSS, JavaScript, Python",
+      "technologies": "HTML, CSS, Ruby, Python",
       "showAll": true
     },
     {
@@ -21,7 +21,7 @@
       "duration": "10h 30min",
       "isFree": false,
       "price": 75,
-      "technologies": "HTML, CSS, JavaScript, Python",
+      "technologies": "HTML, CSS, Go, Python",
       "showAll": true
     },
     {
@@ -45,7 +45,7 @@
       "duration": "10h 30min",
       "isFree": false,
       "price": 75,
-      "technologies": "HTML, CSS, JavaScript, Python",
+      "technologies": "HTML, React, Go, Python",
       "showAll": true
     },
     {
@@ -57,7 +57,7 @@
       "duration": "10h 30min",
       "isFree": false,
       "price": 75,
-      "technologies": "HTML, CSS, JavaScript, Python",
+      "technologies": "CSS, JavaScript, Python",
       "showAll": true
     },
     {
@@ -81,7 +81,7 @@
       "duration": "10h 30min",
       "isFree": false,
       "price": 75,
-      "technologies": "HTML, CSS, JavaScript, Python",
+      "technologies": "HTML, JavaScript, Python",
       "showAll": true
     }
   ],
@@ -94,7 +94,7 @@
       "title": "Amazon Clone",
       "lessons": 13,
       "duration": "10h 30min",
-      "technologies": "HTML, CSS, JavaScript, Python",
+      "technologies": "HTML, CSS, JavaScript, React",
       "note": 4,
       "isFree": true,
       "price": 0,
@@ -107,7 +107,7 @@
       "title": "Amazon Clone",
       "lessons": 13,
       "duration": "10h 30min",
-      "technologies": "HTML, CSS, JavaScript, Python",
+      "technologies": "HTML, CSS, Ruby, Vue",
       "note": 4,
       "isFree": false,
       "price": 75,
@@ -120,7 +120,7 @@
       "title": "Amazon Clone",
       "lessons": 13,
       "duration": "10h 30min",
-      "technologies": "HTML, CSS, JavaScript, Python",
+      "technologies": "HTML, CSS, Perl, Python",
       "note": 4,
       "isFree": false,
       "price": 75,
@@ -133,7 +133,7 @@
       "title": "Amazon Clone",
       "lessons": 13,
       "duration": "10h 30min",
-      "technologies": "HTML, CSS, JavaScript, Python",
+      "technologies": "HTML, CSS, Go, Python",
       "note": 4,
       "isFree": true,
       "price": 0,

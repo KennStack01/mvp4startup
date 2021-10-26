@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Layout from "../components/Layout";
+import Hero from "../components/BusinessPlan/Hero";
 
 export default function BusinessPlan() {
   return (
@@ -9,7 +10,9 @@ export default function BusinessPlan() {
         <link rel="icon" href="/favicon.png" />
       </Head>
 
-      <Layout></Layout>
+      <Layout>
+        <Hero />
+      </Layout>
     </div>
   );
 }
