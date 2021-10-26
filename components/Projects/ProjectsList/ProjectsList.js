@@ -1,29 +1,31 @@
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
-import Formation from "./Formation";
+import { BsArrowRightShort } from "react-icons/bs";
+import Project from "./Project";
 import { TAGS } from "../searchedTags";
 
-const FormationsList = () => {
-  const [formations, setFormations] = useState([]);
+const ProjectsList = () => {
+  const [projects, setProjects] = useState([]);
   const [loading, setLoading] = useState(true);
 
-  const fetchFormations = async () => {
-    // let URL = "http://localhost:4000/home/index_formations";
-    let URL = "http://localhost:3002/formations";
+  const fetchProjects = async () => {
+    // let URL = "http://localhost:4000/home/index_projects";
+    let URL = "http://localhost:3002/projects";
 
     try {
       const res = await fetch(URL);
-      const formations = await res.json();
-      setFormations(formations);
+      const projects = await res.json();
+      setProjects(projects);
       setLoading(false);
+      // console.log(projects);
     } catch (err) {
       console.log(err);
     }
   };
 
   useEffect(() => {
-    fetchFormations();
-    // console.log("FormationsList", formations);
+    fetchProjects();
+    console.log("ProjectsList", projects);
   }, []);
 
   // For Filtering Options
@@ -58,10 +60,11 @@ const FormationsList = () => {
     "p-1 rounded-sm mx-2 cursor-pointer my-auto transition-all duration-300 ease-linear";
 
   return (
-    <div className="mt-8 md:mt-24 ">
-      <h1 className="text-xl md:text-3xl text-center font-bold mt-8 mb-4 md:mb-2">
-        Les Formations
+    <div className="mt-8 md:mt-14">
+      <h1 className="text-xl md:text-3xl font-bold mt-8 mb-4 md:mb-2">
+        Les Projects
       </h1>
+
       {/* Filter */}
       <div className="sticky top-0 grid grid-cols-2 place-content-center space-x-2 md:flex flex-row justify-center text-center font-semibold text-sm text-gray-800 my-3 md:my-5">
         <h5
@@ -132,59 +135,67 @@ const FormationsList = () => {
         </div>
       </div>
 
-      <div className="flex flex-col sm:grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+      <div className="flex flex-col sm:grid sm:grid-cols-2 md:grid-cols-3">
         {loading ? (
-          <h1 className="text-gray-700 text-center justify-self-center mx-auto text-xl font-bold">
+          <h1 className="text-gray-700 text-center mx-auto text-xl font-bold">
             Loading...
           </h1>
         ) : (
-          formations
-            .filter((formation) => {
+          projects
+
+            .filter((project) => {
               if (searchTerm === "") {
-                return formation;
+                return project;
               }
 
               if (searchTerm === "Toutes") {
-                return formation.showAll;
+                return project.showAll;
               }
               if (searchTerm === "Gratuites") {
-                return formation.isFree;
+                return project.isFree;
               }
               if (searchTerm === "Premium") {
-                return !formation.isFree;
+                return !project.isFree;
               }
             })
-            .filter((formation) => {
+            .filter((project) => {
               if (tag === "All") {
-                return formation;
+                return project;
               }
               if (
-                formation.technologies
+                project.technologies
                   .toLowerCase()
                   .trim()
                   .includes(tag.toLowerCase().trim())
               ) {
-                return formation;
+                return project;
               }
             })
-            .map((formation) => (
-              <Formation
-                key={formation.id}
-                imageSrc={formation.imageSrc}
-                title={formation.title}
-                lessons={formation.lessons}
-                duration={formation.duration}
-                slug={formation.slug}
-                isFree={formation.isFree}
-                price={formation.price}
-                showAll={formation.showAll}
-                technologies={formation.technologies}
+            .map((project) => (
+              <Project
+                key={project.id}
+                imageSrc={project.imageSrc}
+                title={project.title}
+                slug={project.slug}
+                lessons={project.lessons}
+                notes={project.note}
+                duration={project.duration}
+                price={project.price}
+                technologies={project.technologies}
+                isFree={project.isFree}
+                showAll={project.showAll}
               />
             ))
         )}
       </div>
+      <Link href="/projects">
+        <a className="flex flex-row justify-end text-md md:text-xl text-right font-bold my-8 hover:underline">
+          <h5>En savoir plus</h5>
+          <BsArrowRightShort className="my-auto text-xl" />
+        </a>
+      </Link>
     </div>
   );
 };
 
-export default FormationsList;
+export default ProjectsList;

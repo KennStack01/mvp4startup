@@ -11,4 +11,5 @@ export const TAGS = [
   "Express",
   "Python",
   "Go",
+  "Perl",
 ];
