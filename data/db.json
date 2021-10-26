@@ -189,8 +189,7 @@
       "details": "Create an account and receive your first 100 points. Submit an article to earn more and unlock your first project. Enjoy learning about new CSS frameworks, animation libraries, and SEO.",
       "category": "Agriculture",
       "isFree": false,
-      "price": 75,
-      "showAll": true
+      "price": 75
     },
     {
       "id": 2,
@@ -200,8 +199,7 @@
       "details": "Create an account and receive your first 100 points. Submit an article to earn more and unlock your first project. Enjoy learning about new CSS frameworks, animation libraries, and SEO.",
       "category": "IT",
       "isFree": false,
-      "price": 75,
-      "showAll": true
+      "price": 75
     },
     {
       "id": 3,
@@ -211,8 +209,7 @@
       "details": "Create an account and receive your first 100 points. Submit an article to earn more and unlock your first project. Enjoy learning about new CSS frameworks, animation libraries, and SEO.",
       "category": "Elevage",
       "isFree": false,
-      "price": 75,
-      "showAll": true
+      "price": 75
     },
     {
       "id": 4,
@@ -222,8 +219,7 @@
       "details": "Create an account and receive your first 100 points. Submit an article to earn more and unlock your first project. Enjoy learning about new CSS frameworks, animation libraries, and SEO.",
       "category": "Industrielle",
       "isFree": false,
-      "price": 75,
-      "showAll": true
+      "price": 75
     },
     {
       "id": 5,
@@ -233,8 +229,7 @@
       "details": "Create an account and receive your first 100 points. Submit an article to earn more and unlock your first project. Enjoy learning about new CSS frameworks, animation libraries, and SEO.",
       "category": "Agriculture",
       "isFree": false,
-      "price": 75,
-      "showAll": true
+      "price": 75
     },
     {
       "id": 6,
@@ -244,8 +239,7 @@
       "details": "Create an account and receive your first 100 points. Submit an article to earn more and unlock your first project. Enjoy learning about new CSS frameworks, animation libraries, and SEO.",
       "category": "Elevage",
       "isFree": true,
-      "price": 0,
-      "showAll": true
+      "price": 0
     },
     {
       "id": 7,
@@ -255,8 +249,7 @@
       "details": "Create an account and receive your first 100 points. Submit an article to earn more and unlock your first project. Enjoy learning about new CSS frameworks, animation libraries, and SEO.",
       "category": "Industrielle",
       "isFree": false,
-      "price": 75,
-      "showAll": true
+      "price": 75
     },
     {
       "id": 8,
@@ -266,8 +259,7 @@
       "details": "Create an account and receive your first 100 points. Submit an article to earn more and unlock your first project. Enjoy learning about new CSS frameworks, animation libraries, and SEO.",
       "category": "Agriculture",
       "isFree": false,
-      "price": 75,
-      "showAll": true
+      "price": 75
     }
   ]
 }

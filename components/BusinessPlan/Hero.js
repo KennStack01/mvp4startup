@@ -12,7 +12,7 @@ const Hero = () => {
           L’Afrique est le continent avec les plus grande perspective
           d’évolution.{" "}
         </h1>
-        <h5 className="text-sm font-semibold md:font-medium my-4 text-justify">
+        <h5 className="text-sm font-medium md:font-medium my-4 text-justify">
           La population est jeune passionnée et talentueuse, tout est à
           construire. Vous trouverez ici des business plan clé en main qui vous
           permettra de contribuer à l’essor économique de ce continent. Vous

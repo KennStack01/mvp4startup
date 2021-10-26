@@ -27,27 +27,173 @@ const BusinessPlansList = () => {
     // console.log("BusinessPlansList", businessPlans);
   }, []);
 
+  // For Filtering Options
+  const [isCurrent, setIsCurrent] = React.useState({
+    isTousCurrent: true,
+    isITCurrent: false,
+    isAgroCurrent: false,
+    isElevageCurrent: false,
+    isIndustrielleCurrent: false,
+  });
+  const [searchTerm, setSearchTerm] = useState("");
+
+  const getTousValue = () => {
+    const value = "Tous";
+    setSearchTerm(value);
+  };
+  const getITValue = () => {
+    const value = "IT";
+    setSearchTerm(value);
+  };
+  const getAgroValue = () => {
+    const value = "Agro";
+    setSearchTerm(value);
+  };
+  const getElevageValue = () => {
+    const value = "Elevage";
+    setSearchTerm(value);
+  };
+  const getIndustrielleValue = () => {
+    const value = "Industrielle";
+    setSearchTerm(value);
+  };
+
+  const currentCSSStyles = "text-white bg-dark-pink-400";
+  const normalStyle =
+    "p-1 rounded-sm mx-2 cursor-pointer my-auto transition-all duration-300 ease-linear";
+
   return (
     <div className="mt-8 md:mt-14">
-      <h1 className="text-xl md:text-3xl font-bold mt-8 mb-4 md:mb-2">
-        Business Plans
+      <h1 className="text-xl md:text-3xl text-center font-bold mt-8 mb-4 md:mb-2">
+        Les Business Plans
       </h1>
+
+      {/* Filter */}
+      <div className="sticky top-0 grid grid-cols-2 place-content-center space-x-2 md:flex flex-row justify-center text-center font-semibold text-sm text-gray-800 my-3 md:my-5">
+        <h5
+          onClick={() => {
+            getTousValue();
+            setIsCurrent({
+              isTousCurrent: true,
+              isITCurrent: false,
+              isAgroCurrent: false,
+              isElevageCurrent: false,
+              isIndustrielleCurrent: false,
+            });
+          }}
+          className={`${
+            isCurrent.isTousCurrent ? currentCSSStyles : ""
+          } ${normalStyle}`}
+        >
+          Tous
+        </h5>
+        <h5
+          onClick={() => {
+            getITValue();
+            setIsCurrent({
+              isTousCurrent: false,
+              isITCurrent: true,
+              isAgroCurrent: false,
+              isElevageCurrent: false,
+              isIndustrielleCurrent: false,
+            });
+          }}
+          className={`${
+            isCurrent.isITCurrent ? currentCSSStyles : ""
+          } ${normalStyle}`}
+        >
+          IT
+        </h5>
+        <h5
+          onClick={() => {
+            getAgroValue();
+            setIsCurrent({
+              isTousCurrent: false,
+              isITCurrent: false,
+              isAgroCurrent: true,
+              isElevageCurrent: false,
+              isIndustrielleCurrent: false,
+            });
+          }}
+          className={`${
+            isCurrent.isAgroCurrent ? currentCSSStyles : ""
+          } ${normalStyle}`}
+        >
+          Agriculture
+        </h5>
+        <h5
+          onClick={() => {
+            getElevageValue();
+            setIsCurrent({
+              isTousCurrent: false,
+              isITCurrent: false,
+              isAgroCurrent: false,
+              isElevageCurrent: true,
+              isIndustrielleCurrent: false,
+            });
+          }}
+          className={`${
+            isCurrent.isElevageCurrent ? currentCSSStyles : ""
+          } ${normalStyle}`}
+        >
+          Elevage
+        </h5>
+        <h5
+          onClick={() => {
+            getIndustrielleValue();
+            setIsCurrent({
+              isTousCurrent: false,
+              isITCurrent: false,
+              isAgroCurrent: false,
+              isElevageCurrent: false,
+              isIndustrielleCurrent: true,
+            });
+          }}
+          className={`${
+            isCurrent.isIndustrielleCurrent ? currentCSSStyles : ""
+          } ${normalStyle}`}
+        >
+          Industrielle
+        </h5>
+      </div>
+
       <div className="flex flex-col sm:grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
         {loading ? (
           <h1 className="text-gray-700 text-center justify-self-center mx-auto text-xl font-bold">
             Loading...
           </h1>
         ) : (
-          businessPlans.map((businessPlan) => (
-            <BusinessPlan
-              key={businessPlan.id}
-              imageSrc={businessPlan.imageSrc}
-              title={businessPlan.title}
-              details={businessPlan.details}
-              price={businessPlan.price}
-              slug={businessPlan.slug}
-            />
-          ))
+          businessPlans
+            .filter((busiessPlan) => {
+              if (searchTerm === "") {
+                return busiessPlan;
+              }
+              if (searchTerm === "Tous") {
+                return busiessPlan;
+              }
+              if (searchTerm === "IT") {
+                return busiessPlan.category === "IT";
+              }
+              if (searchTerm === "Agro") {
+                return busiessPlan.category === "Agriculture";
+              }
+              if (searchTerm === "Elevage") {
+                return busiessPlan.category === "Elevage";
+              }
+              if (searchTerm === "Industrielle") {
+                return busiessPlan.category === "Industrielle";
+              }
+            })
+            .map((businessPlan) => (
+              <BusinessPlan
+                key={businessPlan.id}
+                imageSrc={businessPlan.imageSrc}
+                title={businessPlan.title}
+                details={businessPlan.details}
+                price={businessPlan.price}
+                slug={businessPlan.slug}
+              />
+            ))
         )}
       </div>
     </div>
