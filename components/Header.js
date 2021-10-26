@@ -51,7 +51,7 @@ export default function Header() {
                   router.pathname == route
                     ? "active bg-light-pink-500 hover:text-gray-900 hover:bg-light-pink-500 text-white"
                     : ""
-                } mt-3 md:mt-0 md:ml-6 font-bold hover:bg-gray-100 p-2 my-2 mx-1 rounded`}
+                } mt-3 md:mt-0 md:ml-6 font-bold hover:bg-gray-100 p-2 my-2 mx-1 rounded  transition-all duration-300 ease-linear`}
                 key={title}
               >
                 <Link href={route}>
@@ -105,7 +105,7 @@ export default function Header() {
                   router.pathname == route
                     ? "active bg-light-pink-500 hover:text-gray-900 hover:bg-light-pink-500 text-white"
                     : ""
-                } mt-3 md:mt-0 md:ml-6 font-bold hover:bg-gray-100 p-2 my-2 mx-1 rounded`}
+                } mt-3 md:mt-0 md:ml-6 font-bold hover:bg-gray-100 p-2 my-2 mx-1 rounded  transition-all duration-300 ease-linear`}
                 key={title}
               >
                 <Link href={route}>
