@@ -9,7 +9,7 @@ const ProjectALaUneBanner = () => {
         Project à la Une!
       </h1>
       <div className="flex flex-col md:flex-row justify-between">
-        <div className="md:w-2/4 mx-auto">
+        <div className="md:w-3/4 mx-auto">
           <ProjectALaUne />
         </div>
         {/* <div className="hidden md:block">
