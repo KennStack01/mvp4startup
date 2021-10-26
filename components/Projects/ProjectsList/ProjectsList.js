@@ -60,8 +60,8 @@ const ProjectsList = () => {
     "p-1 rounded-sm mx-2 cursor-pointer my-auto transition-all duration-300 ease-linear";
 
   return (
-    <div className="mt-8 md:mt-14">
-      <h1 className="text-xl md:text-3xl font-bold mt-8 mb-4 md:mb-2">
+    <div className="mt-8 md:mt-20">
+      <h1 className="text-xl md:text-3xl text-center font-bold mt-8 mb-4 md:mb-2">
         Les Projects
       </h1>
 
@@ -188,12 +188,6 @@ const ProjectsList = () => {
             ))
         )}
       </div>
-      <Link href="/projects">
-        <a className="flex flex-row justify-end text-md md:text-xl text-right font-bold my-8 hover:underline">
-          <h5>En savoir plus</h5>
-          <BsArrowRightShort className="my-auto text-xl" />
-        </a>
-      </Link>
     </div>
   );
 };
