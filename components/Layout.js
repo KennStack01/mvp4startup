@@ -8,7 +8,7 @@ export default function Layout(props) {
       {/* <Header /> */}
       <Header />
 
-      <main className="relative flex-1 lg:container px-4 py-3 mx-auto md:px-6 md:py-12 overflow-x-auto overflow-auto">
+      <main className="relative flex-1 lg:container px-4 py-3 mx-auto md:px-6 md:py-8 overflow-x-auto overflow-auto">
         {props.children}
       </main>
 

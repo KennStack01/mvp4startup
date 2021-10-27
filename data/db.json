@@ -10,7 +10,90 @@
       "isFree": true,
       "price": 0,
       "technologies": "HTML, CSS, Ruby, Python",
-      "showAll": true
+      "showAll": true,
+      "introVideo": "https://www.youtube.com/watch?v=__IL2nMzUEw",
+      "details": {
+        "courseDescription": "La population est jeune passionnée et talentueuse, tout est à construire. Vous trouverez ici des business plan clé en main qui vous permettra de contribuer à l’essor économique de ce continent. Vous aurez toutes les informations nécessaires pour l’implémentation de chacun des Business plan, de l’offre financière, du plan de dépense, des ressources humaines, des contacts des partenariats, à l’étude de terrain, vous disposez de tous pour investir sur ce continent.",
+        "audience": "La population est jeune passionnée et talentueuse, tout est à construire. Vous trouverez ici des business plan clé en main qui vous permettra de contribuer à l’essor économique de ce continent. Vous aurez toutes les informations nécessaires pour l’implémentation de chacun des Business plan, de l’offre financière, du plan de dépense, des ressources humaines, des contacts des partenariats.",
+        "ceQueVousAllezApprendre": "La population est jeune passionnée et talentueuse, tout est à construire. Vous trouverez ici des business plan clé en main qui vous permettra de contribuer à l’essor économique de ce continent. Vous aurez toutes les informations nécessaires pour l’implémentation de chacun des Business plan, de l’offre financière, du plan de dépense.",
+        "prerequis": "La population est jeune passionnée et talentueuse, tout est à construire. Vous trouverez ici des business plan clé en main qui vous permettra de contribuer à l’essor économique de ce continent. Vous aurez toutes les informations nécessaires"
+      },
+      "lessonsList": [
+        {
+          "title": "Learn React JS for Absolute Beginners",
+          "topics": [
+            {
+              "topic": "What is Reactjs?",
+              "duration": "01:30"
+            },
+            {
+              "topic": "What is Reactjs?",
+              "duration": "01:30"
+            },
+            {
+              "topic": "What is Reactjs?",
+              "duration": "01:30"
+            }
+          ]
+        },
+        {
+          "title": "Learn React JS for Absolute Beginners",
+          "topics": [
+            {
+              "topic": "What is Reactjs?",
+              "duration": "01:30"
+            },
+            {
+              "topic": "What is Reactjs?",
+              "duration": "01:30"
+            },
+            {
+              "topic": "What is Reactjs?",
+              "duration": "01:30"
+            }
+          ]
+        },
+        {
+          "title": "Learn React JS for Absolute Beginners",
+          "topics": [
+            {
+              "topic": "What is Reactjs?",
+              "duration": "01:30"
+            },
+            {
+              "topic": "What is Reactjs?",
+              "duration": "01:30"
+            }
+          ]
+        }
+      ],
+      "reviews": [
+        {
+          "userEmail": "kenn@gmail.com",
+          "userAvatar": "https://avatars.githubusercontent.com/u/67477516?v=4",
+          "comment": "Un Cours très interessant pour les Beginners, les débutants se retrouvent facilement avec leur manière d'expliquer les Concepts"
+        },
+        {
+          "userEmail": "kenn@gmail.com",
+          "userAvatar": "https://avatars.githubusercontent.com/u/67477516?v=4",
+          "comment": "Un Cours très interessant pour les Beginners, les débutants se retrouvent facilement avec leur manière d'expliquer les Concepts"
+        },
+        {
+          "userEmail": "kenn@gmail.com",
+          "userAvatar": "https://avatars.githubusercontent.com/u/67477516?v=4",
+          "comment": "Un Cours très interessant pour les Beginners, les débutants se retrouvent facilement avec leur manière d'expliquer les Concepts"
+        },
+        {
+          "userEmail": "kenn@gmail.com",
+          "userAvatar": "https://avatars.githubusercontent.com/u/67477516?v=4",
+          "comment": "Un Cours très interessant pour les Beginners, les débutants se retrouvent facilement avec leur manière d'expliquer les Concepts"
+        },
+        {
+          "userEmail": "kenn@gmail.com",
+          "userAvatar": "https://avatars.githubusercontent.com/u/67477516?v=4",
+          "comment": "Un Cours très interessant pour les Beginners, les débutants se retrouvent facilement avec leur manière d'expliquer les Concepts"
+        }
+      ]
     },
     {
       "id": 2,
@@ -22,7 +105,90 @@
       "isFree": false,
       "price": 75,
       "technologies": "HTML, CSS, Go, Python",
-      "showAll": true
+      "showAll": true,
+      "introVideo": "https://www.youtube.com/watch?v=__IL2nMzUEw",
+      "details": {
+        "courseDescription": "La population est jeune passionnée et talentueuse, tout est à construire. Vous trouverez ici des business plan clé en main qui vous permettra de contribuer à l’essor économique de ce continent. Vous aurez toutes les informations nécessaires pour l’implémentation de chacun des Business plan, de l’offre financière, du plan de dépense, des ressources humaines, des contacts des partenariats, à l’étude de terrain, vous disposez de tous pour investir sur ce continent.",
+        "audience": "La population est jeune passionnée et talentueuse, tout est à construire. Vous trouverez ici des business plan clé en main qui vous permettra de contribuer à l’essor économique de ce continent. Vous aurez toutes les informations nécessaires pour l’implémentation de chacun des Business plan, de l’offre financière, du plan de dépense, des ressources humaines, des contacts des partenariats.",
+        "ceQueVousAllezApprendre": "La population est jeune passionnée et talentueuse, tout est à construire. Vous trouverez ici des business plan clé en main qui vous permettra de contribuer à l’essor économique de ce continent. Vous aurez toutes les informations nécessaires pour l’implémentation de chacun des Business plan, de l’offre financière, du plan de dépense.",
+        "prerequis": "La population est jeune passionnée et talentueuse, tout est à construire. Vous trouverez ici des business plan clé en main qui vous permettra de contribuer à l’essor économique de ce continent. Vous aurez toutes les informations nécessaires"
+      },
+      "lessonsList": [
+        {
+          "title": "Learn React JS for Absolute Beginners",
+          "topics": [
+            {
+              "topic": "What is Reactjs?",
+              "duration": "01:30"
+            },
+            {
+              "topic": "What is Reactjs?",
+              "duration": "01:30"
+            },
+            {
+              "topic": "What is Reactjs?",
+              "duration": "01:30"
+            }
+          ]
+        },
+        {
+          "title": "Learn React JS for Absolute Beginners",
+          "topics": [
+            {
+              "topic": "What is Reactjs?",
+              "duration": "01:30"
+            },
+            {
+              "topic": "What is Reactjs?",
+              "duration": "01:30"
+            },
+            {
+              "topic": "What is Reactjs?",
+              "duration": "01:30"
+            }
+          ]
+        },
+        {
+          "title": "Learn React JS for Absolute Beginners",
+          "topics": [
+            {
+              "topic": "What is Reactjs?",
+              "duration": "01:30"
+            },
+            {
+              "topic": "What is Reactjs?",
+              "duration": "01:30"
+            }
+          ]
+        }
+      ],
+      "reviews": [
+        {
+          "userEmail": "kenn@gmail.com",
+          "userAvatar": "https://avatars.githubusercontent.com/u/67477516?v=4",
+          "comment": "Un Cours très interessant pour les Beginners, les débutants se retrouvent facilement avec leur manière d'expliquer les Concepts"
+        },
+        {
+          "userEmail": "kenn@gmail.com",
+          "userAvatar": "https://avatars.githubusercontent.com/u/67477516?v=4",
+          "comment": "Un Cours très interessant pour les Beginners, les débutants se retrouvent facilement avec leur manière d'expliquer les Concepts"
+        },
+        {
+          "userEmail": "kenn@gmail.com",
+          "userAvatar": "https://avatars.githubusercontent.com/u/67477516?v=4",
+          "comment": "Un Cours très interessant pour les Beginners, les débutants se retrouvent facilement avec leur manière d'expliquer les Concepts"
+        },
+        {
+          "userEmail": "kenn@gmail.com",
+          "userAvatar": "https://avatars.githubusercontent.com/u/67477516?v=4",
+          "comment": "Un Cours très interessant pour les Beginners, les débutants se retrouvent facilement avec leur manière d'expliquer les Concepts"
+        },
+        {
+          "userEmail": "kenn@gmail.com",
+          "userAvatar": "https://avatars.githubusercontent.com/u/67477516?v=4",
+          "comment": "Un Cours très interessant pour les Beginners, les débutants se retrouvent facilement avec leur manière d'expliquer les Concepts"
+        }
+      ]
     },
     {
       "id": 3,
@@ -34,7 +200,90 @@
       "isFree": false,
       "price": 75,
       "technologies": "HTML, CSS, JavaScript, Python",
-      "showAll": true
+      "showAll": true,
+      "introVideo": "https://www.youtube.com/watch?v=__IL2nMzUEw",
+      "details": {
+        "courseDescription": "La population est jeune passionnée et talentueuse, tout est à construire. Vous trouverez ici des business plan clé en main qui vous permettra de contribuer à l’essor économique de ce continent. Vous aurez toutes les informations nécessaires pour l’implémentation de chacun des Business plan, de l’offre financière, du plan de dépense, des ressources humaines, des contacts des partenariats, à l’étude de terrain, vous disposez de tous pour investir sur ce continent.",
+        "audience": "La population est jeune passionnée et talentueuse, tout est à construire. Vous trouverez ici des business plan clé en main qui vous permettra de contribuer à l’essor économique de ce continent. Vous aurez toutes les informations nécessaires pour l’implémentation de chacun des Business plan, de l’offre financière, du plan de dépense, des ressources humaines, des contacts des partenariats.",
+        "ceQueVousAllezApprendre": "La population est jeune passionnée et talentueuse, tout est à construire. Vous trouverez ici des business plan clé en main qui vous permettra de contribuer à l’essor économique de ce continent. Vous aurez toutes les informations nécessaires pour l’implémentation de chacun des Business plan, de l’offre financière, du plan de dépense.",
+        "prerequis": "La population est jeune passionnée et talentueuse, tout est à construire. Vous trouverez ici des business plan clé en main qui vous permettra de contribuer à l’essor économique de ce continent. Vous aurez toutes les informations nécessaires"
+      },
+      "lessonsList": [
+        {
+          "title": "Learn React JS for Absolute Beginners",
+          "topics": [
+            {
+              "topic": "What is Reactjs?",
+              "duration": "01:30"
+            },
+            {
+              "topic": "What is Reactjs?",
+              "duration": "01:30"
+            },
+            {
+              "topic": "What is Reactjs?",
+              "duration": "01:30"
+            }
+          ]
+        },
+        {
+          "title": "Learn React JS for Absolute Beginners",
+          "topics": [
+            {
+              "topic": "What is Reactjs?",
+              "duration": "01:30"
+            },
+            {
+              "topic": "What is Reactjs?",
+              "duration": "01:30"
+            },
+            {
+              "topic": "What is Reactjs?",
+              "duration": "01:30"
+            }
+          ]
+        },
+        {
+          "title": "Learn React JS for Absolute Beginners",
+          "topics": [
+            {
+              "topic": "What is Reactjs?",
+              "duration": "01:30"
+            },
+            {
+              "topic": "What is Reactjs?",
+              "duration": "01:30"
+            }
+          ]
+        }
+      ],
+      "reviews": [
+        {
+          "userEmail": "kenn@gmail.com",
+          "userAvatar": "https://avatars.githubusercontent.com/u/67477516?v=4",
+          "comment": "Un Cours très interessant pour les Beginners, les débutants se retrouvent facilement avec leur manière d'expliquer les Concepts"
+        },
+        {
+          "userEmail": "kenn@gmail.com",
+          "userAvatar": "https://avatars.githubusercontent.com/u/67477516?v=4",
+          "comment": "Un Cours très interessant pour les Beginners, les débutants se retrouvent facilement avec leur manière d'expliquer les Concepts"
+        },
+        {
+          "userEmail": "kenn@gmail.com",
+          "userAvatar": "https://avatars.githubusercontent.com/u/67477516?v=4",
+          "comment": "Un Cours très interessant pour les Beginners, les débutants se retrouvent facilement avec leur manière d'expliquer les Concepts"
+        },
+        {
+          "userEmail": "kenn@gmail.com",
+          "userAvatar": "https://avatars.githubusercontent.com/u/67477516?v=4",
+          "comment": "Un Cours très interessant pour les Beginners, les débutants se retrouvent facilement avec leur manière d'expliquer les Concepts"
+        },
+        {
+          "userEmail": "kenn@gmail.com",
+          "userAvatar": "https://avatars.githubusercontent.com/u/67477516?v=4",
+          "comment": "Un Cours très interessant pour les Beginners, les débutants se retrouvent facilement avec leur manière d'expliquer les Concepts"
+        }
+      ]
     },
     {
       "id": 4,
@@ -46,7 +295,90 @@
       "isFree": false,
       "price": 75,
       "technologies": "HTML, React, Go, Python",
-      "showAll": true
+      "showAll": true,
+      "introVideo": "https://www.youtube.com/watch?v=__IL2nMzUEw",
+      "details": {
+        "courseDescription": "La population est jeune passionnée et talentueuse, tout est à construire. Vous trouverez ici des business plan clé en main qui vous permettra de contribuer à l’essor économique de ce continent. Vous aurez toutes les informations nécessaires pour l’implémentation de chacun des Business plan, de l’offre financière, du plan de dépense, des ressources humaines, des contacts des partenariats, à l’étude de terrain, vous disposez de tous pour investir sur ce continent.",
+        "audience": "La population est jeune passionnée et talentueuse, tout est à construire. Vous trouverez ici des business plan clé en main qui vous permettra de contribuer à l’essor économique de ce continent. Vous aurez toutes les informations nécessaires pour l’implémentation de chacun des Business plan, de l’offre financière, du plan de dépense, des ressources humaines, des contacts des partenariats.",
+        "ceQueVousAllezApprendre": "La population est jeune passionnée et talentueuse, tout est à construire. Vous trouverez ici des business plan clé en main qui vous permettra de contribuer à l’essor économique de ce continent. Vous aurez toutes les informations nécessaires pour l’implémentation de chacun des Business plan, de l’offre financière, du plan de dépense.",
+        "prerequis": "La population est jeune passionnée et talentueuse, tout est à construire. Vous trouverez ici des business plan clé en main qui vous permettra de contribuer à l’essor économique de ce continent. Vous aurez toutes les informations nécessaires"
+      },
+      "lessonsList": [
+        {
+          "title": "Learn React JS for Absolute Beginners",
+          "topics": [
+            {
+              "topic": "What is Reactjs?",
+              "duration": "01:30"
+            },
+            {
+              "topic": "What is Reactjs?",
+              "duration": "01:30"
+            },
+            {
+              "topic": "What is Reactjs?",
+              "duration": "01:30"
+            }
+          ]
+        },
+        {
+          "title": "Learn React JS for Absolute Beginners",
+          "topics": [
+            {
+              "topic": "What is Reactjs?",
+              "duration": "01:30"
+            },
+            {
+              "topic": "What is Reactjs?",
+              "duration": "01:30"
+            },
+            {
+              "topic": "What is Reactjs?",
+              "duration": "01:30"
+            }
+          ]
+        },
+        {
+          "title": "Learn React JS for Absolute Beginners",
+          "topics": [
+            {
+              "topic": "What is Reactjs?",
+              "duration": "01:30"
+            },
+            {
+              "topic": "What is Reactjs?",
+              "duration": "01:30"
+            }
+          ]
+        }
+      ],
+      "reviews": [
+        {
+          "userEmail": "kenn@gmail.com",
+          "userAvatar": "https://avatars.githubusercontent.com/u/67477516?v=4",
+          "comment": "Un Cours très interessant pour les Beginners, les débutants se retrouvent facilement avec leur manière d'expliquer les Concepts"
+        },
+        {
+          "userEmail": "kenn@gmail.com",
+          "userAvatar": "https://avatars.githubusercontent.com/u/67477516?v=4",
+          "comment": "Un Cours très interessant pour les Beginners, les débutants se retrouvent facilement avec leur manière d'expliquer les Concepts"
+        },
+        {
+          "userEmail": "kenn@gmail.com",
+          "userAvatar": "https://avatars.githubusercontent.com/u/67477516?v=4",
+          "comment": "Un Cours très interessant pour les Beginners, les débutants se retrouvent facilement avec leur manière d'expliquer les Concepts"
+        },
+        {
+          "userEmail": "kenn@gmail.com",
+          "userAvatar": "https://avatars.githubusercontent.com/u/67477516?v=4",
+          "comment": "Un Cours très interessant pour les Beginners, les débutants se retrouvent facilement avec leur manière d'expliquer les Concepts"
+        },
+        {
+          "userEmail": "kenn@gmail.com",
+          "userAvatar": "https://avatars.githubusercontent.com/u/67477516?v=4",
+          "comment": "Un Cours très interessant pour les Beginners, les débutants se retrouvent facilement avec leur manière d'expliquer les Concepts"
+        }
+      ]
     },
     {
       "id": 5,
@@ -58,7 +390,90 @@
       "isFree": false,
       "price": 75,
       "technologies": "CSS, JavaScript, Python",
-      "showAll": true
+      "showAll": true,
+      "introVideo": "https://www.youtube.com/watch?v=__IL2nMzUEw",
+      "details": {
+        "courseDescription": "La population est jeune passionnée et talentueuse, tout est à construire. Vous trouverez ici des business plan clé en main qui vous permettra de contribuer à l’essor économique de ce continent. Vous aurez toutes les informations nécessaires pour l’implémentation de chacun des Business plan, de l’offre financière, du plan de dépense, des ressources humaines, des contacts des partenariats, à l’étude de terrain, vous disposez de tous pour investir sur ce continent.",
+        "audience": "La population est jeune passionnée et talentueuse, tout est à construire. Vous trouverez ici des business plan clé en main qui vous permettra de contribuer à l’essor économique de ce continent. Vous aurez toutes les informations nécessaires pour l’implémentation de chacun des Business plan, de l’offre financière, du plan de dépense, des ressources humaines, des contacts des partenariats.",
+        "ceQueVousAllezApprendre": "La population est jeune passionnée et talentueuse, tout est à construire. Vous trouverez ici des business plan clé en main qui vous permettra de contribuer à l’essor économique de ce continent. Vous aurez toutes les informations nécessaires pour l’implémentation de chacun des Business plan, de l’offre financière, du plan de dépense.",
+        "prerequis": "La population est jeune passionnée et talentueuse, tout est à construire. Vous trouverez ici des business plan clé en main qui vous permettra de contribuer à l’essor économique de ce continent. Vous aurez toutes les informations nécessaires"
+      },
+      "lessonsList": [
+        {
+          "title": "Learn React JS for Absolute Beginners",
+          "topics": [
+            {
+              "topic": "What is Reactjs?",
+              "duration": "01:30"
+            },
+            {
+              "topic": "What is Reactjs?",
+              "duration": "01:30"
+            },
+            {
+              "topic": "What is Reactjs?",
+              "duration": "01:30"
+            }
+          ]
+        },
+        {
+          "title": "Learn React JS for Absolute Beginners",
+          "topics": [
+            {
+              "topic": "What is Reactjs?",
+              "duration": "01:30"
+            },
+            {
+              "topic": "What is Reactjs?",
+              "duration": "01:30"
+            },
+            {
+              "topic": "What is Reactjs?",
+              "duration": "01:30"
+            }
+          ]
+        },
+        {
+          "title": "Learn React JS for Absolute Beginners",
+          "topics": [
+            {
+              "topic": "What is Reactjs?",
+              "duration": "01:30"
+            },
+            {
+              "topic": "What is Reactjs?",
+              "duration": "01:30"
+            }
+          ]
+        }
+      ],
+      "reviews": [
+        {
+          "userEmail": "kenn@gmail.com",
+          "userAvatar": "https://avatars.githubusercontent.com/u/67477516?v=4",
+          "comment": "Un Cours très interessant pour les Beginners, les débutants se retrouvent facilement avec leur manière d'expliquer les Concepts"
+        },
+        {
+          "userEmail": "kenn@gmail.com",
+          "userAvatar": "https://avatars.githubusercontent.com/u/67477516?v=4",
+          "comment": "Un Cours très interessant pour les Beginners, les débutants se retrouvent facilement avec leur manière d'expliquer les Concepts"
+        },
+        {
+          "userEmail": "kenn@gmail.com",
+          "userAvatar": "https://avatars.githubusercontent.com/u/67477516?v=4",
+          "comment": "Un Cours très interessant pour les Beginners, les débutants se retrouvent facilement avec leur manière d'expliquer les Concepts"
+        },
+        {
+          "userEmail": "kenn@gmail.com",
+          "userAvatar": "https://avatars.githubusercontent.com/u/67477516?v=4",
+          "comment": "Un Cours très interessant pour les Beginners, les débutants se retrouvent facilement avec leur manière d'expliquer les Concepts"
+        },
+        {
+          "userEmail": "kenn@gmail.com",
+          "userAvatar": "https://avatars.githubusercontent.com/u/67477516?v=4",
+          "comment": "Un Cours très interessant pour les Beginners, les débutants se retrouvent facilement avec leur manière d'expliquer les Concepts"
+        }
+      ]
     },
     {
       "id": 6,
@@ -70,7 +485,90 @@
       "isFree": false,
       "price": 75,
       "technologies": "HTML, CSS, JavaScript, Python",
-      "showAll": true
+      "showAll": true,
+      "introVideo": "https://www.youtube.com/watch?v=__IL2nMzUEw",
+      "details": {
+        "courseDescription": "La population est jeune passionnée et talentueuse, tout est à construire. Vous trouverez ici des business plan clé en main qui vous permettra de contribuer à l’essor économique de ce continent. Vous aurez toutes les informations nécessaires pour l’implémentation de chacun des Business plan, de l’offre financière, du plan de dépense, des ressources humaines, des contacts des partenariats, à l’étude de terrain, vous disposez de tous pour investir sur ce continent.",
+        "audience": "La population est jeune passionnée et talentueuse, tout est à construire. Vous trouverez ici des business plan clé en main qui vous permettra de contribuer à l’essor économique de ce continent. Vous aurez toutes les informations nécessaires pour l’implémentation de chacun des Business plan, de l’offre financière, du plan de dépense, des ressources humaines, des contacts des partenariats.",
+        "ceQueVousAllezApprendre": "La population est jeune passionnée et talentueuse, tout est à construire. Vous trouverez ici des business plan clé en main qui vous permettra de contribuer à l’essor économique de ce continent. Vous aurez toutes les informations nécessaires pour l’implémentation de chacun des Business plan, de l’offre financière, du plan de dépense.",
+        "prerequis": "La population est jeune passionnée et talentueuse, tout est à construire. Vous trouverez ici des business plan clé en main qui vous permettra de contribuer à l’essor économique de ce continent. Vous aurez toutes les informations nécessaires"
+      },
+      "lessonsList": [
+        {
+          "title": "Learn React JS for Absolute Beginners",
+          "topics": [
+            {
+              "topic": "What is Reactjs?",
+              "duration": "01:30"
+            },
+            {
+              "topic": "What is Reactjs?",
+              "duration": "01:30"
+            },
+            {
+              "topic": "What is Reactjs?",
+              "duration": "01:30"
+            }
+          ]
+        },
+        {
+          "title": "Learn React JS for Absolute Beginners",
+          "topics": [
+            {
+              "topic": "What is Reactjs?",
+              "duration": "01:30"
+            },
+            {
+              "topic": "What is Reactjs?",
+              "duration": "01:30"
+            },
+            {
+              "topic": "What is Reactjs?",
+              "duration": "01:30"
+            }
+          ]
+        },
+        {
+          "title": "Learn React JS for Absolute Beginners",
+          "topics": [
+            {
+              "topic": "What is Reactjs?",
+              "duration": "01:30"
+            },
+            {
+              "topic": "What is Reactjs?",
+              "duration": "01:30"
+            }
+          ]
+        }
+      ],
+      "reviews": [
+        {
+          "userEmail": "kenn@gmail.com",
+          "userAvatar": "https://avatars.githubusercontent.com/u/67477516?v=4",
+          "comment": "Un Cours très interessant pour les Beginners, les débutants se retrouvent facilement avec leur manière d'expliquer les Concepts"
+        },
+        {
+          "userEmail": "kenn@gmail.com",
+          "userAvatar": "https://avatars.githubusercontent.com/u/67477516?v=4",
+          "comment": "Un Cours très interessant pour les Beginners, les débutants se retrouvent facilement avec leur manière d'expliquer les Concepts"
+        },
+        {
+          "userEmail": "kenn@gmail.com",
+          "userAvatar": "https://avatars.githubusercontent.com/u/67477516?v=4",
+          "comment": "Un Cours très interessant pour les Beginners, les débutants se retrouvent facilement avec leur manière d'expliquer les Concepts"
+        },
+        {
+          "userEmail": "kenn@gmail.com",
+          "userAvatar": "https://avatars.githubusercontent.com/u/67477516?v=4",
+          "comment": "Un Cours très interessant pour les Beginners, les débutants se retrouvent facilement avec leur manière d'expliquer les Concepts"
+        },
+        {
+          "userEmail": "kenn@gmail.com",
+          "userAvatar": "https://avatars.githubusercontent.com/u/67477516?v=4",
+          "comment": "Un Cours très interessant pour les Beginners, les débutants se retrouvent facilement avec leur manière d'expliquer les Concepts"
+        }
+      ]
     },
     {
       "id": 7,
@@ -82,7 +580,90 @@
       "isFree": false,
       "price": 75,
       "technologies": "HTML, JavaScript, Python",
-      "showAll": true
+      "showAll": true,
+      "introVideo": "https://www.youtube.com/watch?v=__IL2nMzUEw",
+      "details": {
+        "courseDescription": "La population est jeune passionnée et talentueuse, tout est à construire. Vous trouverez ici des business plan clé en main qui vous permettra de contribuer à l’essor économique de ce continent. Vous aurez toutes les informations nécessaires pour l’implémentation de chacun des Business plan, de l’offre financière, du plan de dépense, des ressources humaines, des contacts des partenariats, à l’étude de terrain, vous disposez de tous pour investir sur ce continent.",
+        "audience": "La population est jeune passionnée et talentueuse, tout est à construire. Vous trouverez ici des business plan clé en main qui vous permettra de contribuer à l’essor économique de ce continent. Vous aurez toutes les informations nécessaires pour l’implémentation de chacun des Business plan, de l’offre financière, du plan de dépense, des ressources humaines, des contacts des partenariats.",
+        "ceQueVousAllezApprendre": "La population est jeune passionnée et talentueuse, tout est à construire. Vous trouverez ici des business plan clé en main qui vous permettra de contribuer à l’essor économique de ce continent. Vous aurez toutes les informations nécessaires pour l’implémentation de chacun des Business plan, de l’offre financière, du plan de dépense.",
+        "prerequis": "La population est jeune passionnée et talentueuse, tout est à construire. Vous trouverez ici des business plan clé en main qui vous permettra de contribuer à l’essor économique de ce continent. Vous aurez toutes les informations nécessaires"
+      },
+      "lessonsList": [
+        {
+          "title": "Learn React JS for Absolute Beginners",
+          "topics": [
+            {
+              "topic": "What is Reactjs?",
+              "duration": "01:30"
+            },
+            {
+              "topic": "What is Reactjs?",
+              "duration": "01:30"
+            },
+            {
+              "topic": "What is Reactjs?",
+              "duration": "01:30"
+            }
+          ]
+        },
+        {
+          "title": "Learn React JS for Absolute Beginners",
+          "topics": [
+            {
+              "topic": "What is Reactjs?",
+              "duration": "01:30"
+            },
+            {
+              "topic": "What is Reactjs?",
+              "duration": "01:30"
+            },
+            {
+              "topic": "What is Reactjs?",
+              "duration": "01:30"
+            }
+          ]
+        },
+        {
+          "title": "Learn React JS for Absolute Beginners",
+          "topics": [
+            {
+              "topic": "What is Reactjs?",
+              "duration": "01:30"
+            },
+            {
+              "topic": "What is Reactjs?",
+              "duration": "01:30"
+            }
+          ]
+        }
+      ],
+      "reviews": [
+        {
+          "userEmail": "kenn@gmail.com",
+          "userAvatar": "https://avatars.githubusercontent.com/u/67477516?v=4",
+          "comment": "Un Cours très interessant pour les Beginners, les débutants se retrouvent facilement avec leur manière d'expliquer les Concepts"
+        },
+        {
+          "userEmail": "kenn@gmail.com",
+          "userAvatar": "https://avatars.githubusercontent.com/u/67477516?v=4",
+          "comment": "Un Cours très interessant pour les Beginners, les débutants se retrouvent facilement avec leur manière d'expliquer les Concepts"
+        },
+        {
+          "userEmail": "kenn@gmail.com",
+          "userAvatar": "https://avatars.githubusercontent.com/u/67477516?v=4",
+          "comment": "Un Cours très interessant pour les Beginners, les débutants se retrouvent facilement avec leur manière d'expliquer les Concepts"
+        },
+        {
+          "userEmail": "kenn@gmail.com",
+          "userAvatar": "https://avatars.githubusercontent.com/u/67477516?v=4",
+          "comment": "Un Cours très interessant pour les Beginners, les débutants se retrouvent facilement avec leur manière d'expliquer les Concepts"
+        },
+        {
+          "userEmail": "kenn@gmail.com",
+          "userAvatar": "https://avatars.githubusercontent.com/u/67477516?v=4",
+          "comment": "Un Cours très interessant pour les Beginners, les débutants se retrouvent facilement avec leur manière d'expliquer les Concepts"
+        }
+      ]
     }
   ],
 
@@ -98,7 +679,90 @@
       "note": 4,
       "isFree": true,
       "price": 0,
-      "showAll": true
+      "showAll": true,
+      "introVideo": "https://www.youtube.com/watch?v=__IL2nMzUEw",
+      "details": {
+        "courseDescription": "La population est jeune passionnée et talentueuse, tout est à construire. Vous trouverez ici des business plan clé en main qui vous permettra de contribuer à l’essor économique de ce continent. Vous aurez toutes les informations nécessaires pour l’implémentation de chacun des Business plan, de l’offre financière, du plan de dépense, des ressources humaines, des contacts des partenariats, à l’étude de terrain, vous disposez de tous pour investir sur ce continent.",
+        "audience": "La population est jeune passionnée et talentueuse, tout est à construire. Vous trouverez ici des business plan clé en main qui vous permettra de contribuer à l’essor économique de ce continent. Vous aurez toutes les informations nécessaires pour l’implémentation de chacun des Business plan, de l’offre financière, du plan de dépense, des ressources humaines, des contacts des partenariats.",
+        "ceQueVousAllezApprendre": "La population est jeune passionnée et talentueuse, tout est à construire. Vous trouverez ici des business plan clé en main qui vous permettra de contribuer à l’essor économique de ce continent. Vous aurez toutes les informations nécessaires pour l’implémentation de chacun des Business plan, de l’offre financière, du plan de dépense.",
+        "prerequis": "La population est jeune passionnée et talentueuse, tout est à construire. Vous trouverez ici des business plan clé en main qui vous permettra de contribuer à l’essor économique de ce continent. Vous aurez toutes les informations nécessaires"
+      },
+      "lessonsList": [
+        {
+          "title": "Learn React JS for Absolute Beginners",
+          "topics": [
+            {
+              "topic": "What is Reactjs?",
+              "duration": "01:30"
+            },
+            {
+              "topic": "What is Reactjs?",
+              "duration": "01:30"
+            },
+            {
+              "topic": "What is Reactjs?",
+              "duration": "01:30"
+            }
+          ]
+        },
+        {
+          "title": "Learn React JS for Absolute Beginners",
+          "topics": [
+            {
+              "topic": "What is Reactjs?",
+              "duration": "01:30"
+            },
+            {
+              "topic": "What is Reactjs?",
+              "duration": "01:30"
+            },
+            {
+              "topic": "What is Reactjs?",
+              "duration": "01:30"
+            }
+          ]
+        },
+        {
+          "title": "Learn React JS for Absolute Beginners",
+          "topics": [
+            {
+              "topic": "What is Reactjs?",
+              "duration": "01:30"
+            },
+            {
+              "topic": "What is Reactjs?",
+              "duration": "01:30"
+            }
+          ]
+        }
+      ],
+      "reviews": [
+        {
+          "userEmail": "kenn@gmail.com",
+          "userAvatar": "https://avatars.githubusercontent.com/u/67477516?v=4",
+          "comment": "Un Cours très interessant pour les Beginners, les débutants se retrouvent facilement avec leur manière d'expliquer les Concepts"
+        },
+        {
+          "userEmail": "kenn@gmail.com",
+          "userAvatar": "https://avatars.githubusercontent.com/u/67477516?v=4",
+          "comment": "Un Cours très interessant pour les Beginners, les débutants se retrouvent facilement avec leur manière d'expliquer les Concepts"
+        },
+        {
+          "userEmail": "kenn@gmail.com",
+          "userAvatar": "https://avatars.githubusercontent.com/u/67477516?v=4",
+          "comment": "Un Cours très interessant pour les Beginners, les débutants se retrouvent facilement avec leur manière d'expliquer les Concepts"
+        },
+        {
+          "userEmail": "kenn@gmail.com",
+          "userAvatar": "https://avatars.githubusercontent.com/u/67477516?v=4",
+          "comment": "Un Cours très interessant pour les Beginners, les débutants se retrouvent facilement avec leur manière d'expliquer les Concepts"
+        },
+        {
+          "userEmail": "kenn@gmail.com",
+          "userAvatar": "https://avatars.githubusercontent.com/u/67477516?v=4",
+          "comment": "Un Cours très interessant pour les Beginners, les débutants se retrouvent facilement avec leur manière d'expliquer les Concepts"
+        }
+      ]
     },
     {
       "id": 2,
@@ -111,7 +775,90 @@
       "note": 4,
       "isFree": false,
       "price": 75,
-      "showAll": true
+      "showAll": true,
+      "introVideo": "https://www.youtube.com/watch?v=__IL2nMzUEw",
+      "details": {
+        "courseDescription": "La population est jeune passionnée et talentueuse, tout est à construire. Vous trouverez ici des business plan clé en main qui vous permettra de contribuer à l’essor économique de ce continent. Vous aurez toutes les informations nécessaires pour l’implémentation de chacun des Business plan, de l’offre financière, du plan de dépense, des ressources humaines, des contacts des partenariats, à l’étude de terrain, vous disposez de tous pour investir sur ce continent.",
+        "audience": "La population est jeune passionnée et talentueuse, tout est à construire. Vous trouverez ici des business plan clé en main qui vous permettra de contribuer à l’essor économique de ce continent. Vous aurez toutes les informations nécessaires pour l’implémentation de chacun des Business plan, de l’offre financière, du plan de dépense, des ressources humaines, des contacts des partenariats.",
+        "ceQueVousAllezApprendre": "La population est jeune passionnée et talentueuse, tout est à construire. Vous trouverez ici des business plan clé en main qui vous permettra de contribuer à l’essor économique de ce continent. Vous aurez toutes les informations nécessaires pour l’implémentation de chacun des Business plan, de l’offre financière, du plan de dépense.",
+        "prerequis": "La population est jeune passionnée et talentueuse, tout est à construire. Vous trouverez ici des business plan clé en main qui vous permettra de contribuer à l’essor économique de ce continent. Vous aurez toutes les informations nécessaires"
+      },
+      "lessonsList": [
+        {
+          "title": "Learn React JS for Absolute Beginners",
+          "topics": [
+            {
+              "topic": "What is Reactjs?",
+              "duration": "01:30"
+            },
+            {
+              "topic": "What is Reactjs?",
+              "duration": "01:30"
+            },
+            {
+              "topic": "What is Reactjs?",
+              "duration": "01:30"
+            }
+          ]
+        },
+        {
+          "title": "Learn React JS for Absolute Beginners",
+          "topics": [
+            {
+              "topic": "What is Reactjs?",
+              "duration": "01:30"
+            },
+            {
+              "topic": "What is Reactjs?",
+              "duration": "01:30"
+            },
+            {
+              "topic": "What is Reactjs?",
+              "duration": "01:30"
+            }
+          ]
+        },
+        {
+          "title": "Learn React JS for Absolute Beginners",
+          "topics": [
+            {
+              "topic": "What is Reactjs?",
+              "duration": "01:30"
+            },
+            {
+              "topic": "What is Reactjs?",
+              "duration": "01:30"
+            }
+          ]
+        }
+      ],
+      "reviews": [
+        {
+          "userEmail": "kenn@gmail.com",
+          "userAvatar": "https://avatars.githubusercontent.com/u/67477516?v=4",
+          "comment": "Un Cours très interessant pour les Beginners, les débutants se retrouvent facilement avec leur manière d'expliquer les Concepts"
+        },
+        {
+          "userEmail": "kenn@gmail.com",
+          "userAvatar": "https://avatars.githubusercontent.com/u/67477516?v=4",
+          "comment": "Un Cours très interessant pour les Beginners, les débutants se retrouvent facilement avec leur manière d'expliquer les Concepts"
+        },
+        {
+          "userEmail": "kenn@gmail.com",
+          "userAvatar": "https://avatars.githubusercontent.com/u/67477516?v=4",
+          "comment": "Un Cours très interessant pour les Beginners, les débutants se retrouvent facilement avec leur manière d'expliquer les Concepts"
+        },
+        {
+          "userEmail": "kenn@gmail.com",
+          "userAvatar": "https://avatars.githubusercontent.com/u/67477516?v=4",
+          "comment": "Un Cours très interessant pour les Beginners, les débutants se retrouvent facilement avec leur manière d'expliquer les Concepts"
+        },
+        {
+          "userEmail": "kenn@gmail.com",
+          "userAvatar": "https://avatars.githubusercontent.com/u/67477516?v=4",
+          "comment": "Un Cours très interessant pour les Beginners, les débutants se retrouvent facilement avec leur manière d'expliquer les Concepts"
+        }
+      ]
     },
     {
       "id": 3,
@@ -137,7 +884,90 @@
       "note": 4,
       "isFree": true,
       "price": 0,
-      "showAll": true
+      "showAll": true,
+      "introVideo": "https://www.youtube.com/watch?v=__IL2nMzUEw",
+      "details": {
+        "courseDescription": "La population est jeune passionnée et talentueuse, tout est à construire. Vous trouverez ici des business plan clé en main qui vous permettra de contribuer à l’essor économique de ce continent. Vous aurez toutes les informations nécessaires pour l’implémentation de chacun des Business plan, de l’offre financière, du plan de dépense, des ressources humaines, des contacts des partenariats, à l’étude de terrain, vous disposez de tous pour investir sur ce continent.",
+        "audience": "La population est jeune passionnée et talentueuse, tout est à construire. Vous trouverez ici des business plan clé en main qui vous permettra de contribuer à l’essor économique de ce continent. Vous aurez toutes les informations nécessaires pour l’implémentation de chacun des Business plan, de l’offre financière, du plan de dépense, des ressources humaines, des contacts des partenariats.",
+        "ceQueVousAllezApprendre": "La population est jeune passionnée et talentueuse, tout est à construire. Vous trouverez ici des business plan clé en main qui vous permettra de contribuer à l’essor économique de ce continent. Vous aurez toutes les informations nécessaires pour l’implémentation de chacun des Business plan, de l’offre financière, du plan de dépense.",
+        "prerequis": "La population est jeune passionnée et talentueuse, tout est à construire. Vous trouverez ici des business plan clé en main qui vous permettra de contribuer à l’essor économique de ce continent. Vous aurez toutes les informations nécessaires"
+      },
+      "lessonsList": [
+        {
+          "title": "Learn React JS for Absolute Beginners",
+          "topics": [
+            {
+              "topic": "What is Reactjs?",
+              "duration": "01:30"
+            },
+            {
+              "topic": "What is Reactjs?",
+              "duration": "01:30"
+            },
+            {
+              "topic": "What is Reactjs?",
+              "duration": "01:30"
+            }
+          ]
+        },
+        {
+          "title": "Learn React JS for Absolute Beginners",
+          "topics": [
+            {
+              "topic": "What is Reactjs?",
+              "duration": "01:30"
+            },
+            {
+              "topic": "What is Reactjs?",
+              "duration": "01:30"
+            },
+            {
+              "topic": "What is Reactjs?",
+              "duration": "01:30"
+            }
+          ]
+        },
+        {
+          "title": "Learn React JS for Absolute Beginners",
+          "topics": [
+            {
+              "topic": "What is Reactjs?",
+              "duration": "01:30"
+            },
+            {
+              "topic": "What is Reactjs?",
+              "duration": "01:30"
+            }
+          ]
+        }
+      ],
+      "reviews": [
+        {
+          "userEmail": "kenn@gmail.com",
+          "userAvatar": "https://avatars.githubusercontent.com/u/67477516?v=4",
+          "comment": "Un Cours très interessant pour les Beginners, les débutants se retrouvent facilement avec leur manière d'expliquer les Concepts"
+        },
+        {
+          "userEmail": "kenn@gmail.com",
+          "userAvatar": "https://avatars.githubusercontent.com/u/67477516?v=4",
+          "comment": "Un Cours très interessant pour les Beginners, les débutants se retrouvent facilement avec leur manière d'expliquer les Concepts"
+        },
+        {
+          "userEmail": "kenn@gmail.com",
+          "userAvatar": "https://avatars.githubusercontent.com/u/67477516?v=4",
+          "comment": "Un Cours très interessant pour les Beginners, les débutants se retrouvent facilement avec leur manière d'expliquer les Concepts"
+        },
+        {
+          "userEmail": "kenn@gmail.com",
+          "userAvatar": "https://avatars.githubusercontent.com/u/67477516?v=4",
+          "comment": "Un Cours très interessant pour les Beginners, les débutants se retrouvent facilement avec leur manière d'expliquer les Concepts"
+        },
+        {
+          "userEmail": "kenn@gmail.com",
+          "userAvatar": "https://avatars.githubusercontent.com/u/67477516?v=4",
+          "comment": "Un Cours très interessant pour les Beginners, les débutants se retrouvent facilement avec leur manière d'expliquer les Concepts"
+        }
+      ]
     },
     {
       "id": 5,
@@ -150,7 +980,90 @@
       "note": 4,
       "isFree": false,
       "price": 75,
-      "showAll": true
+      "showAll": true,
+      "introVideo": "https://www.youtube.com/watch?v=__IL2nMzUEw",
+      "details": {
+        "courseDescription": "La population est jeune passionnée et talentueuse, tout est à construire. Vous trouverez ici des business plan clé en main qui vous permettra de contribuer à l’essor économique de ce continent. Vous aurez toutes les informations nécessaires pour l’implémentation de chacun des Business plan, de l’offre financière, du plan de dépense, des ressources humaines, des contacts des partenariats, à l’étude de terrain, vous disposez de tous pour investir sur ce continent.",
+        "audience": "La population est jeune passionnée et talentueuse, tout est à construire. Vous trouverez ici des business plan clé en main qui vous permettra de contribuer à l’essor économique de ce continent. Vous aurez toutes les informations nécessaires pour l’implémentation de chacun des Business plan, de l’offre financière, du plan de dépense, des ressources humaines, des contacts des partenariats.",
+        "ceQueVousAllezApprendre": "La population est jeune passionnée et talentueuse, tout est à construire. Vous trouverez ici des business plan clé en main qui vous permettra de contribuer à l’essor économique de ce continent. Vous aurez toutes les informations nécessaires pour l’implémentation de chacun des Business plan, de l’offre financière, du plan de dépense.",
+        "prerequis": "La population est jeune passionnée et talentueuse, tout est à construire. Vous trouverez ici des business plan clé en main qui vous permettra de contribuer à l’essor économique de ce continent. Vous aurez toutes les informations nécessaires"
+      },
+      "lessonsList": [
+        {
+          "title": "Learn React JS for Absolute Beginners",
+          "topics": [
+            {
+              "topic": "What is Reactjs?",
+              "duration": "01:30"
+            },
+            {
+              "topic": "What is Reactjs?",
+              "duration": "01:30"
+            },
+            {
+              "topic": "What is Reactjs?",
+              "duration": "01:30"
+            }
+          ]
+        },
+        {
+          "title": "Learn React JS for Absolute Beginners",
+          "topics": [
+            {
+              "topic": "What is Reactjs?",
+              "duration": "01:30"
+            },
+            {
+              "topic": "What is Reactjs?",
+              "duration": "01:30"
+            },
+            {
+              "topic": "What is Reactjs?",
+              "duration": "01:30"
+            }
+          ]
+        },
+        {
+          "title": "Learn React JS for Absolute Beginners",
+          "topics": [
+            {
+              "topic": "What is Reactjs?",
+              "duration": "01:30"
+            },
+            {
+              "topic": "What is Reactjs?",
+              "duration": "01:30"
+            }
+          ]
+        }
+      ],
+      "reviews": [
+        {
+          "userEmail": "kenn@gmail.com",
+          "userAvatar": "https://avatars.githubusercontent.com/u/67477516?v=4",
+          "comment": "Un Cours très interessant pour les Beginners, les débutants se retrouvent facilement avec leur manière d'expliquer les Concepts"
+        },
+        {
+          "userEmail": "kenn@gmail.com",
+          "userAvatar": "https://avatars.githubusercontent.com/u/67477516?v=4",
+          "comment": "Un Cours très interessant pour les Beginners, les débutants se retrouvent facilement avec leur manière d'expliquer les Concepts"
+        },
+        {
+          "userEmail": "kenn@gmail.com",
+          "userAvatar": "https://avatars.githubusercontent.com/u/67477516?v=4",
+          "comment": "Un Cours très interessant pour les Beginners, les débutants se retrouvent facilement avec leur manière d'expliquer les Concepts"
+        },
+        {
+          "userEmail": "kenn@gmail.com",
+          "userAvatar": "https://avatars.githubusercontent.com/u/67477516?v=4",
+          "comment": "Un Cours très interessant pour les Beginners, les débutants se retrouvent facilement avec leur manière d'expliquer les Concepts"
+        },
+        {
+          "userEmail": "kenn@gmail.com",
+          "userAvatar": "https://avatars.githubusercontent.com/u/67477516?v=4",
+          "comment": "Un Cours très interessant pour les Beginners, les débutants se retrouvent facilement avec leur manière d'expliquer les Concepts"
+        }
+      ]
     },
     {
       "id": 6,
@@ -163,7 +1076,90 @@
       "note": 4,
       "isFree": false,
       "price": 75,
-      "showAll": true
+      "showAll": true,
+      "introVideo": "https://www.youtube.com/watch?v=__IL2nMzUEw",
+      "details": {
+        "courseDescription": "La population est jeune passionnée et talentueuse, tout est à construire. Vous trouverez ici des business plan clé en main qui vous permettra de contribuer à l’essor économique de ce continent. Vous aurez toutes les informations nécessaires pour l’implémentation de chacun des Business plan, de l’offre financière, du plan de dépense, des ressources humaines, des contacts des partenariats, à l’étude de terrain, vous disposez de tous pour investir sur ce continent.",
+        "audience": "La population est jeune passionnée et talentueuse, tout est à construire. Vous trouverez ici des business plan clé en main qui vous permettra de contribuer à l’essor économique de ce continent. Vous aurez toutes les informations nécessaires pour l’implémentation de chacun des Business plan, de l’offre financière, du plan de dépense, des ressources humaines, des contacts des partenariats.",
+        "ceQueVousAllezApprendre": "La population est jeune passionnée et talentueuse, tout est à construire. Vous trouverez ici des business plan clé en main qui vous permettra de contribuer à l’essor économique de ce continent. Vous aurez toutes les informations nécessaires pour l’implémentation de chacun des Business plan, de l’offre financière, du plan de dépense.",
+        "prerequis": "La population est jeune passionnée et talentueuse, tout est à construire. Vous trouverez ici des business plan clé en main qui vous permettra de contribuer à l’essor économique de ce continent. Vous aurez toutes les informations nécessaires"
+      },
+      "lessonsList": [
+        {
+          "title": "Learn React JS for Absolute Beginners",
+          "topics": [
+            {
+              "topic": "What is Reactjs?",
+              "duration": "01:30"
+            },
+            {
+              "topic": "What is Reactjs?",
+              "duration": "01:30"
+            },
+            {
+              "topic": "What is Reactjs?",
+              "duration": "01:30"
+            }
+          ]
+        },
+        {
+          "title": "Learn React JS for Absolute Beginners",
+          "topics": [
+            {
+              "topic": "What is Reactjs?",
+              "duration": "01:30"
+            },
+            {
+              "topic": "What is Reactjs?",
+              "duration": "01:30"
+            },
+            {
+              "topic": "What is Reactjs?",
+              "duration": "01:30"
+            }
+          ]
+        },
+        {
+          "title": "Learn React JS for Absolute Beginners",
+          "topics": [
+            {
+              "topic": "What is Reactjs?",
+              "duration": "01:30"
+            },
+            {
+              "topic": "What is Reactjs?",
+              "duration": "01:30"
+            }
+          ]
+        }
+      ],
+      "reviews": [
+        {
+          "userEmail": "kenn@gmail.com",
+          "userAvatar": "https://avatars.githubusercontent.com/u/67477516?v=4",
+          "comment": "Un Cours très interessant pour les Beginners, les débutants se retrouvent facilement avec leur manière d'expliquer les Concepts"
+        },
+        {
+          "userEmail": "kenn@gmail.com",
+          "userAvatar": "https://avatars.githubusercontent.com/u/67477516?v=4",
+          "comment": "Un Cours très interessant pour les Beginners, les débutants se retrouvent facilement avec leur manière d'expliquer les Concepts"
+        },
+        {
+          "userEmail": "kenn@gmail.com",
+          "userAvatar": "https://avatars.githubusercontent.com/u/67477516?v=4",
+          "comment": "Un Cours très interessant pour les Beginners, les débutants se retrouvent facilement avec leur manière d'expliquer les Concepts"
+        },
+        {
+          "userEmail": "kenn@gmail.com",
+          "userAvatar": "https://avatars.githubusercontent.com/u/67477516?v=4",
+          "comment": "Un Cours très interessant pour les Beginners, les débutants se retrouvent facilement avec leur manière d'expliquer les Concepts"
+        },
+        {
+          "userEmail": "kenn@gmail.com",
+          "userAvatar": "https://avatars.githubusercontent.com/u/67477516?v=4",
+          "comment": "Un Cours très interessant pour les Beginners, les débutants se retrouvent facilement avec leur manière d'expliquer les Concepts"
+        }
+      ]
     },
     {
       "id": 7,
@@ -176,7 +1172,90 @@
       "note": 4,
       "isFree": false,
       "price": 75,
-      "showAll": true
+      "showAll": true,
+      "introVideo": "https://www.youtube.com/watch?v=__IL2nMzUEw",
+      "details": {
+        "courseDescription": "La population est jeune passionnée et talentueuse, tout est à construire. Vous trouverez ici des business plan clé en main qui vous permettra de contribuer à l’essor économique de ce continent. Vous aurez toutes les informations nécessaires pour l’implémentation de chacun des Business plan, de l’offre financière, du plan de dépense, des ressources humaines, des contacts des partenariats, à l’étude de terrain, vous disposez de tous pour investir sur ce continent.",
+        "audience": "La population est jeune passionnée et talentueuse, tout est à construire. Vous trouverez ici des business plan clé en main qui vous permettra de contribuer à l’essor économique de ce continent. Vous aurez toutes les informations nécessaires pour l’implémentation de chacun des Business plan, de l’offre financière, du plan de dépense, des ressources humaines, des contacts des partenariats.",
+        "ceQueVousAllezApprendre": "La population est jeune passionnée et talentueuse, tout est à construire. Vous trouverez ici des business plan clé en main qui vous permettra de contribuer à l’essor économique de ce continent. Vous aurez toutes les informations nécessaires pour l’implémentation de chacun des Business plan, de l’offre financière, du plan de dépense.",
+        "prerequis": "La population est jeune passionnée et talentueuse, tout est à construire. Vous trouverez ici des business plan clé en main qui vous permettra de contribuer à l’essor économique de ce continent. Vous aurez toutes les informations nécessaires"
+      },
+      "lessonsList": [
+        {
+          "title": "Learn React JS for Absolute Beginners",
+          "topics": [
+            {
+              "topic": "What is Reactjs?",
+              "duration": "01:30"
+            },
+            {
+              "topic": "What is Reactjs?",
+              "duration": "01:30"
+            },
+            {
+              "topic": "What is Reactjs?",
+              "duration": "01:30"
+            }
+          ]
+        },
+        {
+          "title": "Learn React JS for Absolute Beginners",
+          "topics": [
+            {
+              "topic": "What is Reactjs?",
+              "duration": "01:30"
+            },
+            {
+              "topic": "What is Reactjs?",
+              "duration": "01:30"
+            },
+            {
+              "topic": "What is Reactjs?",
+              "duration": "01:30"
+            }
+          ]
+        },
+        {
+          "title": "Learn React JS for Absolute Beginners",
+          "topics": [
+            {
+              "topic": "What is Reactjs?",
+              "duration": "01:30"
+            },
+            {
+              "topic": "What is Reactjs?",
+              "duration": "01:30"
+            }
+          ]
+        }
+      ],
+      "reviews": [
+        {
+          "userEmail": "kenn@gmail.com",
+          "userAvatar": "https://avatars.githubusercontent.com/u/67477516?v=4",
+          "comment": "Un Cours très interessant pour les Beginners, les débutants se retrouvent facilement avec leur manière d'expliquer les Concepts"
+        },
+        {
+          "userEmail": "kenn@gmail.com",
+          "userAvatar": "https://avatars.githubusercontent.com/u/67477516?v=4",
+          "comment": "Un Cours très interessant pour les Beginners, les débutants se retrouvent facilement avec leur manière d'expliquer les Concepts"
+        },
+        {
+          "userEmail": "kenn@gmail.com",
+          "userAvatar": "https://avatars.githubusercontent.com/u/67477516?v=4",
+          "comment": "Un Cours très interessant pour les Beginners, les débutants se retrouvent facilement avec leur manière d'expliquer les Concepts"
+        },
+        {
+          "userEmail": "kenn@gmail.com",
+          "userAvatar": "https://avatars.githubusercontent.com/u/67477516?v=4",
+          "comment": "Un Cours très interessant pour les Beginners, les débutants se retrouvent facilement avec leur manière d'expliquer les Concepts"
+        },
+        {
+          "userEmail": "kenn@gmail.com",
+          "userAvatar": "https://avatars.githubusercontent.com/u/67477516?v=4",
+          "comment": "Un Cours très interessant pour les Beginners, les débutants se retrouvent facilement avec leur manière d'expliquer les Concepts"
+        }
+      ]
     }
   ],
 
@@ -189,7 +1268,40 @@
       "details": "Create an account and receive your first 100 points. Submit an article to earn more and unlock your first project. Enjoy learning about new CSS frameworks, animation libraries, and SEO.",
       "category": "Agriculture",
       "isFree": false,
-      "price": 75
+      "price": 75,
+      "businessPlanDetails": {
+        "description": "La population est jeune passionnée et talentueuse, tout est à construire. Vous trouverez ici des business plan clé en main qui vous permettra de contribuer à l’essor économique de ce continent. Vous aurez toutes les informations nécessaires pour l’implémentation de chacun des Business plan, de l’offre financière, du plan de dépense, des ressources humaines, des contacts des partenariats, à l’étude de terrain, vous disposez de tous pour investir sur ce continent.",
+        "audience": "La population est jeune passionnée et talentueuse, tout est à construire. Vous trouverez ici des business plan clé en main qui vous permettra de contribuer à l’essor économique de ce continent. Vous aurez toutes les informations nécessaires pour l’implémentation de chacun des Business plan, de l’offre financière, du plan de dépense, des ressources humaines, des contacts des partenariats.",
+        "ceQueVousAllezApprendre": "La population est jeune passionnée et talentueuse, tout est à construire. Vous trouverez ici des business plan clé en main qui vous permettra de contribuer à l’essor économique de ce continent. Vous aurez toutes les informations nécessaires pour l’implémentation de chacun des Business plan, de l’offre financière, du plan de dépense.",
+        "prerequis": "La population est jeune passionnée et talentueuse, tout est à construire. Vous trouverez ici des business plan clé en main qui vous permettra de contribuer à l’essor économique de ce continent. Vous aurez toutes les informations nécessaires"
+      },
+      "reviews": [
+        {
+          "userEmail": "kenn@gmail.com",
+          "userAvatar": "https://avatars.githubusercontent.com/u/67477516?v=4",
+          "comment": "Un Cours très interessant pour les Beginners, les débutants se retrouvent facilement avec leur manière d'expliquer les Concepts"
+        },
+        {
+          "userEmail": "kenn@gmail.com",
+          "userAvatar": "https://avatars.githubusercontent.com/u/67477516?v=4",
+          "comment": "Un Cours très interessant pour les Beginners, les débutants se retrouvent facilement avec leur manière d'expliquer les Concepts"
+        },
+        {
+          "userEmail": "kenn@gmail.com",
+          "userAvatar": "https://avatars.githubusercontent.com/u/67477516?v=4",
+          "comment": "Un Cours très interessant pour les Beginners, les débutants se retrouvent facilement avec leur manière d'expliquer les Concepts"
+        },
+        {
+          "userEmail": "kenn@gmail.com",
+          "userAvatar": "https://avatars.githubusercontent.com/u/67477516?v=4",
+          "comment": "Un Cours très interessant pour les Beginners, les débutants se retrouvent facilement avec leur manière d'expliquer les Concepts"
+        },
+        {
+          "userEmail": "kenn@gmail.com",
+          "userAvatar": "https://avatars.githubusercontent.com/u/67477516?v=4",
+          "comment": "Un Cours très interessant pour les Beginners, les débutants se retrouvent facilement avec leur manière d'expliquer les Concepts"
+        }
+      ]
     },
     {
       "id": 2,
@@ -199,7 +1311,40 @@
       "details": "Create an account and receive your first 100 points. Submit an article to earn more and unlock your first project. Enjoy learning about new CSS frameworks, animation libraries, and SEO.",
       "category": "IT",
       "isFree": false,
-      "price": 75
+      "price": 75,
+      "businessPlanDetails": {
+        "description": "La population est jeune passionnée et talentueuse, tout est à construire. Vous trouverez ici des business plan clé en main qui vous permettra de contribuer à l’essor économique de ce continent. Vous aurez toutes les informations nécessaires pour l’implémentation de chacun des Business plan, de l’offre financière, du plan de dépense, des ressources humaines, des contacts des partenariats, à l’étude de terrain, vous disposez de tous pour investir sur ce continent.",
+        "audience": "La population est jeune passionnée et talentueuse, tout est à construire. Vous trouverez ici des business plan clé en main qui vous permettra de contribuer à l’essor économique de ce continent. Vous aurez toutes les informations nécessaires pour l’implémentation de chacun des Business plan, de l’offre financière, du plan de dépense, des ressources humaines, des contacts des partenariats.",
+        "ceQueVousAllezApprendre": "La population est jeune passionnée et talentueuse, tout est à construire. Vous trouverez ici des business plan clé en main qui vous permettra de contribuer à l’essor économique de ce continent. Vous aurez toutes les informations nécessaires pour l’implémentation de chacun des Business plan, de l’offre financière, du plan de dépense.",
+        "prerequis": "La population est jeune passionnée et talentueuse, tout est à construire. Vous trouverez ici des business plan clé en main qui vous permettra de contribuer à l’essor économique de ce continent. Vous aurez toutes les informations nécessaires"
+      },
+      "reviews": [
+        {
+          "userEmail": "kenn@gmail.com",
+          "userAvatar": "https://avatars.githubusercontent.com/u/67477516?v=4",
+          "comment": "Un Cours très interessant pour les Beginners, les débutants se retrouvent facilement avec leur manière d'expliquer les Concepts"
+        },
+        {
+          "userEmail": "kenn@gmail.com",
+          "userAvatar": "https://avatars.githubusercontent.com/u/67477516?v=4",
+          "comment": "Un Cours très interessant pour les Beginners, les débutants se retrouvent facilement avec leur manière d'expliquer les Concepts"
+        },
+        {
+          "userEmail": "kenn@gmail.com",
+          "userAvatar": "https://avatars.githubusercontent.com/u/67477516?v=4",
+          "comment": "Un Cours très interessant pour les Beginners, les débutants se retrouvent facilement avec leur manière d'expliquer les Concepts"
+        },
+        {
+          "userEmail": "kenn@gmail.com",
+          "userAvatar": "https://avatars.githubusercontent.com/u/67477516?v=4",
+          "comment": "Un Cours très interessant pour les Beginners, les débutants se retrouvent facilement avec leur manière d'expliquer les Concepts"
+        },
+        {
+          "userEmail": "kenn@gmail.com",
+          "userAvatar": "https://avatars.githubusercontent.com/u/67477516?v=4",
+          "comment": "Un Cours très interessant pour les Beginners, les débutants se retrouvent facilement avec leur manière d'expliquer les Concepts"
+        }
+      ]
     },
     {
       "id": 3,
@@ -209,7 +1354,40 @@
       "details": "Create an account and receive your first 100 points. Submit an article to earn more and unlock your first project. Enjoy learning about new CSS frameworks, animation libraries, and SEO.",
       "category": "Elevage",
       "isFree": false,
-      "price": 75
+      "price": 75,
+      "businessPlanDetails": {
+        "description": "La population est jeune passionnée et talentueuse, tout est à construire. Vous trouverez ici des business plan clé en main qui vous permettra de contribuer à l’essor économique de ce continent. Vous aurez toutes les informations nécessaires pour l’implémentation de chacun des Business plan, de l’offre financière, du plan de dépense, des ressources humaines, des contacts des partenariats, à l’étude de terrain, vous disposez de tous pour investir sur ce continent.",
+        "audience": "La population est jeune passionnée et talentueuse, tout est à construire. Vous trouverez ici des business plan clé en main qui vous permettra de contribuer à l’essor économique de ce continent. Vous aurez toutes les informations nécessaires pour l’implémentation de chacun des Business plan, de l’offre financière, du plan de dépense, des ressources humaines, des contacts des partenariats.",
+        "ceQueVousAllezApprendre": "La population est jeune passionnée et talentueuse, tout est à construire. Vous trouverez ici des business plan clé en main qui vous permettra de contribuer à l’essor économique de ce continent. Vous aurez toutes les informations nécessaires pour l’implémentation de chacun des Business plan, de l’offre financière, du plan de dépense.",
+        "prerequis": "La population est jeune passionnée et talentueuse, tout est à construire. Vous trouverez ici des business plan clé en main qui vous permettra de contribuer à l’essor économique de ce continent. Vous aurez toutes les informations nécessaires"
+      },
+      "reviews": [
+        {
+          "userEmail": "kenn@gmail.com",
+          "userAvatar": "https://avatars.githubusercontent.com/u/67477516?v=4",
+          "comment": "Un Cours très interessant pour les Beginners, les débutants se retrouvent facilement avec leur manière d'expliquer les Concepts"
+        },
+        {
+          "userEmail": "kenn@gmail.com",
+          "userAvatar": "https://avatars.githubusercontent.com/u/67477516?v=4",
+          "comment": "Un Cours très interessant pour les Beginners, les débutants se retrouvent facilement avec leur manière d'expliquer les Concepts"
+        },
+        {
+          "userEmail": "kenn@gmail.com",
+          "userAvatar": "https://avatars.githubusercontent.com/u/67477516?v=4",
+          "comment": "Un Cours très interessant pour les Beginners, les débutants se retrouvent facilement avec leur manière d'expliquer les Concepts"
+        },
+        {
+          "userEmail": "kenn@gmail.com",
+          "userAvatar": "https://avatars.githubusercontent.com/u/67477516?v=4",
+          "comment": "Un Cours très interessant pour les Beginners, les débutants se retrouvent facilement avec leur manière d'expliquer les Concepts"
+        },
+        {
+          "userEmail": "kenn@gmail.com",
+          "userAvatar": "https://avatars.githubusercontent.com/u/67477516?v=4",
+          "comment": "Un Cours très interessant pour les Beginners, les débutants se retrouvent facilement avec leur manière d'expliquer les Concepts"
+        }
+      ]
     },
     {
       "id": 4,
@@ -219,7 +1397,40 @@
       "details": "Create an account and receive your first 100 points. Submit an article to earn more and unlock your first project. Enjoy learning about new CSS frameworks, animation libraries, and SEO.",
       "category": "Industrielle",
       "isFree": false,
-      "price": 75
+      "price": 75,
+      "businessPlanDetails": {
+        "description": "La population est jeune passionnée et talentueuse, tout est à construire. Vous trouverez ici des business plan clé en main qui vous permettra de contribuer à l’essor économique de ce continent. Vous aurez toutes les informations nécessaires pour l’implémentation de chacun des Business plan, de l’offre financière, du plan de dépense, des ressources humaines, des contacts des partenariats, à l’étude de terrain, vous disposez de tous pour investir sur ce continent.",
+        "audience": "La population est jeune passionnée et talentueuse, tout est à construire. Vous trouverez ici des business plan clé en main qui vous permettra de contribuer à l’essor économique de ce continent. Vous aurez toutes les informations nécessaires pour l’implémentation de chacun des Business plan, de l’offre financière, du plan de dépense, des ressources humaines, des contacts des partenariats.",
+        "ceQueVousAllezApprendre": "La population est jeune passionnée et talentueuse, tout est à construire. Vous trouverez ici des business plan clé en main qui vous permettra de contribuer à l’essor économique de ce continent. Vous aurez toutes les informations nécessaires pour l’implémentation de chacun des Business plan, de l’offre financière, du plan de dépense.",
+        "prerequis": "La population est jeune passionnée et talentueuse, tout est à construire. Vous trouverez ici des business plan clé en main qui vous permettra de contribuer à l’essor économique de ce continent. Vous aurez toutes les informations nécessaires"
+      },
+      "reviews": [
+        {
+          "userEmail": "kenn@gmail.com",
+          "userAvatar": "https://avatars.githubusercontent.com/u/67477516?v=4",
+          "comment": "Un Cours très interessant pour les Beginners, les débutants se retrouvent facilement avec leur manière d'expliquer les Concepts"
+        },
+        {
+          "userEmail": "kenn@gmail.com",
+          "userAvatar": "https://avatars.githubusercontent.com/u/67477516?v=4",
+          "comment": "Un Cours très interessant pour les Beginners, les débutants se retrouvent facilement avec leur manière d'expliquer les Concepts"
+        },
+        {
+          "userEmail": "kenn@gmail.com",
+          "userAvatar": "https://avatars.githubusercontent.com/u/67477516?v=4",
+          "comment": "Un Cours très interessant pour les Beginners, les débutants se retrouvent facilement avec leur manière d'expliquer les Concepts"
+        },
+        {
+          "userEmail": "kenn@gmail.com",
+          "userAvatar": "https://avatars.githubusercontent.com/u/67477516?v=4",
+          "comment": "Un Cours très interessant pour les Beginners, les débutants se retrouvent facilement avec leur manière d'expliquer les Concepts"
+        },
+        {
+          "userEmail": "kenn@gmail.com",
+          "userAvatar": "https://avatars.githubusercontent.com/u/67477516?v=4",
+          "comment": "Un Cours très interessant pour les Beginners, les débutants se retrouvent facilement avec leur manière d'expliquer les Concepts"
+        }
+      ]
     },
     {
       "id": 5,
@@ -229,7 +1440,40 @@
       "details": "Create an account and receive your first 100 points. Submit an article to earn more and unlock your first project. Enjoy learning about new CSS frameworks, animation libraries, and SEO.",
       "category": "Agriculture",
       "isFree": false,
-      "price": 75
+      "price": 75,
+      "businessPlanDetails": {
+        "description": "La population est jeune passionnée et talentueuse, tout est à construire. Vous trouverez ici des business plan clé en main qui vous permettra de contribuer à l’essor économique de ce continent. Vous aurez toutes les informations nécessaires pour l’implémentation de chacun des Business plan, de l’offre financière, du plan de dépense, des ressources humaines, des contacts des partenariats, à l’étude de terrain, vous disposez de tous pour investir sur ce continent.",
+        "audience": "La population est jeune passionnée et talentueuse, tout est à construire. Vous trouverez ici des business plan clé en main qui vous permettra de contribuer à l’essor économique de ce continent. Vous aurez toutes les informations nécessaires pour l’implémentation de chacun des Business plan, de l’offre financière, du plan de dépense, des ressources humaines, des contacts des partenariats.",
+        "ceQueVousAllezApprendre": "La population est jeune passionnée et talentueuse, tout est à construire. Vous trouverez ici des business plan clé en main qui vous permettra de contribuer à l’essor économique de ce continent. Vous aurez toutes les informations nécessaires pour l’implémentation de chacun des Business plan, de l’offre financière, du plan de dépense.",
+        "prerequis": "La population est jeune passionnée et talentueuse, tout est à construire. Vous trouverez ici des business plan clé en main qui vous permettra de contribuer à l’essor économique de ce continent. Vous aurez toutes les informations nécessaires"
+      },
+      "reviews": [
+        {
+          "userEmail": "kenn@gmail.com",
+          "userAvatar": "https://avatars.githubusercontent.com/u/67477516?v=4",
+          "comment": "Un Cours très interessant pour les Beginners, les débutants se retrouvent facilement avec leur manière d'expliquer les Concepts"
+        },
+        {
+          "userEmail": "kenn@gmail.com",
+          "userAvatar": "https://avatars.githubusercontent.com/u/67477516?v=4",
+          "comment": "Un Cours très interessant pour les Beginners, les débutants se retrouvent facilement avec leur manière d'expliquer les Concepts"
+        },
+        {
+          "userEmail": "kenn@gmail.com",
+          "userAvatar": "https://avatars.githubusercontent.com/u/67477516?v=4",
+          "comment": "Un Cours très interessant pour les Beginners, les débutants se retrouvent facilement avec leur manière d'expliquer les Concepts"
+        },
+        {
+          "userEmail": "kenn@gmail.com",
+          "userAvatar": "https://avatars.githubusercontent.com/u/67477516?v=4",
+          "comment": "Un Cours très interessant pour les Beginners, les débutants se retrouvent facilement avec leur manière d'expliquer les Concepts"
+        },
+        {
+          "userEmail": "kenn@gmail.com",
+          "userAvatar": "https://avatars.githubusercontent.com/u/67477516?v=4",
+          "comment": "Un Cours très interessant pour les Beginners, les débutants se retrouvent facilement avec leur manière d'expliquer les Concepts"
+        }
+      ]
     },
     {
       "id": 6,
@@ -239,7 +1483,40 @@
       "details": "Create an account and receive your first 100 points. Submit an article to earn more and unlock your first project. Enjoy learning about new CSS frameworks, animation libraries, and SEO.",
       "category": "Elevage",
       "isFree": true,
-      "price": 0
+      "price": 0,
+      "businessPlanDetails": {
+        "description": "La population est jeune passionnée et talentueuse, tout est à construire. Vous trouverez ici des business plan clé en main qui vous permettra de contribuer à l’essor économique de ce continent. Vous aurez toutes les informations nécessaires pour l’implémentation de chacun des Business plan, de l’offre financière, du plan de dépense, des ressources humaines, des contacts des partenariats, à l’étude de terrain, vous disposez de tous pour investir sur ce continent.",
+        "audience": "La population est jeune passionnée et talentueuse, tout est à construire. Vous trouverez ici des business plan clé en main qui vous permettra de contribuer à l’essor économique de ce continent. Vous aurez toutes les informations nécessaires pour l’implémentation de chacun des Business plan, de l’offre financière, du plan de dépense, des ressources humaines, des contacts des partenariats.",
+        "ceQueVousAllezApprendre": "La population est jeune passionnée et talentueuse, tout est à construire. Vous trouverez ici des business plan clé en main qui vous permettra de contribuer à l’essor économique de ce continent. Vous aurez toutes les informations nécessaires pour l’implémentation de chacun des Business plan, de l’offre financière, du plan de dépense.",
+        "prerequis": "La population est jeune passionnée et talentueuse, tout est à construire. Vous trouverez ici des business plan clé en main qui vous permettra de contribuer à l’essor économique de ce continent. Vous aurez toutes les informations nécessaires"
+      },
+      "reviews": [
+        {
+          "userEmail": "kenn@gmail.com",
+          "userAvatar": "https://avatars.githubusercontent.com/u/67477516?v=4",
+          "comment": "Un Cours très interessant pour les Beginners, les débutants se retrouvent facilement avec leur manière d'expliquer les Concepts"
+        },
+        {
+          "userEmail": "kenn@gmail.com",
+          "userAvatar": "https://avatars.githubusercontent.com/u/67477516?v=4",
+          "comment": "Un Cours très interessant pour les Beginners, les débutants se retrouvent facilement avec leur manière d'expliquer les Concepts"
+        },
+        {
+          "userEmail": "kenn@gmail.com",
+          "userAvatar": "https://avatars.githubusercontent.com/u/67477516?v=4",
+          "comment": "Un Cours très interessant pour les Beginners, les débutants se retrouvent facilement avec leur manière d'expliquer les Concepts"
+        },
+        {
+          "userEmail": "kenn@gmail.com",
+          "userAvatar": "https://avatars.githubusercontent.com/u/67477516?v=4",
+          "comment": "Un Cours très interessant pour les Beginners, les débutants se retrouvent facilement avec leur manière d'expliquer les Concepts"
+        },
+        {
+          "userEmail": "kenn@gmail.com",
+          "userAvatar": "https://avatars.githubusercontent.com/u/67477516?v=4",
+          "comment": "Un Cours très interessant pour les Beginners, les débutants se retrouvent facilement avec leur manière d'expliquer les Concepts"
+        }
+      ]
     },
     {
       "id": 7,
@@ -249,7 +1526,40 @@
       "details": "Create an account and receive your first 100 points. Submit an article to earn more and unlock your first project. Enjoy learning about new CSS frameworks, animation libraries, and SEO.",
       "category": "Industrielle",
       "isFree": false,
-      "price": 75
+      "price": 75,
+      "businessPlanDetails": {
+        "description": "La population est jeune passionnée et talentueuse, tout est à construire. Vous trouverez ici des business plan clé en main qui vous permettra de contribuer à l’essor économique de ce continent. Vous aurez toutes les informations nécessaires pour l’implémentation de chacun des Business plan, de l’offre financière, du plan de dépense, des ressources humaines, des contacts des partenariats, à l’étude de terrain, vous disposez de tous pour investir sur ce continent.",
+        "audience": "La population est jeune passionnée et talentueuse, tout est à construire. Vous trouverez ici des business plan clé en main qui vous permettra de contribuer à l’essor économique de ce continent. Vous aurez toutes les informations nécessaires pour l’implémentation de chacun des Business plan, de l’offre financière, du plan de dépense, des ressources humaines, des contacts des partenariats.",
+        "ceQueVousAllezApprendre": "La population est jeune passionnée et talentueuse, tout est à construire. Vous trouverez ici des business plan clé en main qui vous permettra de contribuer à l’essor économique de ce continent. Vous aurez toutes les informations nécessaires pour l’implémentation de chacun des Business plan, de l’offre financière, du plan de dépense.",
+        "prerequis": "La population est jeune passionnée et talentueuse, tout est à construire. Vous trouverez ici des business plan clé en main qui vous permettra de contribuer à l’essor économique de ce continent. Vous aurez toutes les informations nécessaires"
+      },
+      "reviews": [
+        {
+          "userEmail": "kenn@gmail.com",
+          "userAvatar": "https://avatars.githubusercontent.com/u/67477516?v=4",
+          "comment": "Un Cours très interessant pour les Beginners, les débutants se retrouvent facilement avec leur manière d'expliquer les Concepts"
+        },
+        {
+          "userEmail": "kenn@gmail.com",
+          "userAvatar": "https://avatars.githubusercontent.com/u/67477516?v=4",
+          "comment": "Un Cours très interessant pour les Beginners, les débutants se retrouvent facilement avec leur manière d'expliquer les Concepts"
+        },
+        {
+          "userEmail": "kenn@gmail.com",
+          "userAvatar": "https://avatars.githubusercontent.com/u/67477516?v=4",
+          "comment": "Un Cours très interessant pour les Beginners, les débutants se retrouvent facilement avec leur manière d'expliquer les Concepts"
+        },
+        {
+          "userEmail": "kenn@gmail.com",
+          "userAvatar": "https://avatars.githubusercontent.com/u/67477516?v=4",
+          "comment": "Un Cours très interessant pour les Beginners, les débutants se retrouvent facilement avec leur manière d'expliquer les Concepts"
+        },
+        {
+          "userEmail": "kenn@gmail.com",
+          "userAvatar": "https://avatars.githubusercontent.com/u/67477516?v=4",
+          "comment": "Un Cours très interessant pour les Beginners, les débutants se retrouvent facilement avec leur manière d'expliquer les Concepts"
+        }
+      ]
     },
     {
       "id": 8,
@@ -259,7 +1569,40 @@
       "details": "Create an account and receive your first 100 points. Submit an article to earn more and unlock your first project. Enjoy learning about new CSS frameworks, animation libraries, and SEO.",
       "category": "Agriculture",
       "isFree": false,
-      "price": 75
+      "price": 75,
+      "businessPlanDetails": {
+        "description": "La population est jeune passionnée et talentueuse, tout est à construire. Vous trouverez ici des business plan clé en main qui vous permettra de contribuer à l’essor économique de ce continent. Vous aurez toutes les informations nécessaires pour l’implémentation de chacun des Business plan, de l’offre financière, du plan de dépense, des ressources humaines, des contacts des partenariats, à l’étude de terrain, vous disposez de tous pour investir sur ce continent.",
+        "audience": "La population est jeune passionnée et talentueuse, tout est à construire. Vous trouverez ici des business plan clé en main qui vous permettra de contribuer à l’essor économique de ce continent. Vous aurez toutes les informations nécessaires pour l’implémentation de chacun des Business plan, de l’offre financière, du plan de dépense, des ressources humaines, des contacts des partenariats.",
+        "ceQueVousAllezApprendre": "La population est jeune passionnée et talentueuse, tout est à construire. Vous trouverez ici des business plan clé en main qui vous permettra de contribuer à l’essor économique de ce continent. Vous aurez toutes les informations nécessaires pour l’implémentation de chacun des Business plan, de l’offre financière, du plan de dépense.",
+        "prerequis": "La population est jeune passionnée et talentueuse, tout est à construire. Vous trouverez ici des business plan clé en main qui vous permettra de contribuer à l’essor économique de ce continent. Vous aurez toutes les informations nécessaires"
+      },
+      "reviews": [
+        {
+          "userEmail": "kenn@gmail.com",
+          "userAvatar": "https://avatars.githubusercontent.com/u/67477516?v=4",
+          "comment": "Un Cours très interessant pour les Beginners, les débutants se retrouvent facilement avec leur manière d'expliquer les Concepts"
+        },
+        {
+          "userEmail": "kenn@gmail.com",
+          "userAvatar": "https://avatars.githubusercontent.com/u/67477516?v=4",
+          "comment": "Un Cours très interessant pour les Beginners, les débutants se retrouvent facilement avec leur manière d'expliquer les Concepts"
+        },
+        {
+          "userEmail": "kenn@gmail.com",
+          "userAvatar": "https://avatars.githubusercontent.com/u/67477516?v=4",
+          "comment": "Un Cours très interessant pour les Beginners, les débutants se retrouvent facilement avec leur manière d'expliquer les Concepts"
+        },
+        {
+          "userEmail": "kenn@gmail.com",
+          "userAvatar": "https://avatars.githubusercontent.com/u/67477516?v=4",
+          "comment": "Un Cours très interessant pour les Beginners, les débutants se retrouvent facilement avec leur manière d'expliquer les Concepts"
+        },
+        {
+          "userEmail": "kenn@gmail.com",
+          "userAvatar": "https://avatars.githubusercontent.com/u/67477516?v=4",
+          "comment": "Un Cours très interessant pour les Beginners, les débutants se retrouvent facilement avec leur manière d'expliquer les Concepts"
+        }
+      ]
     }
   ]
 }
