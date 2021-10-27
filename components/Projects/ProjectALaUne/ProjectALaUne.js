@@ -54,19 +54,19 @@ const ProjectALaUne = () => {
         />
         <div className="flex flex-col justify-center text-gray-900 h-3/6 md:h-full md:w-3/6">
           <Link href={project.slug}>
-            <a className="text-md md:text-lg text-center font-bold mx-auto mt-4 mb-1 hover:text-gray-900 hover:underline">
+            <a className="text-md md:text-xl text-center font-bold mx-auto mt-4 mb-1 hover:text-gray-900 hover:underline">
               {project.title}
             </a>
           </Link>
-          <div className="flex flex-col mx-3 md:mx-4 my-2">
-            <h3 className="text-sm font-semibold">Détails:</h3>
-            <p className="text-xs text-justify">
+          <div className="flex flex-col mx-3 md:mx-4 my-2 md:my-10">
+            <h3 className="text-sm md:text-md font-semibold">Détails:</h3>
+            <p className="text-xs md:text-sm text-justify">
               {" "}
               {project.details.substring(0, 500)}
               {"..."}{" "}
             </p>
           </div>
-          <div className="bg-light-pink-500 mx-auto my-2 md:my-0 p-3 md:p-1 text-white font-semibold rounded-xl md:rounded-sm md:text-md transform transition duration-500 hover:scale-110">
+          <div className="bg-light-pink-500 mx-auto my-2 md:my-1 p-3 md:p-1 text-white font-semibold rounded-xl md:rounded-sm md:text-md transform transition duration-500 hover:scale-110">
             {/* <Link href={project.slug}> */}
             <Link href="/">
               <a className="">

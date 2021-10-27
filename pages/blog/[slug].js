@@ -1,11 +1,11 @@
 import Head from "next/head";
-import Layout from "../components/Layout";
+import Layout from "../../components/Layout";
 
-export default function Forum() {
+export default function Projects({ title }) {
   return (
     <div>
       <Head>
-        <title>Forum - MVP4Startup</title>
+        <title> {title} | MVP4Startup</title>
         <link rel="icon" href="/favicon.png" />
       </Head>
 
