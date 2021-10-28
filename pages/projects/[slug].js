@@ -20,7 +20,7 @@ export default function Projects({ title }) {
   if (error)
     return (
       <Layout>
-        <div className="text-gray-800 font-semibold text-center mx-auto text-3xl mt-8">
+        <div className="text-gray-800 font-semibold text-center mx-auto text-xl md:text-2xl mt-8">
           I failed to fetch the data 😓
         </div>
       </Layout>
@@ -28,7 +28,7 @@ export default function Projects({ title }) {
   if (!data)
     return (
       <Layout>
-        <div className="text-gray-800 font-semibold text-center mx-auto text-3xl mt-8">
+        <div className="text-gray-800 font-semibold text-center mx-auto text-xl md:text-2xl mt-8">
           Loading the data... 😅
         </div>
       </Layout>
