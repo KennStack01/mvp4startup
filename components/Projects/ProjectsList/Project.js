@@ -25,7 +25,7 @@ const Project = ({
   return (
     <div className="flex flex-col bg-white shadow-md rounded-xl my-3 md:my-5 sm:mx-2 md:mx-1 hover:shadow-xl">
       <div className="flex flex-col justify-center text-gray-900 h-1/2">
-        <Link href={slug}>
+        <Link href={`/projects/${slug}`}>
           <a className="text-xl md:text-2xl text-center font-bold mx-auto my-2 hover:text-dark-pink-500">
             {title}
           </a>
@@ -66,7 +66,7 @@ const Project = ({
       />
       <div className="flex flex-row justify-between bg-dark-pink-500 text-white px-3 py-2 md:px-5 md:py-3 rounded-b-xl h-1/6 w-full">
         <h1 className="my-auto text-xl font-semibold"> ${price.toString()} </h1>
-        <Link href={slug}>
+        <Link href={`/projects/${slug}`}>
           <a className="p-1 md:p-3 font-semibold text-xl cursor-pointer bg-white hover:bg-gray-100 text-gray-800 rounded">
             <h5 className="mx-auto md:my-auto ">
               {" "}

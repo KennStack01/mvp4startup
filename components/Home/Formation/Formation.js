@@ -78,7 +78,7 @@ const Formation = ({
             <p className="text-sm md:text-xs my-auto"> {duration} </p>
           </div>
         </div>
-        <Link href={slug}>
+        <Link href={`/formations/${slug}`}>
           <a className="flex justify-evenly mx-5 md:mx-10 my-2 font-semibold text-md md:my-2 cursor-pointer bg-light-pink-500 hover:bg-light-pink-600 text-white p-1 rounded">
             <h5 className="mx-auto"> Découvrir </h5>
           </a>
