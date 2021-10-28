@@ -69,7 +69,7 @@ const ProjectALaUne = () => {
 
         <div className="bg-light-pink-500 mx-auto my-2 md:my-5 p-3 text-white font-semibold rounded-xl  transform transition duration-500 hover:scale-110">
           {/* <Link href={project.slug}> */}
-          <Link href="/">
+          <Link href={`/projects/${project.slug}`}>
             <a className="">
               <h5 className="mx-auto md:my-auto "> Voir plus de Détails </h5>
             </a>

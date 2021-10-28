@@ -69,7 +69,7 @@ const BusinessPlanALaUne = () => {
           </div>
           <div className="bg-gray-900 text-white mx-auto my-2 md:my-1 p-3 md:p-1 font-semibold rounded-xl md:rounded-sm md:text-md transform transition duration-500 hover:scale-110">
             {/* <Link href={businessPlan.slug}> */}
-            <Link href="/">
+            <Link href={`/businessplan/${businessPlan.slug}`}>
               <a className="">
                 <h5 className="mx-auto md:my-auto ">
                   {" "}

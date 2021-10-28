@@ -44,7 +44,7 @@ const BusinessPlan = ({
 
       <div className="flex flex-row justify-between bg-gray-900 text-white mt-1 px-3 py-2 md:px-5 md:py-2 rounded-b-xl w-full">
         <h1 className="my-auto text-xl font-semibold"> ${price.toString()} </h1>
-        <Link href={slug}>
+        <Link href={`/businessplan/${slug}`}>
           <a className="p-1 md:p-1 md:px-2 font-semibold text-xl cursor-pointer bg-white hover:bg-gray-100 text-gray-800 rounded">
             <h5 className="mx-auto md:my-auto "> Acheter </h5>
           </a>
