@@ -1,4 +1,5 @@
 import React from "react";
+import CourseTimestamp from "./CourseTimestamp";
 
 const Tabs = ({ color = "light-pink", project }) => {
   const [openTab, setOpenTab] = React.useState(1);
@@ -115,44 +116,8 @@ const Tabs = ({ color = "light-pink", project }) => {
                   </div>
                 </div>
                 <div className={openTab === 2 ? "block" : "hidden"} id="link2">
-                  <h1>Leçons</h1>
-                  <div className="p-4">
-                    <div className="mt-8">
-                      <h3 className="text-sm font-semibold my-3">
-                        Description du Cours
-                      </h3>
-                      <p className="text-sm text-gray-800 text-justify">
-                        {" "}
-                        {project.details.courseDescription}{" "}
-                      </p>
-                    </div>
-                    <div className="mt-8">
-                      <h3 className="text-sm font-semibold my-3">
-                        A qui ce Projet est destiné?
-                      </h3>
-                      <p className="text-sm text-gray-800 text-justify">
-                        {" "}
-                        {project.details.audience}{" "}
-                      </p>
-                    </div>
-                    <div className="mt-8">
-                      <h3 className="text-sm font-semibold my-3">
-                        Ce que Vous allez apprendre
-                      </h3>
-                      <p className="text-sm text-gray-800 text-justify">
-                        {" "}
-                        {project.details.ceQueVousAllezApprendre}{" "}
-                      </p>
-                    </div>
-                    <div className="mt-8">
-                      <h3 className="text-sm font-semibold my-3">
-                        Les prérequis
-                      </h3>
-                      <p className="text-sm text-gray-800 text-justify">
-                        {" "}
-                        {project.details.prerequis}{" "}
-                      </p>
-                    </div>
+                  <div className="p-4 mx-auto">
+                    <CourseTimestamp data={project} />
                   </div>
                 </div>
                 <div className={openTab === 3 ? "block" : "hidden"} id="link3">
