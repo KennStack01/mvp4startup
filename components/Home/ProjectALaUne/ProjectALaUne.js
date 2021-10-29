@@ -6,7 +6,8 @@ const ProjectALaUne = () => {
   const [loading, setLoading] = useState(true);
 
   const fetchBusinessPlans = async () => {
-    let URL = "http://localhost:4000/home/index_bsp";
+    // let URL = "http://localhost:4000/home/index_bsp";
+    let URL = "http://localhost:3002/projects/";
 
     try {
       const res = await fetch(URL);
@@ -20,7 +21,7 @@ const ProjectALaUne = () => {
   };
 
   useEffect(() => {
-    fetchBusinessPlans();
+    // fetchBusinessPlans();
     // console.log("BusinessPlansList", businessPlans);
   }, []);
 
@@ -69,7 +70,7 @@ const ProjectALaUne = () => {
 
         <div className="bg-light-pink-500 mx-auto my-2 md:my-5 p-3 text-white font-semibold rounded-xl  transform transition duration-500 hover:scale-110">
           {/* <Link href={project.slug}> */}
-          <Link href={`/projects/${project.slug}`}>
+          <Link href={`/projects/[slug]`} as={`/projects/${project.slug}`}>
             <a className="">
               <h5 className="mx-auto md:my-auto "> Voir plus de Détails </h5>
             </a>

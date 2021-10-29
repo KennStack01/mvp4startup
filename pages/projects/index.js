@@ -1,15 +1,16 @@
 import Head from "next/head";
+import React from "react";
 import Layout from "../../components/Layout";
 import FormationsList from "../../components/Projects/FormationsList/FormationsList";
 import Hero from "../../components/Projects/Hero";
 import ProjectALaUneBanner from "../../components/Projects/ProjectALaUne/ProjectALaUneBanner";
 import ProjectsList from "../../components/Projects/ProjectsList/ProjectsList";
 
-export default function Projects() {
+export default function Index() {
   return (
     <div>
       <Head>
-        <title>Projets - MVP4Startup</title>
+        <title>Projets | MVP4Startup</title>
         <link rel="icon" href="/favicon.png" />
       </Head>
 

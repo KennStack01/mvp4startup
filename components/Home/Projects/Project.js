@@ -6,6 +6,7 @@ import { AiFillStar } from "react-icons/ai";
 import Link from "next/link";
 
 const Project = ({
+  id,
   imageSrc = "https://www.google.com/url?sa=i&url=https%3A%2F%2Fmedium.com%2F%40gmonne%2Fsimple-app-layout-with-office-ui-fabric-react-2eac6361e1b4&psig=AOvVaw3hfbrCeQcwX1QNhDk5LqQ1&ust=1634299218822000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCNjS9prtyfMCFQAAAAAdAAAAABAD",
   title,
   slug,
@@ -25,7 +26,7 @@ const Project = ({
   return (
     <div className="flex flex-col bg-white shadow-md rounded-xl my-3 md:my-5 sm:mx-2 md:mx-1 hover:shadow-xl">
       <div className="flex flex-col justify-center text-gray-900 h-1/2">
-        <Link href={slug}>
+        <Link href="/projects/[id]" as={`/projects/${id}`}>
           <a className="text-xl md:text-2xl text-center font-bold mx-auto my-2 hover:text-dark-pink-500">
             {title}
           </a>
@@ -43,7 +44,7 @@ const Project = ({
           </div>
         </div>
         <div className="my-2 mx-2 md:mx-3">
-          <h3 className="text-xs">
+          <h3 className="text-xs text-center">
             {" "}
             <span className="font-semibold"> Technologies:</span> {technologies}
           </h3>
@@ -66,7 +67,8 @@ const Project = ({
       />
       <div className="flex flex-row justify-between bg-dark-pink-500 text-white px-3 py-2 md:px-5 md:py-3 rounded-b-xl h-1/6 w-full">
         <h1 className="my-auto text-xl font-semibold"> ${price.toString()} </h1>
-        <Link href={`/projects/${slug}`}>
+        {/* <Link href={`/projects/${slug}`}> */}
+        <Link href="/projects/[id]" as={`/projects/${id}`}>
           <a className="p-1 md:p-3 font-semibold text-xl cursor-pointer bg-white hover:bg-gray-100 text-gray-800 rounded">
             <h5 className="mx-auto md:my-auto ">
               {" "}
