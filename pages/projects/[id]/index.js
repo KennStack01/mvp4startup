@@ -53,7 +53,7 @@ const ProjectComponent = ({ project }) => {
             </div>
           </div>
           <div className="md:w-2/3 mx-auto">
-            <DetailsTAB />
+            <DetailsTAB project={project} />
             {/* <DetailsTAB project={project} /> */}
           </div>
         </div>
