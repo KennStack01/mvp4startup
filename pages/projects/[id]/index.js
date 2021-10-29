@@ -1,4 +1,4 @@
-import Layout from "../../components/Layout";
+import Layout from "../../../components/Layout";
 import Head from "next/head";
 
 const ProjectComponent = ({ project }) => {
@@ -16,6 +16,7 @@ const ProjectComponent = ({ project }) => {
           Page Project ID: {project.id} <br />
           Page Project Slug: {project.slug}
         </div>
+        <img src={project.imageSrc} alt="Project Pic" />
       </Layout>
     </div>
   );
