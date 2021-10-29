@@ -12,8 +12,6 @@ import ProjectsList from "../components/Home/Projects/ProjectsList";
 import Layout from "../components/Layout";
 
 export default function Home({ projects }) {
-  console.log("Projects List: ", projects);
-
   return (
     <div>
       <Head>
