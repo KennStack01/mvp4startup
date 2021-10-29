@@ -13,7 +13,8 @@ export default function Projects({ title }) {
 
   const { data, error } = useSWR(
     // `https://localhost:3002/projects/${slug}`,
-    `https://localhost:3002/projects/${slug}`,
+    // `http://localhost:3002/projects/${slug}`,
+    `http://localhost:3002/projects/${slug}`,
     fetcher
   );
 
@@ -44,8 +45,6 @@ export default function Projects({ title }) {
       </Head>
 
       <Layout>
-        {error ? <div>failed to load</div> : ""}
-        {!data ? <div>loading...</div> : ""}
         {data ? (
           <div>
             <h1 className="text-gray-800 text-center mx-auto text-3xl">
