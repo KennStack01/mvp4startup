@@ -1,5 +1,7 @@
 import Layout from "../../../components/Layout";
 import Head from "next/head";
+import Link from "next/link";
+import DetailsTAB from "../../../components/Home/Projects/DetailsTAB";
 
 const ProjectComponent = ({ project }) => {
   console.log(project);
@@ -19,11 +21,11 @@ const ProjectComponent = ({ project }) => {
 
       <Layout>
         <div className="flex flex-col">
-          <h1 className="text-xl font-semibold text-center text-gray-900">
+          <h1 className="text-xl md:text-2xl font-semibold text-center text-gray-700">
             {" "}
             {project.title}{" "}
           </h1>
-          <div className="mx-2 md:mx-72 my-4 md:my-8">
+          <div className="my-4 flex flex-col">
             <iframe
               width="100%"
               height="100%"
@@ -32,9 +34,27 @@ const ProjectComponent = ({ project }) => {
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
               title={project.title}
-              // className="rounded-lg mx-3 my-4 md:my-8 w-full md:w-5/6 h-80"
-              className="rounded-lg mx-auto h-96"
+              className="rounded-sm h-96 w-80 md:w-2/3 md:mx-auto"
             />
+            <div className="flex flex-row mx-auto my-2">
+              <h3 className=" bg-light-pink-500 font-semibold my-auto text-lg p-1 md:p-3 text-white">
+                {" "}
+                ${project.price.toString()}{" "}
+              </h3>
+              {/* <Link href="/projects/[id]" as={`/projects/${project.id}`}> */}
+              <Link href={`/projects/${project.id}`}>
+                <a className="p-1 md:p-3 font-semibold text-lg cursor-pointer bg-gray-100 hover:bg-gray-200 text-gray-800">
+                  <h5 className="mx-auto md:my-auto ">
+                    {" "}
+                    {project.isFree ? "Débuter" : "Acheter"}{" "}
+                  </h5>
+                </a>
+              </Link>
+            </div>
+          </div>
+          <div className="md:w-2/3 mx-auto">
+            <DetailsTAB />
+            {/* <DetailsTAB project={project} /> */}
           </div>
         </div>
       </Layout>
