@@ -1,60 +1,50 @@
-import Head from "next/head";
 import Layout from "../../components/Layout";
-import useSWR from "swr";
-import { useRouter } from "next/router";
+import Head from "next/head";
 
-export default function Projects({ title }) {
-  const fetcher = (url) => fetch(url).then((res) => res.json());
-  const router = useRouter();
-  const { slug } = router.query;
-
-  // let URL = "http://localhost:4000/home/index_projects";
-  // let URL = "http://localhost:3002/projects";
-
-  const { data, error } = useSWR(
-    // `https://localhost:3002/projects/${slug}`,
-    // `http://localhost:3002/projects/${slug}`,
-    `http://localhost:3002/projects/${slug}`,
-    fetcher
-  );
-
-  if (error)
-    return (
-      <Layout>
-        <div className="text-gray-800 font-semibold text-center mx-auto text-xl md:text-2xl mt-8">
-          I failed to fetch the data 😓
-        </div>
-      </Layout>
-    );
-  if (!data)
-    return (
-      <Layout>
-        <div className="text-gray-800 font-semibold text-center mx-auto text-xl md:text-2xl mt-8">
-          Loading the data... 😅
-        </div>
-      </Layout>
-    );
-
-  if (data) console.log(data);
+const ProjectComponent = ({ project }) => {
+  console.log(project);
 
   return (
     <div>
       <Head>
-        <title> {title} | MVP4Startup</title>
+        <title> {project.slug} | MVP4Startup</title>
         <link rel="icon" href="/favicon.png" />
       </Head>
 
       <Layout>
-        {data ? (
-          <div>
-            <h1 className="text-gray-800 text-center mx-auto text-3xl">
-              {data.title}
-            </h1>
-          </div>
-        ) : (
-          ""
-        )}
+        <div className="text-gray-800 font-semibold text-center mx-auto text-xl md:text-2xl mt-8">
+          Page Project Slug: {project.slug}
+        </div>
       </Layout>
     </div>
   );
+};
+
+export default ProjectComponent;
+
+export async function getStaticProps({ params }) {
+  const project = await fetch(
+    `http://localhost:3002/projects/${params.slug}`
+  ).then((res) => res.json());
+
+  return {
+    props: {
+      project,
+    },
+  };
+}
+
+export async function getStaticPaths() {
+  const projects = await fetch("http://localhost:3002/projects").then((res) =>
+    res.json()
+  );
+
+  return {
+    paths: projects.map((project) => {
+      return {
+        params: { slug: project.slug },
+      };
+    }),
+    fallback: false,
+  };
 }

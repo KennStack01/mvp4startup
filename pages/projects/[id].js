@@ -7,13 +7,14 @@ const ProjectComponent = ({ project }) => {
   return (
     <div>
       <Head>
-        <title> | MVP4Startup</title>
+        <title> {project?.title} | MVP4Startup</title>
         <link rel="icon" href="/favicon.png" />
       </Head>
 
       <Layout>
         <div className="text-gray-800 font-semibold text-center mx-auto text-xl md:text-2xl mt-8">
-          Page Project ID: {project.id}
+          Page Project ID: {project.id} <br />
+          Page Project Slug: {project.slug}
         </div>
       </Layout>
     </div>
@@ -42,7 +43,10 @@ export async function getStaticPaths() {
   return {
     paths: projects.map((project) => {
       return {
-        params: { id: project.id.toString() },
+        params: {
+          id: project.id.toString(),
+          slug: project.slug,
+        },
       };
     }),
     fallback: false,
