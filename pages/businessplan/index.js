@@ -4,7 +4,7 @@ import Hero from "../../components/BusinessPlan/Hero";
 import BusinessPlanALaUneBanner from "../../components/BusinessPlan/BusinessPlanALaUne/BpALaUneBanner";
 import BusinessPlansList from "../../components/BusinessPlan/BusinessPlansList";
 
-export default function BusinessPlan() {
+export default function BusinessPlan({ businessplans }) {
   return (
     <div>
       <Head>
@@ -15,8 +15,20 @@ export default function BusinessPlan() {
       <Layout>
         <Hero />
         <BusinessPlanALaUneBanner />
-        <BusinessPlansList />
+        <BusinessPlansList businessPlans={businessplans} />
       </Layout>
     </div>
   );
+}
+
+export async function getStaticProps() {
+  const businessplans = await fetch("http://localhost:3002/businessPlans").then(
+    (res) => res.json()
+  );
+
+  return {
+    props: {
+      businessplans,
+    },
+  };
 }

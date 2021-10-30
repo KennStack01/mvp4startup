@@ -1,7 +1,6 @@
 import React from "react";
-import CourseTimestamp from "./CourseTimestamp";
 
-const Tabs = ({ color = "light-pink", project }) => {
+const DetailsTAB = ({ color = "light-pink", businessplan }) => {
   const [openTab, setOpenTab] = React.useState(1);
   return (
     <>
@@ -29,9 +28,10 @@ const Tabs = ({ color = "light-pink", project }) => {
                   href="#link1"
                   role="tablist"
                 >
-                  Détails
+                  Description
                 </a>
               </li>
+
               <li className="-mb-px mx-2 md:mx-1 md:my-1 my-2 last:mr-0 flex-auto text-center">
                 <a
                   className={
@@ -46,25 +46,6 @@ const Tabs = ({ color = "light-pink", project }) => {
                   }}
                   data-toggle="tab"
                   href="#link2"
-                  role="tablist"
-                >
-                  Leçons
-                </a>
-              </li>
-              <li className="-mb-px mx-2 md:mx-1 md:my-1 my-2 last:mr-0 flex-auto text-center">
-                <a
-                  className={
-                    "text-xs font-bold uppercase px-5 py-3 rounded-sm block leading-normal " +
-                    (openTab === 3
-                      ? "text-white bg-" + "light-pink" + "-500"
-                      : "text-" + color + "-600 bg-gray-100")
-                  }
-                  onClick={(e) => {
-                    e.preventDefault();
-                    setOpenTab(3);
-                  }}
-                  data-toggle="tab"
-                  href="#link4"
                   role="tablist"
                 >
                   Reviews
@@ -83,7 +64,9 @@ const Tabs = ({ color = "light-pink", project }) => {
                       </h3>
                       <p className="text-sm text-gray-800 text-justify">
                         {" "}
-                        {project.details.courseDescription}{" "}
+                        {
+                          businessplan.businessPlanDetails.courseDescription
+                        }{" "}
                       </p>
                     </div>
                     <div className="mt-8">
@@ -92,7 +75,7 @@ const Tabs = ({ color = "light-pink", project }) => {
                       </h3>
                       <p className="text-sm text-gray-800 text-justify">
                         {" "}
-                        {project.details.audience}{" "}
+                        {businessplan.businessPlanDetails.audience}{" "}
                       </p>
                     </div>
                     <div className="mt-8">
@@ -101,7 +84,10 @@ const Tabs = ({ color = "light-pink", project }) => {
                       </h3>
                       <p className="text-sm text-gray-800 text-justify">
                         {" "}
-                        {project.details.ceQueVousAllezApprendre}{" "}
+                        {
+                          businessplan.businessPlanDetails
+                            .ceQueVousAllezApprendre
+                        }{" "}
                       </p>
                     </div>
                     <div className="mt-8">
@@ -110,19 +96,15 @@ const Tabs = ({ color = "light-pink", project }) => {
                       </h3>
                       <p className="text-sm text-gray-800 text-justify">
                         {" "}
-                        {project.details.prerequis}{" "}
+                        {businessplan.businessPlanDetails.prerequis}{" "}
                       </p>
                     </div>
                   </div>
                 </div>
+
                 <div className={openTab === 2 ? "block" : "hidden"} id="link2">
-                  <div className="p-4 mx-auto">
-                    <CourseTimestamp data={project} />
-                  </div>
-                </div>
-                <div className={openTab === 3 ? "block" : "hidden"} id="link3">
                   <div className="my-3">
-                    {project?.reviews.map((review) => (
+                    {businessplan?.reviews.map((review) => (
                       <div className="flex flex-row mx-auto justify-center my-8">
                         <img
                           src={review.userAvatar}
@@ -152,12 +134,12 @@ const Tabs = ({ color = "light-pink", project }) => {
   );
 };
 
-export default Tabs;
+export default DetailsTAB;
 
 // export default function DetailsTAB() {
 //   return (
 //     <>
-//       <Tabs color="light-pink" />
+//       <DetailsTAB color="light-pink" />
 //     </>
 //   );
 // }

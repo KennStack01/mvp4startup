@@ -1,12 +1,12 @@
 import Layout from "../../../components/Layout";
 import Head from "next/head";
 import Link from "next/link";
-import DetailsTAB from "../../../components/Home/Projects/DetailsTAB";
+import DetailsTAB from "../../../components/Home/Formation/DetailsTAB";
 
-const ProjectComponent = ({ project }) => {
-  console.log(project);
+const FormationComponent = ({ formation }) => {
+  console.log(formation);
 
-  const videoID = project.introVideo.replace(
+  const videoID = formation.introVideo.replace(
     "https://www.youtube.com/watch?v=",
     ""
   );
@@ -15,7 +15,7 @@ const ProjectComponent = ({ project }) => {
   return (
     <div>
       <Head>
-        <title> {project?.title} | MVP4Startup</title>
+        <title> {formation?.title} | MVP4Startup</title>
         <link rel="icon" href="/favicon.png" />
       </Head>
 
@@ -23,7 +23,7 @@ const ProjectComponent = ({ project }) => {
         <div className="flex flex-col">
           <h1 className="text-xl md:text-2xl font-semibold text-center text-gray-700">
             {" "}
-            {project.title}{" "}
+            {formation.title}{" "}
           </h1>
           <div className="my-4 flex flex-col">
             <iframe
@@ -33,28 +33,28 @@ const ProjectComponent = ({ project }) => {
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
-              title={project.title}
+              title={formation.title}
               className="rounded-sm h-96 w-80 md:w-2/3 md:mx-auto"
             />
             <div className="flex flex-row mx-auto my-2">
               <h3 className="font-semibold my-auto text-lg p-1 md:p-3 bg-gray-100 hover:bg-gray-200 text-gray-800 rounded-l-sm">
                 {" "}
-                ${project.price.toString()}{" "}
+                ${formation.price.toString()}{" "}
               </h3>
-              {/* <Link href="/projects/[id]" as={`/projects/${project.id}`}> */}
-              <Link href={`/projects/${project.id}`}>
+              {/* <Link href="/formations/[id]" as={`/formations/${formation.id}`}> */}
+              <Link href={`/formations/${formation.id}`}>
                 <a className="p-1 md:p-3 font-semibold text-lg cursor-pointer text-white bg-light-pink-500  rounded-r-sm">
                   <h5 className="mx-auto md:my-auto ">
                     {" "}
-                    {project.isFree ? "Débuter" : "Acheter"}{" "}
+                    {formation.isFree ? "Débuter" : "Acheter"}{" "}
                   </h5>
                 </a>
               </Link>
             </div>
           </div>
           <div className="md:w-2/3 mx-auto">
-            <DetailsTAB project={project} />
-            {/* <DetailsTAB project={project} /> */}
+            <DetailsTAB formation={formation} />
+            {/* <DetailsTAB formation={formation} /> */}
           </div>
         </div>
       </Layout>
@@ -62,31 +62,31 @@ const ProjectComponent = ({ project }) => {
   );
 };
 
-export default ProjectComponent;
+export default FormationComponent;
 
 export async function getStaticProps({ params }) {
-  const project = await fetch(
-    `http://localhost:3002/projects/${params.id}`
+  const formation = await fetch(
+    `http://localhost:3002/formations/${params.id}`
   ).then((res) => res.json());
 
   return {
     props: {
-      project,
+      formation,
     },
   };
 }
 
 export async function getStaticPaths() {
-  const projects = await fetch("http://localhost:3002/projects").then((res) =>
-    res.json()
+  const formations = await fetch("http://localhost:3002/formations").then(
+    (res) => res.json()
   );
 
   return {
-    paths: projects.map((project) => {
+    paths: formations.map((formation) => {
       return {
         params: {
-          id: project.id.toString(),
-          slug: project.slug,
+          id: formation.id.toString(),
+          slug: formation.slug,
         },
       };
     }),

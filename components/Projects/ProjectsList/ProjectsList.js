@@ -4,30 +4,7 @@ import { BsArrowRightShort } from "react-icons/bs";
 import Project from "./Project";
 import { TAGS } from "../searchedTags";
 
-const ProjectsList = () => {
-  const [projects, setProjects] = useState([]);
-  const [loading, setLoading] = useState(true);
-
-  const fetchProjects = async () => {
-    // let URL = "http://localhost:4000/home/index_projects";
-    let URL = "http://localhost:3002/projects";
-
-    try {
-      const res = await fetch(URL);
-      const projects = await res.json();
-      setProjects(projects);
-      setLoading(false);
-      // console.log(projects);
-    } catch (err) {
-      console.log(err);
-    }
-  };
-
-  useEffect(() => {
-    fetchProjects();
-    console.log("ProjectsList", projects);
-  }, []);
-
+const ProjectsList = ({ projects }) => {
   // For Filtering Options
   const [isCurrent, setIsCurrent] = React.useState({
     isToutesCurrent: true,
@@ -58,13 +35,11 @@ const ProjectsList = () => {
   const currentCSSStyles = "text-white bg-dark-pink-400";
   const normalStyle =
     "p-1 rounded-sm mx-2 cursor-pointer my-auto transition-all duration-300 ease-linear";
-
   return (
-    <div className="mt-8 md:mt-20">
+    <div className="mt-8 md:mt-14">
       <h1 className="text-xl md:text-3xl text-center font-bold mt-8 mb-4 md:mb-2">
-        Les Projects
+        Projects Premium
       </h1>
-
       {/* Filter */}
       <div className="sticky top-0 grid grid-cols-2 place-content-center space-x-2 md:flex flex-row justify-center text-center font-semibold text-sm text-gray-800 my-3 md:my-5">
         <h5
@@ -134,59 +109,52 @@ const ProjectsList = () => {
           </div>
         </div>
       </div>
-
       <div className="flex flex-col sm:grid sm:grid-cols-2 md:grid-cols-3">
-        {loading ? (
-          <h1 className="text-gray-700 text-center mx-auto text-xl font-bold">
-            Loading...
-          </h1>
-        ) : (
-          projects
+        {projects
+          .filter((project) => {
+            if (searchTerm === "") {
+              return project;
+            }
 
-            .filter((project) => {
-              if (searchTerm === "") {
-                return project;
-              }
-
-              if (searchTerm === "Toutes") {
-                return project.showAll;
-              }
-              if (searchTerm === "Gratuites") {
-                return project.isFree;
-              }
-              if (searchTerm === "Premium") {
-                return !project.isFree;
-              }
-            })
-            .filter((project) => {
-              if (tag === "All") {
-                return project;
-              }
-              if (
-                project.technologies
-                  .toLowerCase()
-                  .trim()
-                  .includes(tag.toLowerCase().trim())
-              ) {
-                return project;
-              }
-            })
-            .map((project) => (
-              <Project
-                key={project.id}
-                imageSrc={project.imageSrc}
-                title={project.title}
-                slug={project.slug}
-                lessons={project.lessons}
-                notes={project.note}
-                duration={project.duration}
-                price={project.price}
-                technologies={project.technologies}
-                isFree={project.isFree}
-                showAll={project.showAll}
-              />
-            ))
-        )}
+            if (searchTerm === "Toutes") {
+              return project.showAll;
+            }
+            if (searchTerm === "Gratuites") {
+              return project.isFree;
+            }
+            if (searchTerm === "Premium") {
+              return !project.isFree;
+            }
+          })
+          .filter((project) => {
+            if (tag === "All") {
+              return project;
+            }
+            if (
+              project.technologies
+                .toLowerCase()
+                .trim()
+                .includes(tag.toLowerCase().trim())
+            ) {
+              return project;
+            }
+          })
+          .map((project) => (
+            <Project
+              key={project.id}
+              id={project.id}
+              imageSrc={project.imageSrc}
+              title={project.title}
+              slug={project.slug}
+              lessons={project.lessons}
+              notes={project.note}
+              duration={project.duration}
+              price={project.price}
+              technologies={project.technologies}
+              isFree={project.isFree}
+              showAll={project.showAll}
+            />
+          ))}
       </div>
     </div>
   );

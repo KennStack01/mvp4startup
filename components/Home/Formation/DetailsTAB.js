@@ -1,7 +1,7 @@
 import React from "react";
 import CourseTimestamp from "./CourseTimestamp";
 
-const Tabs = ({ color = "light-pink", project }) => {
+const DetailsTAB = ({ color = "light-pink", formation }) => {
   const [openTab, setOpenTab] = React.useState(1);
   return (
     <>
@@ -83,7 +83,7 @@ const Tabs = ({ color = "light-pink", project }) => {
                       </h3>
                       <p className="text-sm text-gray-800 text-justify">
                         {" "}
-                        {project.details.courseDescription}{" "}
+                        {formation.details.courseDescription}{" "}
                       </p>
                     </div>
                     <div className="mt-8">
@@ -92,7 +92,7 @@ const Tabs = ({ color = "light-pink", project }) => {
                       </h3>
                       <p className="text-sm text-gray-800 text-justify">
                         {" "}
-                        {project.details.audience}{" "}
+                        {formation.details.audience}{" "}
                       </p>
                     </div>
                     <div className="mt-8">
@@ -101,7 +101,7 @@ const Tabs = ({ color = "light-pink", project }) => {
                       </h3>
                       <p className="text-sm text-gray-800 text-justify">
                         {" "}
-                        {project.details.ceQueVousAllezApprendre}{" "}
+                        {formation.details.ceQueVousAllezApprendre}{" "}
                       </p>
                     </div>
                     <div className="mt-8">
@@ -110,19 +110,19 @@ const Tabs = ({ color = "light-pink", project }) => {
                       </h3>
                       <p className="text-sm text-gray-800 text-justify">
                         {" "}
-                        {project.details.prerequis}{" "}
+                        {formation.details.prerequis}{" "}
                       </p>
                     </div>
                   </div>
                 </div>
                 <div className={openTab === 2 ? "block" : "hidden"} id="link2">
                   <div className="p-4 mx-auto">
-                    <CourseTimestamp data={project} />
+                    <CourseTimestamp data={formation} />
                   </div>
                 </div>
                 <div className={openTab === 3 ? "block" : "hidden"} id="link3">
                   <div className="my-3">
-                    {project?.reviews.map((review) => (
+                    {formation?.reviews.map((review) => (
                       <div className="flex flex-row mx-auto justify-center my-8">
                         <img
                           src={review.userAvatar}
@@ -152,12 +152,12 @@ const Tabs = ({ color = "light-pink", project }) => {
   );
 };
 
-export default Tabs;
+export default DetailsTAB;
 
 // export default function DetailsTAB() {
 //   return (
 //     <>
-//       <Tabs color="light-pink" />
+//       <DetailsTAB color="light-pink" />
 //     </>
 //   );
 // }
