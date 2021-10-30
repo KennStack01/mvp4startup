@@ -2,6 +2,7 @@ import Layout from "../../../components/Layout";
 import Head from "next/head";
 import Link from "next/link";
 import DetailsTAB from "../../../components/Home/BusinessPlan/DetailsTAB";
+// import BusinessPlansList from "../../../components/Home/BusinessPlan/BusinessPlansList";
 
 const BusinessPlanComponent = ({ businessPlan }) => {
   // console.log(businessPlan);
@@ -46,6 +47,12 @@ const BusinessPlanComponent = ({ businessPlan }) => {
           <div className="md:w-2/3 mx-auto">
             <DetailsTAB businessplan={businessPlan} />
           </div>
+          {/* <div className="my-5 md:my-10">
+            <h1>Autres Business Plans de la même Catégorie</h1>
+            <div>
+              <BusinessPlansList businessPlans={businessPlansList} />
+            </div>
+          </div> */}
         </div>
       </Layout>
     </div>
