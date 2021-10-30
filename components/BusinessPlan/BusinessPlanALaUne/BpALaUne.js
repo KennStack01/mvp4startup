@@ -52,7 +52,10 @@ const BusinessPlanALaUne = () => {
           className="h-3/6 md:h-full md:w-3/6 rounded-xl w-full object-cover"
         />
         <div className="flex flex-col justify-center text-gray-900 h-3/6 md:h-full md:w-3/6">
-          <Link href={businessPlan.slug}>
+          <Link
+            href="/businessplan/[id]"
+            as={`/businessplan/${businessPlan.id}`}
+          >
             <a className="text-md md:text-xl text-center font-bold mx-auto mt-4 mb-1 hover:text-gray-900 hover:underline">
               {businessPlan.title}
             </a>
@@ -69,7 +72,10 @@ const BusinessPlanALaUne = () => {
           </div>
           <div className="bg-gray-900 text-white mx-auto my-2 md:my-1 p-3 md:p-1 font-semibold rounded-xl md:rounded-sm md:text-md transform transition duration-500 hover:scale-110">
             {/* <Link href={businessPlan.slug}> */}
-            <Link href={`/businessplan/${businessPlan.slug}`}>
+            <Link
+              href="/businessplan/[id]"
+              as={`/businessplan/${businessPlan.id}`}
+            >
               <a className="">
                 <h5 className="mx-auto md:my-auto ">
                   {" "}

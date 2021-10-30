@@ -11,7 +11,7 @@ import ProjectALaUneBanner from "../components/Home/ProjectALaUne/ProjectALaUneB
 import ProjectsList from "../components/Home/Projects/ProjectsList";
 import Layout from "../components/Layout";
 
-export default function Home({ projects }) {
+export default function Home({ projects, formations, businessplans }) {
   return (
     <div>
       <Head>
@@ -21,9 +21,9 @@ export default function Home({ projects }) {
 
       <Layout>
         <Hero />
-        <FormationsList />
+        <FormationsList formations={formations} />
         <ProjectsList projects={projects} />
-        <BusinessPlansList />
+        <BusinessPlansList businessPlans={businessplans} />
         <ProjectALaUneBanner />
         <MeilleureCommunaute />
         <BlogAnnonce />
@@ -38,10 +38,23 @@ export async function getStaticProps() {
   const projects = await fetch("http://localhost:3002/projects").then((res) =>
     res.json()
   );
+  // OR "http://localhost:4000/home/pro";
+
+  const formations = await fetch("http://localhost:3002/formations").then(
+    (res) => res.json()
+  );
+  // OR "http://localhost:4000/home/index_projects";
+
+  const businessplans = await fetch("http://localhost:3002/businessPlans").then(
+    (res) => res.json()
+  );
+  // OR "http://localhost:4000/home/index_bsp";
 
   return {
     props: {
       projects,
+      formations,
+      businessplans,
     },
   };
 }

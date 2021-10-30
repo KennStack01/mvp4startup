@@ -6,6 +6,7 @@ import { AiFillStar } from "react-icons/ai";
 import Link from "next/link";
 
 const BusinessPlan = ({
+  id,
   imageSrc = "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGJ1c2luZXNzJTIwcGxhbnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60",
   title,
   details,
@@ -27,7 +28,7 @@ const BusinessPlan = ({
         className="h-4/6 rounded-xl w-full object-cover"
       />
       <div className="flex flex-col justify-center text-gray-900 h-2/6">
-        <Link href={slug}>
+        <Link href="/businessplan/[id]" as={`/businessplan/${id}`}>
           <a className="text-md md:text-lg text-center font-bold mx-auto mt-4 mb-1 hover:text-gray-900 hover:underline">
             {title}
           </a>
@@ -44,7 +45,7 @@ const BusinessPlan = ({
 
       <div className="flex flex-row justify-between bg-gray-900 text-white mt-1 px-3 py-2 md:px-5 md:py-2 rounded-b-xl w-full">
         <h1 className="my-auto text-xl font-semibold"> ${price.toString()} </h1>
-        <Link href={`/businessplan/${slug}`}>
+        <Link href="/businessplan/[id]" as={`/businessplan/${id}`}>
           <a className="p-1 md:p-1 md:px-2 font-semibold text-xl cursor-pointer bg-white hover:bg-gray-100 text-gray-800 rounded">
             <h5 className="mx-auto md:my-auto "> Acheter </h5>
           </a>

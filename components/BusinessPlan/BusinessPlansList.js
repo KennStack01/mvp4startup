@@ -3,29 +3,29 @@ import Link from "next/link";
 import { BsArrowRightShort } from "react-icons/bs";
 import BusinessPlan from "./BusinessPlan";
 
-const BusinessPlansList = () => {
-  const [businessPlans, setBusinessPlans] = useState([]);
-  const [loading, setLoading] = useState(true);
+const BusinessPlansList = ({ businessPlans }) => {
+  // const [businessPlans, setBusinessPlans] = useState([]);
+  // const [loading, setLoading] = useState(true);
 
-  const fetchBusinessPlans = async () => {
-    // let URL = "http://localhost:4000/home/index_bsp";
-    let URL = "http://localhost:3002/businessPlans";
+  // const fetchBusinessPlans = async () => {
+  //   // let URL = "http://localhost:4000/home/index_bsp";
+  //   let URL = "http://localhost:3002/businessPlans";
 
-    try {
-      const res = await fetch(URL);
-      const businessPlans = await res.json();
-      setBusinessPlans(businessPlans);
-      setLoading(false);
-      // console.log(businessPlans);
-    } catch (err) {
-      console.log(err);
-    }
-  };
+  //   try {
+  //     const res = await fetch(URL);
+  //     const businessPlans = await res.json();
+  //     setBusinessPlans(businessPlans);
+  //     setLoading(false);
+  //     // console.log(businessPlans);
+  //   } catch (err) {
+  //     console.log(err);
+  //   }
+  // };
 
-  useEffect(() => {
-    fetchBusinessPlans();
-    // console.log("BusinessPlansList", businessPlans);
-  }, []);
+  // useEffect(() => {
+  //   fetchBusinessPlans();
+  //   // console.log("BusinessPlansList", businessPlans);
+  // }, []);
 
   // For Filtering Options
   const [isCurrent, setIsCurrent] = React.useState({
@@ -158,43 +158,38 @@ const BusinessPlansList = () => {
       </div>
 
       <div className="flex flex-col sm:grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-        {loading ? (
-          <h1 className="text-gray-700 text-center justify-self-center mx-auto text-xl font-bold">
-            Loading...
-          </h1>
-        ) : (
-          businessPlans
-            .filter((busiessPlan) => {
-              if (searchTerm === "") {
-                return busiessPlan;
-              }
-              if (searchTerm === "Tous") {
-                return busiessPlan;
-              }
-              if (searchTerm === "IT") {
-                return busiessPlan.category === "IT";
-              }
-              if (searchTerm === "Agro") {
-                return busiessPlan.category === "Agriculture";
-              }
-              if (searchTerm === "Elevage") {
-                return busiessPlan.category === "Elevage";
-              }
-              if (searchTerm === "Industrielle") {
-                return busiessPlan.category === "Industrielle";
-              }
-            })
-            .map((businessPlan) => (
-              <BusinessPlan
-                key={businessPlan.id}
-                imageSrc={businessPlan.imageSrc}
-                title={businessPlan.title}
-                details={businessPlan.details}
-                price={businessPlan.price}
-                slug={businessPlan.slug}
-              />
-            ))
-        )}
+        {businessPlans
+          .filter((busiessPlan) => {
+            if (searchTerm === "") {
+              return busiessPlan;
+            }
+            if (searchTerm === "Tous") {
+              return busiessPlan;
+            }
+            if (searchTerm === "IT") {
+              return busiessPlan.category === "IT";
+            }
+            if (searchTerm === "Agro") {
+              return busiessPlan.category === "Agriculture";
+            }
+            if (searchTerm === "Elevage") {
+              return busiessPlan.category === "Elevage";
+            }
+            if (searchTerm === "Industrielle") {
+              return busiessPlan.category === "Industrielle";
+            }
+          })
+          .map((businessPlan) => (
+            <BusinessPlan
+              key={businessPlan.id}
+              id={businessPlan.id}
+              imageSrc={businessPlan.imageSrc}
+              title={businessPlan.title}
+              details={businessPlan.details}
+              price={businessPlan.price}
+              slug={businessPlan.slug}
+            />
+          ))}
       </div>
     </div>
   );
