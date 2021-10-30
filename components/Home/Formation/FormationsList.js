@@ -41,6 +41,7 @@ const FormationsList = () => {
           formations.map((formation) => (
             <Formation
               key={formation.id}
+              id={formation.id}
               imageSrc={formation.imageSrc}
               title={formation.title}
               lessons={formation.lessons}

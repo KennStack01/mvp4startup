@@ -6,6 +6,7 @@ import { BsBoxArrowUpRight } from "react-icons/bs";
 import Link from "next/link";
 
 const Formation = ({
+  id,
   imageSrc = "https://www.google.com/url?sa=i&url=https%3A%2F%2Fmedium.com%2F%40gmonne%2Fsimple-app-layout-with-office-ui-fabric-react-2eac6361e1b4&psig=AOvVaw3hfbrCeQcwX1QNhDk5LqQ1&ust=1634299218822000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCNjS9prtyfMCFQAAAAAdAAAAABAD",
   title,
   slug = "/projects",
@@ -61,7 +62,7 @@ const Formation = ({
         className="w-1/4 rounded-l-xl object-cover"
       /> */}
       <div className="flex flex-col justify-center text-gray-900 h-4/6 md:mt-2">
-        <Link href={slug}>
+        <Link href="/formations/[id]" as={`/formations/${id}`}>
           <a className="text-md md:text-md text-center font-bold mx-auto my-2 hover:text-dark-pink-500">
             {title}
           </a>
@@ -78,7 +79,7 @@ const Formation = ({
             <p className="text-sm md:text-xs my-auto"> {duration} </p>
           </div>
         </div>
-        <Link href={`/formations/${slug}`}>
+        <Link href="/formations/[id]" as={`/formations/${id}`}>
           <a className="flex justify-evenly mx-5 md:mx-10 my-2 font-semibold text-md md:my-2 cursor-pointer bg-light-pink-500 hover:bg-light-pink-600 text-white p-1 rounded">
             <h5 className="mx-auto"> Découvrir </h5>
           </a>
