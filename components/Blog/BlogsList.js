@@ -1,6 +1,8 @@
 import React from "react";
+import Blog from "./Blog";
 
-const BlogsList = () => {
+const BlogsList = ({ posts }) => {
+  console.log(posts);
   return (
     <div className="flex flex-col">
       <div className="flex flex-col text-gray-800">
@@ -10,6 +12,19 @@ const BlogsList = () => {
           spend creating the software design depends on the complexity of the
           system and your familiarity with the system.
         </p>
+      </div>
+      <div className="flex flex-col md:grid grid-cols-3 place-content-center">
+        {posts?.map((post) => (
+          <Blog
+            key={post.slug}
+            title={post.title}
+            image={post.blogCoverImage.url}
+            date={post.date}
+            author={post.author}
+            description={post.shortDescription}
+            slug={post.slug}
+          />
+        ))}
       </div>
     </div>
   );
