@@ -1,4 +1,5 @@
 import Head from "next/head";
+import BlogsList from "../../components/Blog/BlogsList";
 import Layout from "../../components/Layout";
 
 export default function Blog() {
@@ -9,7 +10,9 @@ export default function Blog() {
         <link rel="icon" href="/favicon.png" />
       </Head>
 
-      <Layout></Layout>
+      <Layout>
+        <BlogsList />
+      </Layout>
     </div>
   );
 }
