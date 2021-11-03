@@ -30,3 +30,7 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: #3f3d56;
 }
+
+.capitalize {
+  text-transform: capitalize;
+}

@@ -25,7 +25,7 @@ export async function getStaticProps() {
   const { blogArticles } = await graphcms.request(
     `
     query {
-        blogArticles {
+        blogArticles(orderBy: date_DESC) {
             title
             blogCoverImage {
                 url
