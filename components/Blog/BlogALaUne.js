@@ -9,7 +9,7 @@ const BlogALaUne = ({ image, title, description, slug, date }) => {
   const dateToFormat = date;
 
   return (
-    <div className="flex flex-col md:flex-row justify-between mx-auto my-8 md:my-12 md:w-4/6">
+    <div className="flex flex-col md:flex-row justify-between mx-auto my-8 md:my-12 lg:w-4/6">
       <img src={image} alt={title} className="bg-cover rounded-lg md:w-1/2" />
       <div className="flex flex-col justify-between md:w-1/2 md:mx-4">
         <p className="text-xs text-gray-600 text-left">
