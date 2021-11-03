@@ -13,7 +13,7 @@ const Blog = ({ image, title, description, slug, date }) => {
       <img src={image} alt={title} className="bg-cover rounded-lg" />
       <p className="text-xs text-gray-600 text-left">
         {" "}
-        <Moment format="DD MMMM YYYY" className="capitalize">
+        <Moment format="DD MMMM YYYY" className="capitalize font-semibold">
           {dateToFormat}
         </Moment>
       </p>
