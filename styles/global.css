@@ -34,3 +34,7 @@ body {
 .capitalize {
   text-transform: capitalize;
 }
+
+.blogContent {
+  overflow-x: hidden;
+}
