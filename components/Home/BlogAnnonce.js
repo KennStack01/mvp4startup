@@ -18,7 +18,7 @@ const BlogAnnonce = () => {
           vous-même ou vous aider à parler le même langage que vos dévéloppeurs.
         </h5>
         <div className="bg-light-pink-500 hover:bg-light-pink-600 mx-auto my-2 md:my-5 p-2 text-white font-semibold rounded-lg">
-          <Link href="/forum">
+          <Link href="/blog">
             <a className="">
               <h5 className="mx-auto md:my-auto "> Voir Blog </h5>
             </a>
