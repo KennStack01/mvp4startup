@@ -4,7 +4,8 @@ import Blog from "./Blog";
 const BlogsList = ({ posts }) => {
   const [searchTerm, setSearchTerm] = useState("");
 
-  console.log(posts);
+  // console.log(posts);
+
   return (
     <div className="flex flex-col">
       <div className="mx-auto w-3/4 lg:w-1/2">
