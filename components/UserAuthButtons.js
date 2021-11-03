@@ -1,33 +1,30 @@
 import React from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { useSession, signOut } from "next-auth/react";
 
 const UserAuthButtons = () => {
   const router = useRouter();
 
-  const { data: session } = useSession();
-
-  if (session) {
-    return (
-      <div className="mx-auto flex flex-row text-xs font-bold">
-        <div className="flex flex-row">
-          <img
-            className="h-8 w-8 rounded-full my-auto mx-2 lg:mt-2"
-            src={session.user.image}
-            alt="Workflow"
-          />
-        </div>
-        <h3 className="my-auto">{session.user.name}</h3>
-        <button
-          className="md:mx-2 mx-3 bg-gray-200 hover:bg-gray-400 font-semibold p-2 text-gray-900 rounded-md my-auto"
-          onClick={() => signOut()}
-        >
-          Se Déconnecter
-        </button>
-      </div>
-    );
-  }
+  // if (session) {
+  //   return (
+  //     <div className="mx-auto flex flex-row text-xs font-bold">
+  //       <div className="flex flex-row">
+  //         <img
+  //           className="h-8 w-8 rounded-full my-auto mx-2 lg:mt-2"
+  //           src={session.user.image}
+  //           alt="Workflow"
+  //         />
+  //       </div>
+  //       <h3 className="my-auto">{session.user.name}</h3>
+  //       <button
+  //         className="md:mx-2 mx-3 bg-gray-200 hover:bg-gray-400 font-semibold p-2 text-gray-900 rounded-md my-auto"
+  //         // onClick={() => signOut()}
+  //       >
+  //         Se Déconnecter
+  //       </button>
+  //     </div>
+  //   );
+  // }
   return (
     <div className="mx-auto flex flex-row text-xs font-bold">
       <Link href="/login">

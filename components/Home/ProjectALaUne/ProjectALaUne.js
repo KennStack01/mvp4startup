@@ -28,7 +28,7 @@ const ProjectALaUne = () => {
   // console.log("Project", businessPlans[0]);
 
   const project = {
-    id: 11,
+    id: 1,
     title: "business-plan-mvp",
     imagesrc:
       "https://images.unsplash.com/photo-1572177812156-58036aae439c?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cHJvamVjdHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60",
@@ -53,7 +53,7 @@ const ProjectALaUne = () => {
           className="h-3/6 rounded-t-xl w-full object-cover"
         />
         <div className="flex flex-col justify-center text-gray-900 h-3/6">
-          <Link href={project.slug}>
+          <Link href="/projects/[id]" as={`/projects/${project.id}`}>
             <a className="text-md md:text-lg text-center font-bold mx-auto mt-4 mb-1 hover:text-gray-900 hover:underline">
               {project.title}
             </a>
@@ -70,7 +70,7 @@ const ProjectALaUne = () => {
 
         <div className="bg-light-pink-500 mx-auto my-2 md:my-5 p-3 text-white font-semibold rounded-xl  transform transition duration-500 hover:scale-110">
           {/* <Link href={project.slug}> */}
-          <Link href={`/projects/[slug]`} as={`/projects/${project.slug}`}>
+          <Link href="/projects/[id]" as={`/projects/${project.id}`}>
             <a className="">
               <h5 className="mx-auto md:my-auto "> Voir plus de Détails </h5>
             </a>

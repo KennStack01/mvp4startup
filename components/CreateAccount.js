@@ -4,7 +4,6 @@ import { FcGoogle } from "react-icons/fc";
 import { FaGithub } from "react-icons/fa";
 import { BsFacebook } from "react-icons/bs";
 import Link from "next/link";
-import { signIn, useSession } from "next-auth/react";
 
 export default function CreateAccount() {
   const { register, handleSubmit } = useForm();
@@ -100,8 +99,7 @@ export default function CreateAccount() {
             <div className="flex flex-col mb-2">
               {/* Google */}
               <button
-                // onClick={handleSocialAuth}
-                onClick={() => signIn()}
+                onClick={handleSocialAuth}
                 className="bg-white outline-none shadow-sm hover:shadow-lg mx-auto px-10 font-semibold py-2 my-3 rounded-lg"
               >
                 <div className="flex flex-row ">
@@ -115,8 +113,7 @@ export default function CreateAccount() {
 
               {/* Facebook */}
               <button
-                // onClick={handleSocialAuth}
-                // onClick={() => signIn()}
+                onClick={handleSocialAuth}
                 className="bg-white outline-none shadow-sm hover:shadow-lg mx-auto px-10 font-semibold py-2 my-3 rounded-lg"
                 style={{ background: "#3b5998" }}
               >
@@ -133,8 +130,7 @@ export default function CreateAccount() {
 
               {/* Github */}
               <button
-                // onClick={handleSocialAuth}
-                onClick={() => signIn()}
+                onClick={handleSocialAuth}
                 className="bg-white outline-none shadow-sm hover:shadow-lg mx-auto px-10 font-semibold py-2 my-3 mt-4 rounded-lg"
                 style={{ background: "#211F1F" }}
               >
