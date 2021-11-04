@@ -13,7 +13,11 @@ const BlogContent = ({ title, image, author, date, mainContent }) => {
         {" "}
         {title}{" "}
       </h1>
-      <img src={image} alt={title} className="bg-cover rounded-lg" />
+      <img
+        src={image}
+        alt={title}
+        className="bg-cover rounded-lg md:w-3/4 mx-auto"
+      />
       <div className="flex flex-row justify-center text-md text-gray-600 font-medium">
         <p className="text-xs text-left my-auto">
           {"Date:  "}

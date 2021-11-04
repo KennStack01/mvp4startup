@@ -64,9 +64,7 @@ const DetailsTAB = ({ color = "light-pink", businessplan }) => {
                       </h3>
                       <p className="text-sm text-gray-800 text-justify">
                         {" "}
-                        {
-                          businessplan.businessPlanDetails.courseDescription
-                        }{" "}
+                        {businessplan.businessPlanDetails.description}{" "}
                       </p>
                     </div>
                     <div className="mt-8">
