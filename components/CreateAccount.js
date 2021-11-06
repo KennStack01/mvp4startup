@@ -4,11 +4,19 @@ import { FcGoogle } from "react-icons/fc";
 import { FaGithub } from "react-icons/fa";
 import { BsFacebook } from "react-icons/bs";
 import Link from "next/link";
+import axios from "axios";
 
 export default function CreateAccount() {
   const { register, handleSubmit } = useForm();
   const [result, setResult] = useState("");
-  const onSubmit = (data) => setResult(JSON.stringify(data));
+
+  const USER_AUTH_URL = "https://mvp4startup-api.herokuapp.com/api/v1/auth";
+
+  const onSubmit = (data) => {
+    setResult(JSON.stringify(data));
+    const userData = axios.post(USER_AUTH_URL, result).then((res) => res.data);
+    console.log(userData);
+  };
 
   // Function pour L'inscription via les réseaux sociaux
   const handleSocialAuth = (e) => {
@@ -23,7 +31,6 @@ export default function CreateAccount() {
           <h1 className="my-3 text-center text-lg md:text-3xl font-semibold text-gray-700">
             Créer un Compte
           </h1>
-          <p>{result}</p>
           <div className="grid grid-cols-1 divide-y divide-gray-400">
             <form
               onSubmit={handleSubmit(onSubmit)}
@@ -81,7 +88,7 @@ export default function CreateAccount() {
               <div className="md:flex">
                 <div className="flex flex-row justify-items-center">
                   <button
-                    onClick={() => signIn()}
+                    onClick={() => handleSubmit(result)}
                     className="shadow bg-light-pink-500 hover:bg-light-pink-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"
                     type="submit"
                   >

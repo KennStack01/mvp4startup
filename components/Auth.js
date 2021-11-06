@@ -12,10 +12,16 @@ export default function Auth() {
     handleSubmit,
   } = useForm();
   const [result, setResult] = useState("");
-  const onSubmit = (data) => setResult(JSON.stringify(data));
+  // const onSubmit = (data) => setResult(JSON.stringify(data));
 
-  // Données à envoyer dans le Backend: result
-  // C'est composé de Username and Password
+  const USER_LOGIN_URL =
+    "https://mvp4startup-api.herokuapp.com/api/v1/auth/sign_in";
+
+  const onSubmit = (data) => {
+    setResult(JSON.stringify(data));
+    const userData = axios.post(USER_LOGIN_URL, result).then((res) => res.data);
+    console.log(userData);
+  };
 
   // Function pour Authentification via les réseaux sociaux
   const handleSocialAuth = (e) => {
@@ -69,7 +75,7 @@ export default function Auth() {
               <div className="md:flex">
                 <div className="flex flex-row justify-items-center">
                   <button
-                    onClick={() => signIn()}
+                    // onClick={() => signIn()}
                     className="shadow bg-light-pink-500 hover:bg-light-pink-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"
                     type="submit"
                   >
