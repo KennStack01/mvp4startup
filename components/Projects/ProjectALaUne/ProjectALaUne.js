@@ -31,7 +31,7 @@ const ProjectALaUne = () => {
     id: 1,
     slug: "amazon-clone",
     imageSrc:
-      "https://res.cloudinary.com/dt9okciwh/image/upload/v1590756522/employcoder/amazon-clone.jpg",
+      "https://images.unsplash.com/photo-1523474253046-8cd2748b5fd2?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YW1hem9ufGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60",
     title: "Amazon Clone",
     lessons: 13,
     duration: "10h 30min",

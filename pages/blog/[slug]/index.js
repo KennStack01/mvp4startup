@@ -8,7 +8,7 @@ import { GraphQLClient } from "graphql-request";
 const graphcms = new GraphQLClient(process.env.GRAPHQL_URL_ENDPOINT);
 
 const BlogArticle = ({ blogArticles }) => {
-  console.log(blogArticles);
+  // console.log(blogArticles);
 
   return (
     <div>

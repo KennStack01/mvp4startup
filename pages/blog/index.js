@@ -25,7 +25,7 @@ export default function Blog({ blogArticles, latestArticle }) {
             system and your familiarity with the system.
           </p>
         </div>
-        <div>
+        <div className="">
           {latestArticle.map((post) => (
             <BlogALaUne
               key={post.slug}

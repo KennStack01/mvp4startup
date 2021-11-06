@@ -13,7 +13,11 @@ const BlogContent = ({ title, image, author, date, mainContent }) => {
         {" "}
         {title}{" "}
       </h1>
-      <img src={image} alt={title} className="bg-cover rounded-lg" />
+      <img
+        src={image}
+        alt={title}
+        className="bg-cover rounded-lg md:w-3/4 mx-auto"
+      />
       <div className="flex flex-row justify-center text-md text-gray-600 font-medium">
         <p className="text-xs text-left my-auto">
           {"Date:  "}
@@ -24,8 +28,12 @@ const BlogContent = ({ title, image, author, date, mainContent }) => {
         <span className="mx-4"> {" | "} </span>
         <p className="my-auto text-xs"> Auteur: {author} </p>
       </div>
-      <div className="mx-auto text-justify">
-        <p className="text-gray-800 text-sm"> {mainContent} </p>
+      <div className="mx-auto text-justify my-8 md:my-10">
+        {/* <p className="text-gray-800 text-sm"> {mainContent} </p> */}
+        <p className="text-gray-800 text-xl font-semibold text-center">
+          {" "}
+          Contenu du Blog{" "}
+        </p>
       </div>
     </div>
   );
