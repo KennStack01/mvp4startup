@@ -12,10 +12,13 @@ export default function CreateAccount() {
 
   const USER_AUTH_URL = "https://mvp4startup-api.herokuapp.com/api/v1/auth";
 
-  const onSubmit = (data) => {
+  const onSubmit = async (data) => {
     setResult(JSON.stringify(data));
-    const userData = axios.post(USER_AUTH_URL, result).then((res) => res.data);
-    console.log(userData);
+    const userData = await axios
+      .post(USER_AUTH_URL, data)
+      .then((res) => res.data);
+    console.log("User Data", userData);
+    console.log("Normal Data", data);
   };
 
   // Function pour L'inscription via les réseaux sociaux
@@ -39,12 +42,12 @@ export default function CreateAccount() {
               <div className="md:flex md:items-center mb-2 mt-5">
                 <div className="w-full">
                   <input
-                    {...register("userName")}
+                    {...register("email")}
                     className="bg-gray-200 appearance-none border-2 my-auto border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-back-color-500"
-                    id="inline-full-name"
-                    type="text"
+                    id="inline-email"
+                    type="email"
                     // value=""
-                    placeholder="Nom d'utilisateur"
+                    placeholder="Adresse E-mail"
                     required
                   />
                 </div>
@@ -54,7 +57,7 @@ export default function CreateAccount() {
                   <input
                     {...register("password")}
                     className="bg-gray-200 appearance-none border-2 my-auto border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-back-color-500"
-                    id="inline-password"
+                    id="inline-repeated-password"
                     type="password"
                     placeholder="Entrer le Mot de passe"
                     required
@@ -64,7 +67,7 @@ export default function CreateAccount() {
               <div className="md:flex md:items-center mb-2">
                 <div className="w-full">
                   <input
-                    {...register("password")}
+                    {...register("password_confirmation")}
                     className="bg-gray-200 appearance-none border-2 my-auto border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-back-color-500"
                     id="inline-password"
                     type="password"
@@ -76,7 +79,7 @@ export default function CreateAccount() {
               <div className="md:flex md:items-center mb-6">
                 <label className="block md:flex flex-row text-gray-500 font-semibold cursor-pointer">
                   <input
-                    {...register("newsletter")}
+                    // {...register("newsletter")}
                     className="mr-2 leading-tight form-checkbox h-4 w-4 rounded-full my-auto"
                     type="checkbox"
                   />
