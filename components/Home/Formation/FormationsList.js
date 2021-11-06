@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Link from "next/link";
 import Formation from "./Formation";
 import { BsArrowRightShort } from "react-icons/bs";
