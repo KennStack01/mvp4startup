@@ -16,9 +16,9 @@ export default function CreateAccount() {
     setResult(JSON.stringify(data));
     const userData = await axios
       .post(USER_AUTH_URL, data)
-      .then((res) => res.data);
+      .then((res) => res.data)
+      .catch((err) => console.log(err.message));
     console.log("User Data", userData);
-    console.log("Normal Data", data);
   };
 
   // Function pour L'inscription via les réseaux sociaux
