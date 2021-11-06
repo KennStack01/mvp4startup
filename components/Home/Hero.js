@@ -17,7 +17,7 @@ const Hero = () => {
         </p>
         <div className="flex flex-row justify-left mt-6">
           <Link href="/">
-            <a className="transform transition duration-500 hover:scale-110 text-white font-semibold bg-light-pink-600 hover:bg-dark-pink-500 rounded-md p-2">
+            <a className="transform transition duration-500 hover:scale-110 text-white font-semibold bg-light-pink-600 hover:bg-dark-pink-500 rounded-sm p-2">
               Accéder maintenant
             </a>
           </Link>
