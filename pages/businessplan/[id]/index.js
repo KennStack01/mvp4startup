@@ -2,7 +2,7 @@ import Layout from "../../../components/Layout";
 import Head from "next/head";
 import Link from "next/link";
 import DetailsTAB from "../../../components/Home/BusinessPlan/DetailsTAB";
-// import BusinessPlansList from "../../../components/Home/BusinessPlan/BusinessPlansList";
+import { server } from "../../../config";
 
 const BusinessPlanComponent = ({ businessPlan }) => {
   // console.log(businessPlan);
@@ -63,7 +63,7 @@ export default BusinessPlanComponent;
 
 export async function getStaticProps({ params }) {
   const businessPlan = await fetch(
-    `https://mvp4startup-api.herokuapp.com/api/v1/businessplans/${params.id}`
+    `${server}/api/v1/businessplans/api/v1/businessplans/${params.id}`
   ).then((res) => res.json());
 
   return {
@@ -75,7 +75,7 @@ export async function getStaticProps({ params }) {
 
 export async function getStaticPaths() {
   const businessPlans = await fetch(
-    "https://mvp4startup-api.herokuapp.com/api/v1/businessplans"
+    `${server}/api/v1/businessplans/api/v1/businessplans`
   ).then((res) => res.json());
 
   return {
