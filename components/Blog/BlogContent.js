@@ -1,6 +1,7 @@
 import React from "react";
 import Moment from "react-moment";
 import "moment/locale/fr";
+import { RichText } from "@graphcms/rich-text-react-renderer";
 
 Moment.globalLocale = "fr";
 
@@ -28,12 +29,16 @@ const BlogContent = ({ title, image, author, date, mainContent }) => {
         <span className="mx-4"> {" | "} </span>
         <p className="my-auto text-xs"> Auteur: {author} </p>
       </div>
-      <div className="mx-auto text-justify my-8 md:my-10">
+      <div className="mx-auto text-justify my-8 md:my-10 md:mx-32">
+        <RichText
+          content={mainContent}
+          renderers={{
+            h1: ({ children }) => <h1 className="text-white">{children}</h1>,
+            bold: ({ children }) => <strong>{children}</strong>,
+          }}
+          className="text-gray-800 text-sm mx-2"
+        />
         {/* <p className="text-gray-800 text-sm"> {mainContent} </p> */}
-        <p className="text-gray-800 text-xl font-semibold text-center">
-          {" "}
-          Contenu du Blog{" "}
-        </p>
       </div>
     </div>
   );

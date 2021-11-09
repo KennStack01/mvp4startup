@@ -83,7 +83,7 @@ const DetailsTAB = ({ color = "light-pink", formation }) => {
                       </h3>
                       <p className="text-sm text-gray-800 text-justify">
                         {" "}
-                        {formation.details.courseDescription}{" "}
+                        {formation.detailforma.courseDescription}{" "}
                       </p>
                     </div>
                     <div className="mt-8">
@@ -92,7 +92,7 @@ const DetailsTAB = ({ color = "light-pink", formation }) => {
                       </h3>
                       <p className="text-sm text-gray-800 text-justify">
                         {" "}
-                        {formation.details.audience}{" "}
+                        {formation.detailforma.audience}{" "}
                       </p>
                     </div>
                     <div className="mt-8">
@@ -101,7 +101,7 @@ const DetailsTAB = ({ color = "light-pink", formation }) => {
                       </h3>
                       <p className="text-sm text-gray-800 text-justify">
                         {" "}
-                        {formation.details.ceQueVousAllezApprendre}{" "}
+                        {formation.detailforma.ceQueVousAllezApprendre}{" "}
                       </p>
                     </div>
                     <div className="mt-8">
@@ -110,7 +110,7 @@ const DetailsTAB = ({ color = "light-pink", formation }) => {
                       </h3>
                       <p className="text-sm text-gray-800 text-justify">
                         {" "}
-                        {formation.details.prerequis}{" "}
+                        {formation.detailforma.prerequis}{" "}
                       </p>
                     </div>
                   </div>
@@ -122,8 +122,11 @@ const DetailsTAB = ({ color = "light-pink", formation }) => {
                 </div>
                 <div className={openTab === 3 ? "block" : "hidden"} id="link3">
                   <div className="my-3">
-                    {formation?.reviews.map((review) => (
-                      <div className="flex flex-row mx-auto justify-center my-8">
+                    {formation?.reviewformas.map((review, index) => (
+                      <div
+                        key={index}
+                        className="flex flex-row mx-auto justify-center my-8"
+                      >
                         <img
                           src={review.userAvatar}
                           alt="Avatar Image"
@@ -132,7 +135,8 @@ const DetailsTAB = ({ color = "light-pink", formation }) => {
                         <div className="flex flex-col mx-3 md:mx-4 my-auto md:w-2/3 bg-white p-2 rounded">
                           <h4 className="text-xs font-semibold mb-1">
                             {" "}
-                            {review.userName}{" "}
+                            {/* {review.userName}{" "} */}
+                            Unknown User
                           </h4>
                           <p className="text-xs text-gray-800">
                             {" "}

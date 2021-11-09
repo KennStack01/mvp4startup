@@ -27,7 +27,7 @@ const BlogArticle = ({ blogArticles }) => {
                 image={blogArticle.blogCoverImage.url}
                 date={blogArticle.date}
                 author={blogArticle.author}
-                mainContent={blogArticle.mainContent.markdown}
+                mainContent={blogArticle.mainContent.raw}
                 slug={blogArticle.slug}
               />
             );
@@ -54,7 +54,7 @@ export async function getStaticProps({ params }) {
         shortDescription
         slug
         mainContent {
-          markdown
+          raw
         }
       }
     }

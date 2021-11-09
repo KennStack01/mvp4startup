@@ -12,7 +12,7 @@ const Project = ({
   slug,
   lessons,
   duration,
-  notes,
+  notes = 4,
   technologies,
   isFree,
   price,
@@ -35,7 +35,7 @@ const Project = ({
           <div className="flex flex-row mx-2">
             {" "}
             <BsFillCollectionPlayFill className="text-md md:text-xl my-auto" />{" "}
-            <p className="text-xs my-auto"> {lessons} leçons </p>
+            <p className="text-xs my-auto mx-1"> {lessons.length} leçons </p>
           </div>
           <div className="flex flex-row mx-2">
             {" "}

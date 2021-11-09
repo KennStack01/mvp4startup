@@ -64,7 +64,7 @@ const DetailsTAB = ({ color = "light-pink", businessplan }) => {
                       </h3>
                       <p className="text-sm text-gray-800 text-justify">
                         {" "}
-                        {businessplan.businessPlanDetails.description}{" "}
+                        {businessplan.businessplandetail.description}{" "}
                       </p>
                     </div>
                     <div className="mt-8">
@@ -73,7 +73,7 @@ const DetailsTAB = ({ color = "light-pink", businessplan }) => {
                       </h3>
                       <p className="text-sm text-gray-800 text-justify">
                         {" "}
-                        {businessplan.businessPlanDetails.audience}{" "}
+                        {businessplan.businessplandetail.audience}{" "}
                       </p>
                     </div>
                     <div className="mt-8">
@@ -83,7 +83,7 @@ const DetailsTAB = ({ color = "light-pink", businessplan }) => {
                       <p className="text-sm text-gray-800 text-justify">
                         {" "}
                         {
-                          businessplan.businessPlanDetails
+                          businessplan.businessplandetail
                             .ceQueVousAllezApprendre
                         }{" "}
                       </p>
@@ -94,7 +94,7 @@ const DetailsTAB = ({ color = "light-pink", businessplan }) => {
                       </h3>
                       <p className="text-sm text-gray-800 text-justify">
                         {" "}
-                        {businessplan.businessPlanDetails.prerequis}{" "}
+                        {businessplan.businessplandetail.prerequis}{" "}
                       </p>
                     </div>
                   </div>
@@ -102,7 +102,7 @@ const DetailsTAB = ({ color = "light-pink", businessplan }) => {
 
                 <div className={openTab === 2 ? "block" : "hidden"} id="link2">
                   <div className="my-3">
-                    {businessplan?.reviews.map((review) => (
+                    {businessplan?.reviewbsps.map((review) => (
                       <div className="flex flex-row mx-auto justify-center my-8">
                         <img
                           src={review.userAvatar}
@@ -112,7 +112,8 @@ const DetailsTAB = ({ color = "light-pink", businessplan }) => {
                         <div className="flex flex-col mx-3 md:mx-4 my-auto md:w-2/3 bg-white p-2 rounded">
                           <h4 className="text-xs font-semibold mb-1">
                             {" "}
-                            {review.userName}{" "}
+                            {/* {review.userName}{" "} */}
+                            Unknown User
                           </h4>
                           <p className="text-xs text-gray-800">
                             {" "}

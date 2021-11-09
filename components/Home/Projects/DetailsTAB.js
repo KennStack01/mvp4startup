@@ -83,7 +83,7 @@ const Tabs = ({ color = "light-pink", project }) => {
                       </h3>
                       <p className="text-sm text-gray-800 text-justify">
                         {" "}
-                        {project.details.courseDescription}{" "}
+                        {project.detailpro.courseDescription}{" "}
                       </p>
                     </div>
                     <div className="mt-8">
@@ -92,7 +92,7 @@ const Tabs = ({ color = "light-pink", project }) => {
                       </h3>
                       <p className="text-sm text-gray-800 text-justify">
                         {" "}
-                        {project.details.audience}{" "}
+                        {project.detailpro.audience}{" "}
                       </p>
                     </div>
                     <div className="mt-8">
@@ -101,7 +101,7 @@ const Tabs = ({ color = "light-pink", project }) => {
                       </h3>
                       <p className="text-sm text-gray-800 text-justify">
                         {" "}
-                        {project.details.ceQueVousAllezApprendre}{" "}
+                        {project.detailpro.ceQueVousAllezApprendre}{" "}
                       </p>
                     </div>
                     <div className="mt-8">
@@ -110,7 +110,7 @@ const Tabs = ({ color = "light-pink", project }) => {
                       </h3>
                       <p className="text-sm text-gray-800 text-justify">
                         {" "}
-                        {project.details.prerequis}{" "}
+                        {project.detailpro.prerequis}{" "}
                       </p>
                     </div>
                   </div>
@@ -122,8 +122,11 @@ const Tabs = ({ color = "light-pink", project }) => {
                 </div>
                 <div className={openTab === 3 ? "block" : "hidden"} id="link3">
                   <div className="my-3">
-                    {project?.reviews.map((review) => (
-                      <div className="flex flex-row mx-auto justify-center my-8">
+                    {project?.reviewpros.map((review, index) => (
+                      <div
+                        key={index}
+                        className="flex flex-row mx-auto justify-center my-8"
+                      >
                         <img
                           src={review.userAvatar}
                           alt="Avatar Image"
