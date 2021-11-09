@@ -10,6 +10,7 @@ import NewsLetter from "../components/Home/NewsLetter";
 import ProjectALaUneBanner from "../components/Home/ProjectALaUne/ProjectALaUneBanner";
 import ProjectsList from "../components/Home/Projects/ProjectsList";
 import Layout from "../components/Layout";
+import { server } from "../config";
 
 export default function Home({ projects, formations, businessplans }) {
   return (
@@ -35,20 +36,17 @@ export default function Home({ projects, formations, businessplans }) {
 }
 
 export async function getStaticProps() {
-  const projects = await fetch(
-    "https://mvp4startup-api.herokuapp.com/api/v1/projects"
-  ).then((res) => res.json());
-  // OR "http://localhost:4000/home/pro";
+  const projects = await fetch(`${server}/api/v1/projects`).then((res) =>
+    res.json()
+  );
 
-  const formations = await fetch(
-    "https://mvp4startup-api.herokuapp.com/api/v1/formations"
-  ).then((res) => res.json());
-  // OR "http://localhost:4000/home/index_projects";
+  const formations = await fetch(`${server}/api/v1/formations`).then((res) =>
+    res.json()
+  );
 
-  const businessplans = await fetch(
-    "https://mvp4startup-api.herokuapp.com/api/v1/businessplans"
-  ).then((res) => res.json());
-  // OR "http://localhost:4000/home/index_bsp";
+  const businessplans = await fetch(`${server}/api/v1/businessplans`).then(
+    (res) => res.json()
+  );
 
   return {
     props: {

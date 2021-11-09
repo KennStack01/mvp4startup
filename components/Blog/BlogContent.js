@@ -10,7 +10,7 @@ const BlogContent = ({ title, image, author, date, mainContent }) => {
 
   return (
     <div className=".blogContent flex flex-col justify-between mx-auto md:mx-auto my-8 w-full">
-      <h1 className="text-3xl md:text-5xl text-center font-bold text-gray-800 hover:text-light-pink-500 my-4 md:mb-6 md:mt-2">
+      <h1 className="text-3xl md:text-5xl md:w-3/4 mx-auto text-center font-bold text-gray-800 hover:text-light-pink-500 my-4 md:mb-6 md:mt-2">
         {" "}
         {title}{" "}
       </h1>

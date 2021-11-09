@@ -2,13 +2,14 @@ import React from "react";
 
 const DetailsTAB = ({ color = "light-pink", businessplan }) => {
   const [openTab, setOpenTab] = React.useState(1);
+  console.log(businessplan);
   return (
     <>
       <div className="flex w-full z-0">
         <div className="w-full">
           <div className="flex">
             <ul
-              className="md:flex flex-row grid grid-cols-3 md:justify-between mb-0 list-none flex-wrap pt-3 pb-4 px-2 text-gray-700 font-semibold md:w-full"
+              className="md:flex flex-row grid grid-cols-2 mx-auto justify-between mb-0 list-none flex-wrap pt-3 pb-4 px-2 text-gray-700 font-semibold md:w-full"
               role="tablist"
               id="MenuTab"
             >
@@ -84,7 +85,7 @@ const DetailsTAB = ({ color = "light-pink", businessplan }) => {
                         {" "}
                         {
                           businessplan.businessplandetail
-                            .ceQueVousAllezApprendre
+                            .cequevousallezapprendre
                         }{" "}
                       </p>
                     </div>

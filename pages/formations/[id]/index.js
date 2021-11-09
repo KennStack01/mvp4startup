@@ -2,6 +2,7 @@ import Layout from "../../../components/Layout";
 import Head from "next/head";
 import Link from "next/link";
 import DetailsTAB from "../../../components/Home/Formation/DetailsTAB";
+import { server } from "../../../config";
 
 const FormationComponent = ({ formation }) => {
   const videoID = formation.introVideo.replace(
@@ -64,8 +65,7 @@ export default FormationComponent;
 
 export async function getStaticProps({ params }) {
   const formation = await fetch(
-    // `http://localhost:3002/formations/${params.id}`
-    `https://mvp4startup-api.herokuapp.com/api/v1/formations/${params.id}`
+    `${server}/api/v1/formations/${params.id}`
   ).then((res) => res.json());
 
   return {
@@ -77,9 +77,9 @@ export async function getStaticProps({ params }) {
 
 export async function getStaticPaths() {
   // const formations = await fetch("http://localhost:3002/formations").then(
-  const formations = await fetch(
-    "https://mvp4startup-api.herokuapp.com/api/v1/formations"
-  ).then((res) => res.json());
+  const formations = await fetch(`${server}/api/v1/formations`).then((res) =>
+    res.json()
+  );
 
   return {
     paths: formations.map((formation) => {

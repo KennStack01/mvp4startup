@@ -2,6 +2,7 @@ import Layout from "../../../components/Layout";
 import Head from "next/head";
 import Link from "next/link";
 import DetailsTAB from "../../../components/Home/Projects/DetailsTAB";
+import { server } from "../../../config";
 
 const ProjectComponent = ({ project }) => {
   const videoID = project.introVideo.replace(
@@ -63,9 +64,9 @@ const ProjectComponent = ({ project }) => {
 export default ProjectComponent;
 
 export async function getStaticProps({ params }) {
-  const project = await fetch(
-    `https://mvp4startup-api.herokuapp.com/api/v1/projects/${params.id}`
-  ).then((res) => res.json());
+  const project = await fetch(`${server}/api/v1/projects/${params.id}`).then(
+    (res) => res.json()
+  );
 
   return {
     props: {
@@ -75,9 +76,9 @@ export async function getStaticProps({ params }) {
 }
 
 export async function getStaticPaths() {
-  const projects = await fetch(
-    "https://mvp4startup-api.herokuapp.com/api/v1/projects"
-  ).then((res) => res.json());
+  const projects = await fetch(`${server}/api/v1/projects`).then((res) =>
+    res.json()
+  );
 
   return {
     paths: projects.map((project) => {

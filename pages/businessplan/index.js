@@ -3,6 +3,7 @@ import Layout from "../../components/Layout";
 import Hero from "../../components/BusinessPlan/Hero";
 import BusinessPlanALaUneBanner from "../../components/BusinessPlan/BusinessPlanALaUne/BpALaUneBanner";
 import BusinessPlansList from "../../components/BusinessPlan/BusinessPlansList";
+import { server } from "../../config";
 
 export default function BusinessPlan({ businessplans }) {
   return (
@@ -23,9 +24,9 @@ export default function BusinessPlan({ businessplans }) {
 
 export async function getStaticProps() {
   // const businessplans = await fetch("http://localhost:3002/businessPlans").then(
-  const businessplans = await fetch(
-    "https://mvp4startup-api.herokuapp.com/api/v1/businessplans"
-  ).then((res) => res.json());
+  const businessplans = await fetch(`${server}/api/v1/businessplans`).then(
+    (res) => res.json()
+  );
 
   return {
     props: {
