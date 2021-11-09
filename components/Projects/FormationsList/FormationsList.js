@@ -3,28 +3,28 @@ import Link from "next/link";
 import Formation from "./Formation";
 import { TAGS } from "../searchedTags";
 
-const FormationsList = () => {
-  const [formations, setFormations] = useState([]);
-  const [loading, setLoading] = useState(true);
+const FormationsList = ({ formations }) => {
+  // const [formations, setFormations] = useState([]);
+  // const [loading, setLoading] = useState(true);
 
-  const fetchFormations = async () => {
-    // let URL = "http://localhost:4000/home/index_formations";
-    let URL = "http://localhost:3002/formations";
+  // const fetchFormations = async () => {
+  //   // let URL = "http://localhost:4000/home/index_formations";
+  //   let URL = "http://localhost:3002/formations";
 
-    try {
-      const res = await fetch(URL);
-      const formations = await res.json();
-      setFormations(formations);
-      setLoading(false);
-    } catch (err) {
-      console.log(err);
-    }
-  };
+  //   try {
+  //     const res = await fetch(URL);
+  //     const formations = await res.json();
+  //     setFormations(formations);
+  //     setLoading(false);
+  //   } catch (err) {
+  //     console.log(err);
+  //   }
+  // };
 
-  useEffect(() => {
-    fetchFormations();
-    // console.log("FormationsList", formations);
-  }, []);
+  // useEffect(() => {
+  //   fetchFormations();
+  //   // console.log("FormationsList", formations);
+  // }, []);
 
   // For Filtering Options
   const [isCurrent, setIsCurrent] = React.useState({
@@ -133,56 +133,50 @@ const FormationsList = () => {
       </div>
 
       <div className="flex flex-col sm:grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-        {loading ? (
-          <h1 className="text-gray-700 text-center justify-self-center mx-auto text-xl font-bold">
-            Loading...
-          </h1>
-        ) : (
-          formations
-            .filter((formation) => {
-              if (searchTerm === "") {
-                return formation;
-              }
+        {formations
+          .filter((formation) => {
+            if (searchTerm === "") {
+              return formation;
+            }
 
-              if (searchTerm === "Toutes") {
-                return formation.showAll;
-              }
-              if (searchTerm === "Gratuites") {
-                return formation.isFree;
-              }
-              if (searchTerm === "Premium") {
-                return !formation.isFree;
-              }
-            })
-            .filter((formation) => {
-              if (tag === "All") {
-                return formation;
-              }
-              if (
-                formation.technologies
-                  .toLowerCase()
-                  .trim()
-                  .includes(tag.toLowerCase().trim())
-              ) {
-                return formation;
-              }
-            })
-            .map((formation) => (
-              <Formation
-                key={formation.id}
-                id={formation.id}
-                imageSrc={formation.imageSrc}
-                title={formation.title}
-                lessons={formation.lessons}
-                duration={formation.duration}
-                slug={formation.slug}
-                isFree={formation.isFree}
-                price={formation.price}
-                showAll={formation.showAll}
-                technologies={formation.technologies}
-              />
-            ))
-        )}
+            if (searchTerm === "Toutes") {
+              return formation.showAll;
+            }
+            if (searchTerm === "Gratuites") {
+              return formation.isFree;
+            }
+            if (searchTerm === "Premium") {
+              return !formation.isFree;
+            }
+          })
+          .filter((formation) => {
+            if (tag === "All") {
+              return formation;
+            }
+            if (
+              formation.technologies
+                .toLowerCase()
+                .trim()
+                .includes(tag.toLowerCase().trim())
+            ) {
+              return formation;
+            }
+          })
+          .map((formation) => (
+            <Formation
+              key={formation.id}
+              id={formation.id}
+              imageSrc={formation.imageSrc}
+              title={formation.title}
+              lessons={formation.lessons}
+              duration={formation.duration}
+              slug={formation.slug}
+              isFree={formation.isFree}
+              price={formation.price}
+              showAll={formation.showAll}
+              technologies={formation.technologies}
+            />
+          ))}
       </div>
     </div>
   );

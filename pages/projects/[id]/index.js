@@ -4,8 +4,6 @@ import Link from "next/link";
 import DetailsTAB from "../../../components/Home/Projects/DetailsTAB";
 
 const ProjectComponent = ({ project }) => {
-  console.log(project);
-
   const videoID = project.introVideo.replace(
     "https://www.youtube.com/watch?v=",
     ""
@@ -34,7 +32,7 @@ const ProjectComponent = ({ project }) => {
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
               title={project.title}
-              className="rounded-sm h-96 w-80 md:w-2/3 md:mx-auto"
+              className="rounded-sm h-96 w-80 md:w-2/3 mx-auto md:mx-auto"
             />
             <div className="flex flex-row mx-auto my-2">
               <h3 className="font-semibold my-auto text-lg p-1 md:p-3 bg-gray-100 hover:bg-gray-200 text-gray-800 rounded-l-sm">
@@ -66,7 +64,7 @@ export default ProjectComponent;
 
 export async function getStaticProps({ params }) {
   const project = await fetch(
-    `http://localhost:3002/projects/${params.id}`
+    `https://mvp4startup-api.herokuapp.com/api/v1/projects/${params.id}`
   ).then((res) => res.json());
 
   return {
@@ -77,9 +75,9 @@ export async function getStaticProps({ params }) {
 }
 
 export async function getStaticPaths() {
-  const projects = await fetch("http://localhost:3002/projects").then((res) =>
-    res.json()
-  );
+  const projects = await fetch(
+    "https://mvp4startup-api.herokuapp.com/api/v1/projects"
+  ).then((res) => res.json());
 
   return {
     paths: projects.map((project) => {

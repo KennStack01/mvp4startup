@@ -4,7 +4,7 @@ import { FaGraduationCap } from "react-icons/fa";
 const CourseTimestamp = ({ data }) => {
   return (
     <div className="flex flex-col md:grid grid-cols-2 text-sm md:text-md">
-      {data.lessonsList.map((item, index) => (
+      {data.lessonformas.map((item, index) => (
         <div key={index} className="flex flex-row my-2 mx-auto">
           <FaGraduationCap className="text-3xl text-light-pink-500 my-auto" />
           <div className="flex flex-row justify-between my-auto text-gray-800">

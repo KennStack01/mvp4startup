@@ -4,8 +4,6 @@ import Link from "next/link";
 import DetailsTAB from "../../../components/Home/Formation/DetailsTAB";
 
 const FormationComponent = ({ formation }) => {
-  console.log(formation);
-
   const videoID = formation.introVideo.replace(
     "https://www.youtube.com/watch?v=",
     ""
@@ -34,7 +32,7 @@ const FormationComponent = ({ formation }) => {
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
               title={formation.title}
-              className="rounded-sm h-96 w-80 md:w-2/3 md:mx-auto"
+              className="rounded-sm h-96 w-80 md:w-2/3 mx-auto md:mx-auto"
             />
             <div className="flex flex-row mx-auto my-2">
               <h3 className="font-semibold my-auto text-lg p-1 md:p-3 bg-gray-100 hover:bg-gray-200 text-gray-800 rounded-l-sm">
@@ -66,7 +64,8 @@ export default FormationComponent;
 
 export async function getStaticProps({ params }) {
   const formation = await fetch(
-    `http://localhost:3002/formations/${params.id}`
+    // `http://localhost:3002/formations/${params.id}`
+    `https://mvp4startup-api.herokuapp.com/api/v1/formations/${params.id}`
   ).then((res) => res.json());
 
   return {
@@ -77,9 +76,10 @@ export async function getStaticProps({ params }) {
 }
 
 export async function getStaticPaths() {
-  const formations = await fetch("http://localhost:3002/formations").then(
-    (res) => res.json()
-  );
+  // const formations = await fetch("http://localhost:3002/formations").then(
+  const formations = await fetch(
+    "https://mvp4startup-api.herokuapp.com/api/v1/formations"
+  ).then((res) => res.json());
 
   return {
     paths: formations.map((formation) => {

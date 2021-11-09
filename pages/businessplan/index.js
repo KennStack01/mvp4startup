@@ -22,9 +22,10 @@ export default function BusinessPlan({ businessplans }) {
 }
 
 export async function getStaticProps() {
-  const businessplans = await fetch("http://localhost:3002/businessPlans").then(
-    (res) => res.json()
-  );
+  // const businessplans = await fetch("http://localhost:3002/businessPlans").then(
+  const businessplans = await fetch(
+    "https://mvp4startup-api.herokuapp.com/api/v1/businessplans"
+  ).then((res) => res.json());
 
   return {
     props: {

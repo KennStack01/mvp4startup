@@ -35,19 +35,19 @@ export default function Home({ projects, formations, businessplans }) {
 }
 
 export async function getStaticProps() {
-  const projects = await fetch("http://localhost:3002/projects").then((res) =>
-    res.json()
-  );
+  const projects = await fetch(
+    "https://mvp4startup-api.herokuapp.com/api/v1/projects"
+  ).then((res) => res.json());
   // OR "http://localhost:4000/home/pro";
 
-  const formations = await fetch("http://localhost:3002/formations").then(
-    (res) => res.json()
-  );
+  const formations = await fetch(
+    "https://mvp4startup-api.herokuapp.com/api/v1/formations"
+  ).then((res) => res.json());
   // OR "http://localhost:4000/home/index_projects";
 
-  const businessplans = await fetch("http://localhost:3002/businessPlans").then(
-    (res) => res.json()
-  );
+  const businessplans = await fetch(
+    "https://mvp4startup-api.herokuapp.com/api/v1/businessplans"
+  ).then((res) => res.json());
   // OR "http://localhost:4000/home/index_bsp";
 
   return {
