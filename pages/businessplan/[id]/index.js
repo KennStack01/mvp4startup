@@ -5,7 +5,7 @@ import DetailsTAB from "../../../components/Home/BusinessPlan/DetailsTAB";
 import { server } from "../../../config";
 
 const BusinessPlanComponent = ({ businessPlan }) => {
-  // console.log(businessPlan);
+  console.log(businessPlan);
 
   return (
     <div>
@@ -26,13 +26,13 @@ const BusinessPlanComponent = ({ businessPlan }) => {
               height="100%"
               src={businessPlan.imageSrc}
               alt="Business Plan Picture"
-              className="rounded-sm h-96 w-80 md:w-2/3 md:mx-auto object-cover"
+              className="rounded-sm h-96 w-auto md:w-2/3 mx-auto md:mx-auto object-cover"
             />
 
             <div className="flex flex-row mx-auto my-2">
               <h3 className=" font-semibold my-auto text-lg p-1 md:p-3  bg-gray-100 hover:bg-gray-200 text-gray-800 rounded-l-sm">
                 {" "}
-                ${businessPlan.price.toString()}{" "}
+                ${businessPlan.price?.toString()}{" "}
               </h3>
               <Link href={`/businessplan/${businessPlan.id}`}>
                 <a className="p-1 md:p-3 font-semibold text-lg cursor-pointer text-white bg-light-pink-500  rounded-r-sm">
@@ -63,7 +63,7 @@ export default BusinessPlanComponent;
 
 export async function getStaticProps({ params }) {
   const businessPlan = await fetch(
-    `${server}/api/v1/businessplans/api/${params.id}`
+    `${server}/api/v1/businessplans/${params.id}`
   ).then((res) => res.json());
 
   return {

@@ -11,7 +11,7 @@ const BusinessPlan = ({
   title,
   details,
   price,
-  slug = "/businessplan",
+  slug = "",
 }) => {
   let API = "http://localhost:3002/businessPlans/"; //Image domain: to be set
   const myLoader = ({ src }) => {
