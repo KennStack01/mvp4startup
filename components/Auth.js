@@ -4,6 +4,8 @@ import { FcGoogle } from "react-icons/fc";
 import { FaGithub } from "react-icons/fa";
 import { BsFacebook } from "react-icons/bs";
 import Link from "next/link";
+import axios from "axios";
+import LoadingComponent from "./smartComponents/Loader";
 
 export default function Auth() {
   const {
@@ -12,15 +14,25 @@ export default function Auth() {
     handleSubmit,
   } = useForm();
   const [result, setResult] = useState("");
-  // const onSubmit = (data) => setResult(JSON.stringify(data));
+  const [isLoading, setLoading] = useState(false);
 
   const USER_LOGIN_URL =
     "https://mvp4startup-api.herokuapp.com/api/v1/auth/sign_in";
 
   const onSubmit = (data) => {
+    setLoading(true);
     setResult(JSON.stringify(data));
-    const userData = axios.post(USER_LOGIN_URL, result).then((res) => res.data);
-    console.log(userData);
+    const userData = axios
+      .post(USER_LOGIN_URL, result)
+      .then((res) => {
+        setLoading(false);
+        res.data;
+      })
+      .catch((err) => console.log(err.message));
+
+    if (userData === undefined || userData === null) setLoading(false);
+
+    console.log("User Data", userData);
   };
 
   // Function pour Authentification via les réseaux sociaux
@@ -45,16 +57,16 @@ export default function Auth() {
               <div className="md:flex md:items-center mb-2 mt-5">
                 <div className="w-full">
                   <input
-                    {...register("userName", { required: true })}
+                    {...register("email")}
                     className="bg-gray-200 appearance-none border-2 my-auto border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-back-color-500"
-                    id="inline-full-name"
-                    type="text"
+                    id="inline-email"
+                    type="email"
                     // value=""
-                    placeholder="Nom d'utilisateur"
+                    placeholder="Adresse E-mail"
                     required
                   />
-                  {errors.userName?.type === "required" &&
-                    "Le nom d'Utilisateur est requis"}
+                  {errors.email?.type === "required" &&
+                    "L'adresse e-mail est requis"}
                 </div>
               </div>
               <div className="md:flex md:items-center mb-6">
@@ -64,7 +76,7 @@ export default function Auth() {
                     className="bg-gray-200 appearance-none border-2 my-auto border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-back-color-500"
                     id="inline-password"
                     type="password"
-                    placeholder="******************"
+                    placeholder="Mot de passe"
                     required
                   />
                   {errors.userName?.type === "required" &&
@@ -76,10 +88,14 @@ export default function Auth() {
                 <div className="flex flex-row justify-items-center">
                   <button
                     // onClick={() => signIn()}
-                    className="shadow bg-light-pink-500 hover:bg-light-pink-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"
+                    className={`shadow ${
+                      isLoading
+                        ? ""
+                        : "bg-light-pink-500 hover:bg-light-pink-400 text-white focus:shadow-outline focus:outline-none  font-bold py-2 px-4 rounded"
+                    }`}
                     type="submit"
                   >
-                    Se Connecter
+                    {isLoading ? <LoadingComponent /> : "Se Connecter"}
                   </button>
                   <Link href="/signup">
                     <a className="md:mx-2 mx-auto text-sm my-auto cursor-pointer hover:bg-gray-100 p-1 rounded">

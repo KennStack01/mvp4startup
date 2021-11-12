@@ -1,23 +1,33 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useForm } from "react-hook-form";
 import { FcGoogle } from "react-icons/fc";
 import { FaGithub } from "react-icons/fa";
 import { BsFacebook } from "react-icons/bs";
 import Link from "next/link";
 import axios from "axios";
+import LoadingComponent from "./smartComponents/Loader";
 
 export default function CreateAccount() {
   const { register, handleSubmit } = useForm();
   const [result, setResult] = useState("");
+  const [isLoading, setLoading] = useState(false);
 
   const USER_AUTH_URL = "https://mvp4startup-api.herokuapp.com/api/v1/auth";
 
   const onSubmit = async (data) => {
+    setLoading(true);
     setResult(JSON.stringify(data));
     const userData = await axios
       .post(USER_AUTH_URL, data)
-      .then((res) => res.data)
+      .then((res) => {
+        setLoading(false);
+        console.log(res.status);
+        return res.data;
+      })
       .catch((err) => console.log(err.message));
+
+    if (userData === undefined || userData === null) setLoading(false);
+
     console.log("User Data", userData);
   };
 
@@ -59,7 +69,7 @@ export default function CreateAccount() {
                     className="bg-gray-200 appearance-none border-2 my-auto border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-back-color-500"
                     id="inline-repeated-password"
                     type="password"
-                    placeholder="Entrer le Mot de passe"
+                    placeholder="Mot de passe"
                     required
                   />
                 </div>
@@ -71,7 +81,7 @@ export default function CreateAccount() {
                     className="bg-gray-200 appearance-none border-2 my-auto border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-back-color-500"
                     id="inline-password"
                     type="password"
-                    placeholder="Répéter le Mot de passe"
+                    placeholder="Répéter Mot de passe"
                     required
                   />
                 </div>
@@ -92,10 +102,14 @@ export default function CreateAccount() {
                 <div className="flex flex-row justify-items-center">
                   <button
                     onClick={() => handleSubmit(result)}
-                    className="shadow bg-light-pink-500 hover:bg-light-pink-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"
+                    className={`shadow ${
+                      isLoading
+                        ? ""
+                        : "bg-light-pink-500 hover:bg-light-pink-400 text-white focus:shadow-outline focus:outline-none  font-bold py-2 px-4 rounded"
+                    }`}
                     type="submit"
                   >
-                    S'inscrire
+                    {isLoading ? <LoadingComponent /> : "S'inscrire"}
                   </button>
                   <Link href="/login">
                     <a className="md:mx-2 text-sm mx-auto my-auto cursor-pointer hover:bg-gray-100 p-1 rounded">
