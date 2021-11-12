@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useForm } from "react-hook-form";
 import { FcGoogle } from "react-icons/fc";
 import { FaGithub } from "react-icons/fa";
@@ -9,15 +9,24 @@ import axios from "axios";
 export default function CreateAccount() {
   const { register, handleSubmit } = useForm();
   const [result, setResult] = useState("");
+  const [isLoading, setLoading] = useState(false);
 
   const USER_AUTH_URL = "https://mvp4startup-api.herokuapp.com/api/v1/auth";
 
   const onSubmit = async (data) => {
+    setLoading(true);
     setResult(JSON.stringify(data));
     const userData = await axios
       .post(USER_AUTH_URL, data)
-      .then((res) => res.data)
+      .then((res) => {
+        setLoading(false);
+        return res.data;
+      })
       .catch((err) => console.log(err.message));
+
+    if (userData === undefined || userData === null) {
+      setLoading(false);
+    }
     console.log("User Data", userData);
   };
 
@@ -92,10 +101,14 @@ export default function CreateAccount() {
                 <div className="flex flex-row justify-items-center">
                   <button
                     onClick={() => handleSubmit(result)}
-                    className="shadow bg-light-pink-500 hover:bg-light-pink-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"
+                    className={`shadow ${
+                      isLoading
+                        ? "bg-gray-200 text-gray-900"
+                        : "bg-light-pink-500 hover:bg-light-pink-400 text-white focus:shadow-outline focus:outline-none "
+                    } font-bold py-2 px-4 rounded`}
                     type="submit"
                   >
-                    S'inscrire
+                    {isLoading ? "En cours..." : "S'inscrire"}
                   </button>
                   <Link href="/login">
                     <a className="md:mx-2 text-sm mx-auto my-auto cursor-pointer hover:bg-gray-100 p-1 rounded">
