@@ -20,13 +20,13 @@ export default function CreateAccount() {
       .post(USER_AUTH_URL, data)
       .then((res) => {
         setLoading(false);
+        console.log(res.status);
         return res.data;
       })
       .catch((err) => console.log(err.message));
 
-    if (userData === undefined || userData === null) {
-      setLoading(false);
-    }
+    if (userData === undefined || userData === null) setLoading(false);
+
     console.log("User Data", userData);
   };
 
@@ -68,7 +68,7 @@ export default function CreateAccount() {
                     className="bg-gray-200 appearance-none border-2 my-auto border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-back-color-500"
                     id="inline-repeated-password"
                     type="password"
-                    placeholder="Entrer le Mot de passe"
+                    placeholder="Mot de passe"
                     required
                   />
                 </div>
@@ -80,7 +80,7 @@ export default function CreateAccount() {
                     className="bg-gray-200 appearance-none border-2 my-auto border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-back-color-500"
                     id="inline-password"
                     type="password"
-                    placeholder="Répéter le Mot de passe"
+                    placeholder="Répéter Mot de passe"
                     required
                   />
                 </div>
