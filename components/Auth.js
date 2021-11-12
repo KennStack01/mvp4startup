@@ -5,6 +5,7 @@ import { FaGithub } from "react-icons/fa";
 import { BsFacebook } from "react-icons/bs";
 import Link from "next/link";
 import axios from "axios";
+import LoadingComponent from "./smartComponents/Loader";
 
 export default function Auth() {
   const {
@@ -89,12 +90,12 @@ export default function Auth() {
                     // onClick={() => signIn()}
                     className={`shadow ${
                       isLoading
-                        ? "bg-gray-200 text-gray-900"
-                        : "bg-light-pink-500 hover:bg-light-pink-400 text-white focus:shadow-outline focus:outline-none "
-                    } font-bold py-2 px-4 rounded`}
+                        ? ""
+                        : "bg-light-pink-500 hover:bg-light-pink-400 text-white focus:shadow-outline focus:outline-none  font-bold py-2 px-4 rounded"
+                    }`}
                     type="submit"
                   >
-                    {isLoading ? "En cours..." : "Se Connecter"}
+                    {isLoading ? <LoadingComponent /> : "Se Connecter"}
                   </button>
                   <Link href="/signup">
                     <a className="md:mx-2 mx-auto text-sm my-auto cursor-pointer hover:bg-gray-100 p-1 rounded">
