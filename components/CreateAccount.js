@@ -23,7 +23,8 @@ export default function CreateAccount() {
       .email("Oops! E-nail; invalide :("),
     password: Yup.string()
       .required("Oops! Entrer le mot de passe")
-      .min(8, "Entrer au moins 8 caractères"),
+      .min(8, "Entrer au moins 8 caractères")
+      .max(20, "Ne pas dépasser 20 caractères"),
     password_confirmation: Yup.string()
       .required("Oops! Confirmer le mot de passe")
       .oneOf([Yup.ref("password")], "Mots de passe non-identiques 😦"),
