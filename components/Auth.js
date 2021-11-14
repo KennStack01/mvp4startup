@@ -19,21 +19,23 @@ export default function Auth() {
   const USER_LOGIN_URL =
     "https://mvp4startup-api.herokuapp.com/api/v1/auth/sign_in";
 
-  const onSubmit = (data) => {
+  async function onSubmit(data) {
     setLoading(true);
-    setResult(JSON.stringify(data));
-    const userData = axios
-      .post(USER_LOGIN_URL, result)
+    const userData = await axios
+      .post(USER_LOGIN_URL, data)
       .then((res) => {
         setLoading(false);
-        res.data;
+        console.log("Status: ", res.status);
+        return res.data;
       })
       .catch((err) => console.log(err.message));
 
     if (userData === undefined || userData === null) setLoading(false);
 
-    console.log("User Data", userData);
-  };
+    // display form data on success
+    console.log("SUCCESS!! :-)\n\n" + JSON.stringify(data, null, 4));
+    return false;
+  }
 
   // Function pour Authentification via les réseaux sociaux
   const handleSocialAuth = (e) => {

@@ -64,7 +64,7 @@ export default function CreateAccount() {
       .post(USER_AUTH_URL, data)
       .then((res) => {
         setLoading(false);
-        console.log("Status: ", res.status);
+        console.log("Status: ", res);
         return res.data;
       })
       .catch((err) => console.log(err.message));
