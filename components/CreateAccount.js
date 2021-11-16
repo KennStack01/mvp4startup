@@ -8,6 +8,17 @@ import { BsFacebook } from "react-icons/bs";
 import Link from "next/link";
 import axios from "axios";
 import LoadingComponent from "./smartComponents/Loader";
+import toast from "react-hot-toast";
+
+const notifySuccess = () =>
+  toast.success(
+    <div className="text-lg">
+      {" "}
+      <p> Enregistrement Réussi </p>{" "}
+    </div>
+  );
+
+const notifyError = () => toast.error("Erreur d'enregistrement");
 
 export default function CreateAccount() {
   // const { register, handleSubmit } = useForm();
@@ -64,15 +75,21 @@ export default function CreateAccount() {
       .post(USER_AUTH_URL, data)
       .then((res) => {
         setLoading(false);
+        notifySuccess();
         console.log("Status: ", res);
+        // display form data on success
+        console.log("SUCCESS!! :-)\n\n" + JSON.stringify(data, null, 4));
         return res.data;
       })
-      .catch((err) => console.log(err.message));
+      .catch((err) => {
+        notifyError();
+        console.log(err.message);
+      });
 
-    if (userData === undefined || userData === null) setLoading(false);
+    if (userData === undefined || userData === null) {
+      setLoading(false);
+    }
 
-    // display form data on success
-    console.log("SUCCESS!! :-)\n\n" + JSON.stringify(data, null, 4));
     return false;
   }
 

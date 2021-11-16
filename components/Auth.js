@@ -7,16 +7,19 @@ import Link from "next/link";
 import axios from "axios";
 import LoadingComponent from "./smartComponents/Loader";
 import { useRouter } from "next/router";
+import toast from "react-hot-toast";
 
+const notify = () =>
+  toast.success(
+    <div className="text-lg">
+      {" "}
+      <p> Connexion Réussie </p>{" "}
+    </div>
+  );
 
 export default function Auth() {
-
   const router = useRouter();
   const [user, setUser] = useState(null);
-
-  
-
-
 
   const {
     register,
@@ -35,11 +38,11 @@ export default function Auth() {
       .post(USER_LOGIN_URL, data)
       .then((res) => {
         setLoading(false);
-        setUser(res)
+        setUser(res);
         console.log("Status: ", res.status);
-
+        notify();
         setTimeout(() => {
-          router.push('/user')
+          router.push("/user");
         }, 1000);
         return res.data;
       })

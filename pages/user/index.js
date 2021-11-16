@@ -1,11 +1,15 @@
-import { useEffect } from "react";
+import { useEffect, useContext } from "react";
 import Head from "next/head";
 import Link from "next/link";
 import Layout from "../../components/Layout";
 import NewsLetter from "../../components/Home/NewsLetter";
 import { FiLogIn } from "react-icons/fi";
+import AuthContext from "../../stores/authContext";
 
-export default function User({ user = false }) {
+export default function User() {
+  const user = useContext(AuthContext);
+  console.log(user);
+
   if (!user) {
     return (
       <div>
@@ -19,6 +23,9 @@ export default function User({ user = false }) {
             {" "}
             Veuillez vous connecter pour continuer{" "}
           </h1>
+          <p className="text-3xl font-bold my-2 text-gray-700 text-center mx-auto">
+            👇
+          </p>
           <Link href="/login">
             <a className="flex flex-row mx-8 md:w-1/4 md:mx-auto justify-evenly text-white bg-gray-800 hover:text-pink-400 font-bold py-2 md:py-3 md:px-4 px-2 text-sm md:text-xl rounded-md">
               <h2 className="my-auto">Connectez-vous {` `}</h2>
