@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useForm } from "react-hook-form";
 import { FcGoogle } from "react-icons/fc";
 import { FaGithub } from "react-icons/fa";
@@ -6,8 +6,18 @@ import { BsFacebook } from "react-icons/bs";
 import Link from "next/link";
 import axios from "axios";
 import LoadingComponent from "./smartComponents/Loader";
+import { useRouter } from "next/router";
+
 
 export default function Auth() {
+
+  const router = useRouter();
+  const [user, setUser] = useState(null);
+
+  
+
+
+
   const {
     register,
     formState: { errors },
@@ -25,7 +35,12 @@ export default function Auth() {
       .post(USER_LOGIN_URL, data)
       .then((res) => {
         setLoading(false);
+        setUser(res)
         console.log("Status: ", res.status);
+
+        setTimeout(() => {
+          router.push('/user')
+        }, 1000);
         return res.data;
       })
       .catch((err) => console.log(err.message));
@@ -50,7 +65,7 @@ export default function Auth() {
           <h1 className="my-3 text-center text-lg md:text-3xl font-semibold text-gray-700">
             Se Connecter
           </h1>
-          <p>{result}</p>
+          {/* <p>{result}</p> */}
           <div className="grid grid-cols-1 divide-y divide-gray-400">
             <form
               onSubmit={handleSubmit(onSubmit)}
