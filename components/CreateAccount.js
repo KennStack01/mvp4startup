@@ -1,40 +1,102 @@
 import { useState, useEffect } from "react";
 import { useForm } from "react-hook-form";
+import { yupResolver } from "@hookform/resolvers/yup";
+import * as Yup from "yup";
 import { FcGoogle } from "react-icons/fc";
 import { FaGithub } from "react-icons/fa";
 import { BsFacebook } from "react-icons/bs";
 import Link from "next/link";
 import axios from "axios";
 import LoadingComponent from "./smartComponents/Loader";
+import toast from "react-hot-toast";
+
+const notifySuccess = () =>
+  toast.success(
+    <div className="text-lg">
+      {" "}
+      <p> Enregistrement Réussi </p>{" "}
+    </div>
+  );
+
+const notifyError = () => toast.error("Erreur d'enregistrement");
 
 export default function CreateAccount() {
-  const { register, handleSubmit } = useForm();
+  // const { register, handleSubmit } = useForm();
   const [result, setResult] = useState("");
   const [isLoading, setLoading] = useState(false);
 
   const USER_AUTH_URL = "https://mvp4startup-api.herokuapp.com/api/v1/auth";
 
-  const onSubmit = async (data) => {
+  // form validation rules
+  const validationSchema = Yup.object().shape({
+    email: Yup.string()
+      .required("Oops! Entrer l'e-mail")
+      .email("Oops! E-nail; invalide :("),
+    password: Yup.string()
+      .required("Oops! Entrer le mot de passe")
+      .min(8, "Entrer au moins 8 caractères")
+      .max(20, "Ne pas dépasser 20 caractères"),
+    password_confirmation: Yup.string()
+      .required("Oops! Confirmer le mot de passe")
+      .oneOf([Yup.ref("password")], "Mots de passe non-identiques 😦"),
+  });
+  const formOptions = { resolver: yupResolver(validationSchema) };
+
+  // get functions to build form with useForm() hook
+  const {
+    register,
+    handleSubmit,
+    reset,
+    formState: { errors },
+  } = useForm(formOptions);
+  // const { register, handleSubmit, formState } = useForm(formOptions);
+  // const { errors } = formState;
+
+  // const onSubmit = async (data) => {
+  //   setLoading(true);
+  //   setResult(JSON.stringify(data));
+  //   const userData = await axios
+  //     .post(USER_AUTH_URL, data)
+  //     .then((res) => {
+  //       setLoading(false);
+  //       console.log(res.status);
+  //       return res.data;
+  //     })
+  //     .catch((err) => console.log(err.message));
+
+  //   if (userData === undefined || userData === null) setLoading(false);
+
+  //   console.log("User Data", userData);
+  // };
+
+  async function onSubmit(data) {
     setLoading(true);
-    setResult(JSON.stringify(data));
     const userData = await axios
       .post(USER_AUTH_URL, data)
       .then((res) => {
         setLoading(false);
-        console.log(res.status);
+        notifySuccess();
+        console.log("Status: ", res);
+        // display form data on success
+        console.log("SUCCESS!! :-)\n\n" + JSON.stringify(data, null, 4));
         return res.data;
       })
-      .catch((err) => console.log(err.message));
+      .catch((err) => {
+        notifyError();
+        console.log(err.message);
+      });
 
-    if (userData === undefined || userData === null) setLoading(false);
+    if (userData === undefined || userData === null) {
+      setLoading(false);
+    }
 
-    console.log("User Data", userData);
-  };
+    return false;
+  }
 
   // Function pour L'inscription via les réseaux sociaux
   const handleSocialAuth = (e) => {
     e.preventDefault();
-    console.log("Social Auth");
+    // console.log("Social Auth");
   };
 
   return (
@@ -72,6 +134,9 @@ export default function CreateAccount() {
                     placeholder="Mot de passe"
                     required
                   />
+                  <p className="text-xs text-red-600 text-light">
+                    {errors.password?.message}
+                  </p>
                 </div>
               </div>
               <div className="md:flex md:items-center mb-2">
@@ -84,6 +149,9 @@ export default function CreateAccount() {
                     placeholder="Répéter Mot de passe"
                     required
                   />
+                  <p className="text-xs text-red-600 text-light">
+                    {errors.password?.message}
+                  </p>
                 </div>
               </div>
               <div className="md:flex md:items-center mb-6">

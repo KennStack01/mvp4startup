@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useContext } from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import AuthContext from "../stores/authContext";
 
 const UserAuthButtons = () => {
   const router = useRouter();
+
+  const user = useContext(AuthContext);
+  console.log(user);
 
   // if (session) {
   //   return (

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useForm } from "react-hook-form";
 import { FcGoogle } from "react-icons/fc";
 import { FaGithub } from "react-icons/fa";
@@ -6,8 +6,21 @@ import { BsFacebook } from "react-icons/bs";
 import Link from "next/link";
 import axios from "axios";
 import LoadingComponent from "./smartComponents/Loader";
+import { useRouter } from "next/router";
+import toast from "react-hot-toast";
+
+const notify = () =>
+  toast.success(
+    <div className="text-lg">
+      {" "}
+      <p> Connexion Réussie </p>{" "}
+    </div>
+  );
 
 export default function Auth() {
+  const router = useRouter();
+  const [user, setUser] = useState(null);
+
   const {
     register,
     formState: { errors },
@@ -19,21 +32,28 @@ export default function Auth() {
   const USER_LOGIN_URL =
     "https://mvp4startup-api.herokuapp.com/api/v1/auth/sign_in";
 
-  const onSubmit = (data) => {
+  async function onSubmit(data) {
     setLoading(true);
-    setResult(JSON.stringify(data));
-    const userData = axios
-      .post(USER_LOGIN_URL, result)
+    const userData = await axios
+      .post(USER_LOGIN_URL, data)
       .then((res) => {
         setLoading(false);
-        res.data;
+        setUser(res);
+        console.log("Status: ", res.status);
+        notify();
+        setTimeout(() => {
+          router.push("/user");
+        }, 500);
+        return res.data;
       })
       .catch((err) => console.log(err.message));
 
     if (userData === undefined || userData === null) setLoading(false);
 
-    console.log("User Data", userData);
-  };
+    // display form data on success
+    console.log("SUCCESS!! :-)\n\n" + JSON.stringify(data, null, 4));
+    return false;
+  }
 
   // Function pour Authentification via les réseaux sociaux
   const handleSocialAuth = (e) => {
@@ -48,7 +68,7 @@ export default function Auth() {
           <h1 className="my-3 text-center text-lg md:text-3xl font-semibold text-gray-700">
             Se Connecter
           </h1>
-          <p>{result}</p>
+          {/* <p>{result}</p> */}
           <div className="grid grid-cols-1 divide-y divide-gray-400">
             <form
               onSubmit={handleSubmit(onSubmit)}
