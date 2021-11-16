@@ -43,7 +43,7 @@ export default function Auth() {
         notify();
         setTimeout(() => {
           router.push("/user");
-        }, 1000);
+        }, 500);
         return res.data;
       })
       .catch((err) => console.log(err.message));
