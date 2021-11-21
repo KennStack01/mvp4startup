@@ -6,8 +6,8 @@ import AuthContext from "../stores/authContext";
 const UserAuthButtons = () => {
   const router = useRouter();
 
-  const user = useContext(AuthContext);
-  console.log(user);
+  // const { user } = useContext(AuthContext);
+  // console.log(user);
 
   // if (session) {
   //   return (
