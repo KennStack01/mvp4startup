@@ -74,19 +74,43 @@ export async function getStaticProps({ params }) {
 }
 
 export async function getStaticPaths() {
-  const businessPlans = await fetch(`${server}/api/v1/businessplans`).then(
-    (res) => res.json()
-  );
+  try {
+    const businessPlans = await fetch(`${server}/api/v1/businessplans`).then(
+      (res) => res.json()
+    );
+    return {
+      paths: businessPlans.map((businessPlan) => {
+        return {
+          params: {
+            id: businessPlan.id.toString(),
+            slug: businessPlan.slug,
+          },
+        };
+      }),
+      fallback: false,
+    };
+  } catch (error) {
+    console.error(error.message);
+  }
 
   return {
-    paths: businessPlans.map((businessPlan) => {
-      return {
-        params: {
-          id: businessPlan.id.toString(),
-          slug: businessPlan.slug,
-        },
-      };
-    }),
+    paths: [],
     fallback: false,
   };
+
+  // const businessPlans = await fetch(`${server}/api/v1/businessplans`).then(
+  //   (res) => res.json()
+  // );
+
+  // return {
+  //   paths: businessPlans.map((businessPlan) => {
+  //     return {
+  //       params: {
+  //         id: businessPlan.id.toString(),
+  //         slug: businessPlan.slug,
+  //       },
+  //     };
+  //   }),
+  //   fallback: false,
+  // };
 }

@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { useForm } from "react-hook-form";
-import { yupResolver } from "@hookform/resolvers/yup";
+import { yupResolver } from "@hookform/resolvers/yup/dist/yup.umd";
 import * as Yup from "yup";
 import { FcGoogle } from "react-icons/fc";
 import { FaGithub } from "react-icons/fa";
