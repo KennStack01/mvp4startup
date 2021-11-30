@@ -24,7 +24,7 @@ export default function BusinessPlan({ businessplans }) {
 
 export async function getStaticProps() {
   try {
-    const response = await fetch(`${server}/api/businessplans`);
+    const response = await fetch(`${server}/api/v1/businessplans`);
     const businessplans = await response.json();
     return {
       props: {
