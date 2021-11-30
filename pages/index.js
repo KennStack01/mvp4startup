@@ -36,12 +36,12 @@ export default function Home({ projects, formations, businessplans }) {
 }
 
 export async function getStaticProps() {
-  const res = await fetch(`${server}/api/v1/projects`);
+  const res = await fetch(`${server}/projects`);
   const projects = await res.json();
-  const formations = await fetch(`${server}/api/v1/formations`).then((res) =>
+  const formations = await fetch(`${server}/formations`).then((res) =>
     res.json()
   );
-  const businessplans = await fetch(`${server}/api/businessplans`).then((res) =>
+  const businessplans = await fetch(`${server}/businessplans`).then((res) =>
     res.json()
   );
   return {

@@ -24,7 +24,7 @@ export default function BusinessPlan({ businessplans }) {
 
 export async function getStaticProps() {
   try {
-    const response = await fetch(`${server}/api/v1/businessplans`);
+    const response = await fetch(`${server}/businessplans`);
     const businessplans = await response.json();
     return {
       props: {
@@ -42,7 +42,7 @@ export async function getStaticProps() {
   };
 
   // const businessplans = await fetch("http://localhost:3002/businessPlans").then(
-  // const businessplans = await fetch(`${server}/api/v1/businessplans`).then(
+  // const businessplans = await fetch(`${server}/businessplans`).then(
   //   (res) => res.json()
   // );
 

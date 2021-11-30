@@ -62,9 +62,9 @@ const BusinessPlanComponent = ({ businessPlan }) => {
 export default BusinessPlanComponent;
 
 export async function getStaticProps({ params }) {
-  const businessPlan = await fetch(
-    `${server}/api/v1/businessplans/${params.id}`
-  ).then((res) => res.json());
+  const businessPlan = await fetch(`${server}/businessplans/${params.id}`).then(
+    (res) => res.json()
+  );
 
   return {
     props: {
@@ -75,8 +75,8 @@ export async function getStaticProps({ params }) {
 
 export async function getStaticPaths() {
   try {
-    const businessPlans = await fetch(`${server}/api/v1/businessplans`).then(
-      (res) => res.json()
+    const businessPlans = await fetch(`${server}/businessplans`).then((res) =>
+      res.json()
     );
     return {
       paths: businessPlans.map((businessPlan) => {
@@ -98,7 +98,7 @@ export async function getStaticPaths() {
     fallback: false,
   };
 
-  // const businessPlans = await fetch(`${server}/api/v1/businessplans`).then(
+  // const businessPlans = await fetch(`${server}/businessplans`).then(
   //   (res) => res.json()
   // );
 

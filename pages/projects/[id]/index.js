@@ -64,8 +64,8 @@ const ProjectComponent = ({ project }) => {
 export default ProjectComponent;
 
 export async function getStaticProps({ params }) {
-  const project = await fetch(`${server}/api/v1/projects/${params.id}`).then(
-    (res) => res.json()
+  const project = await fetch(`${server}/projects/${params.id}`).then((res) =>
+    res.json()
   );
 
   return {
@@ -76,9 +76,7 @@ export async function getStaticProps({ params }) {
 }
 
 export async function getStaticPaths() {
-  const projects = await fetch(`${server}/api/v1/projects`).then((res) =>
-    res.json()
-  );
+  const projects = await fetch(`${server}/projects`).then((res) => res.json());
 
   return {
     paths: projects.map((project) => {
