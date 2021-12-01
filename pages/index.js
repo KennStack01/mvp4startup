@@ -36,23 +36,51 @@ export default function Home({ projects, formations, businessplans }) {
 }
 
 export async function getStaticProps() {
-  const projects = await fetch(`${server}/api/v1/projects`).then((res) =>
-    res.json()
-  );
-
-  const formations = await fetch(`${server}/api/v1/formations`).then((res) =>
-    res.json()
-  );
-
-  const businessplans = await fetch(`${server}/api/v1/businessplans`).then(
-    (res) => res.json()
-  );
+  try {
+    const res = await fetch(`${server}/projects`);
+    const projects = await res.json();
+    const formations = await fetch(`${server}/formations`).then((res) =>
+      res.json()
+    );
+    const businessplans = await fetch(`${server}/businessplans`).then((res) =>
+      res.json()
+    );
+    return {
+      props: {
+        projects,
+        formations,
+        businessplans,
+      },
+    };
+  } catch (error) {
+    console.error(error.message);
+  }
 
   return {
     props: {
-      projects,
-      formations,
-      businessplans,
+      projects: [],
+      formations: [],
+      businessplans: [],
     },
   };
+
+  // const projects = await fetch(`${server}/api/v1/projects`).then((res) =>
+  //   res.json()
+  // );
+
+  // const formations = await fetch(`${server}/api/v1/formations`).then((res) =>
+  //   res.json()
+  // );
+
+  // const businessplans = await fetch(`${server}/api/v1/businessplans`).then(
+  //   (res) => res.json()
+  // );
+
+  // return {
+  //   props: {
+  //     projects,
+  //     formations,
+  //     businessplans,
+  //   },
+  // };
 }

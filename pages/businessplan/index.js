@@ -23,14 +23,32 @@ export default function BusinessPlan({ businessplans }) {
 }
 
 export async function getStaticProps() {
-  // const businessplans = await fetch("http://localhost:3002/businessPlans").then(
-  const businessplans = await fetch(`${server}/api/v1/businessplans`).then(
-    (res) => res.json()
-  );
+  try {
+    const response = await fetch(`${server}/businessplans`);
+    const businessplans = await response.json();
+    return {
+      props: {
+        businessplans,
+      },
+    };
+  } catch (error) {
+    console.error(error.message);
+  }
 
   return {
     props: {
-      businessplans,
+      businessplans: [],
     },
   };
+
+  // const businessplans = await fetch("http://localhost:3002/businessPlans").then(
+  // const businessplans = await fetch(`${server}/businessplans`).then(
+  //   (res) => res.json()
+  // );
+
+  // return {
+  //   props: {
+  //     businessplans,
+  //   },
+  // };
 }

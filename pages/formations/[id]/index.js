@@ -64,9 +64,9 @@ const FormationComponent = ({ formation }) => {
 export default FormationComponent;
 
 export async function getStaticProps({ params }) {
-  const formation = await fetch(
-    `${server}/api/v1/formations/${params.id}`
-  ).then((res) => res.json());
+  const formation = await fetch(`${server}/formations/${params.id}`).then(
+    (res) => res.json()
+  );
 
   return {
     props: {
@@ -77,7 +77,7 @@ export async function getStaticProps({ params }) {
 
 export async function getStaticPaths() {
   // const formations = await fetch("http://localhost:3002/formations").then(
-  const formations = await fetch(`${server}/api/v1/formations`).then((res) =>
+  const formations = await fetch(`${server}/formations`).then((res) =>
     res.json()
   );
 

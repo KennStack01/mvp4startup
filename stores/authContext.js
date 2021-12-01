@@ -7,11 +7,12 @@ const AuthContext = createContext({
   authReady: false,
 });
 
-export const AuthContextProvider = ({ children }) => {
+export const AuthContextProvider = ({ children, userBeta }) => {
   const [user, setUser] = useState("null eeeeh");
 
   useEffect(() => {
     //   Initialize
+    setUser(userBeta);
   }, []);
 
   return <AuthContext.Provider value={user}>{children}</AuthContext.Provider>;

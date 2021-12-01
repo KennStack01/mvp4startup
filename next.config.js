@@ -16,3 +16,11 @@ module.exports = withReactSvg({
     domains: ["images.unsplash.com"],
   },
 });
+
+module.exports = {
+  reactStrictMode: true,
+  images: {
+    loader: "imgix",
+    path: [""],
+  },
+};
