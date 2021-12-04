@@ -1,9 +1,9 @@
 import React from "react";
 import Head from "next/head";
-import Layout from "../../../components/Layout";
-import CourseChapters from "../../../components/Dashboard/CourseChapters";
+import Layout from "../../../../components/Layout";
+import CourseChapters from "../../../../components/Dashboard/CourseChapters";
 
-const Dashboard = () => {
+const Index = () => {
   return (
     <div>
       <Head>
@@ -19,4 +19,4 @@ const Dashboard = () => {
   );
 };
 
-export default Dashboard;
+export default Index;
