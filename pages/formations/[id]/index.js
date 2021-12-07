@@ -41,7 +41,7 @@ const FormationComponent = ({ formation }) => {
                 ${formation.price.toString()}{" "}
               </h3>
               {/* <Link href="/formations/[id]" as={`/formations/${formation.id}`}> */}
-              <Link href={`/formations/${formation.id}`}>
+              <Link href={`/formations/[id]/dashboard/0`}>
                 <a className="p-1 md:p-3 font-semibold text-lg cursor-pointer text-white bg-light-pink-500  rounded-r-sm">
                   <h5 className="mx-auto md:my-auto ">
                     {" "}

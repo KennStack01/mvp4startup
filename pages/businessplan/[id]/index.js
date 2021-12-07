@@ -34,7 +34,7 @@ const BusinessPlanComponent = ({ businessPlan }) => {
                 {" "}
                 ${businessPlan.price?.toString()}{" "}
               </h3>
-              <Link href={`/businessplan/${businessPlan.id}`}>
+              <Link href={`/businessplan/[id]/dashboard/0`}>
                 <a className="p-1 md:p-3 font-semibold text-lg cursor-pointer text-white bg-light-pink-500  rounded-r-sm">
                   <h5 className="mx-auto md:my-auto ">
                     {" "}
