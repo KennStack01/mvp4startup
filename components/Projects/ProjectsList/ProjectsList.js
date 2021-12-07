@@ -141,7 +141,7 @@ const ProjectsList = ({ projects }) => {
           })
           .map((project) => (
             <Project
-              key={project.id}
+              key={project.slug}
               id={project.id}
               imageSrc={project.imageSrc}
               title={project.title}

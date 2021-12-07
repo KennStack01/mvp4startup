@@ -58,7 +58,7 @@ const FormationsList = ({ formations }) => {
     "p-1 rounded-sm mx-2 cursor-pointer my-auto transition-all duration-300 ease-linear";
 
   return (
-    <div className="mt-8 md:mt-24 ">
+    <div className="mt-8 ">
       <h1 className="text-xl md:text-3xl text-center font-bold mt-8 mb-4 md:mb-2">
         Les Formations
       </h1>
@@ -164,7 +164,7 @@ const FormationsList = ({ formations }) => {
           })
           .map((formation) => (
             <Formation
-              key={formation.id}
+              key={formation.slug}
               id={formation.id}
               imageSrc={formation.imageSrc}
               title={formation.title}
