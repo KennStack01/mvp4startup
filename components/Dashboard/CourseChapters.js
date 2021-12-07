@@ -8,7 +8,7 @@ const CourseChapters = () => {
   const router = useRouter();
 
   return (
-    <div className="">
+    <div className="h-screen min-h-screen sticky z-40 top-0 overflow-y-auto">
       <div className=" justify-self-start ml-0">
         <h1 className="font-semibold text-md my-2">Nom du Cours</h1>
         {courseDetails.map((item, index) => (

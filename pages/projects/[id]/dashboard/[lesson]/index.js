@@ -1,8 +1,8 @@
 import React from "react";
 import Head from "next/head";
-import Layout from "../../../../../components/Layout";
 import CourseChapters from "../../../../../components/Dashboard/CourseChapters";
 import { courseDetails } from "../../../../../data/coursesDetails";
+import Layout from "../../../../../components/Dashboard/Layout";
 
 const Lesson = () => {
   const videoID = "https://www.youtube.com/watch?v=__IL2nMzUEw".replace(
@@ -21,7 +21,11 @@ const Lesson = () => {
       <Layout>
         <div className="flex flex-row mx-auto">
           <CourseChapters />
-          <div className="flex flex-col w-80 md:w-3/4">
+          <div className="flex flex-col w-80 md:w-4/5">
+            <h1 className="font-semibold text-md my-2 mx-auto">
+              {" "}
+              0. JavaScript for Beginners 1
+            </h1>
             <iframe
               width="100%"
               height="100%"
@@ -30,7 +34,7 @@ const Lesson = () => {
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
               title="Titre du Cours"
-              className="sticky top-0 rounded-md h-screen mx-auto md:mx-auto"
+              className="sticky top-0 rounded-md min-h-screen mx-auto"
             />
             <div>
               <h1 className="font-semibold text-center text-md my-5 text-xs uppercase px-5 py-3 rounded-sm block leading-normal bg-light-pink-600 text-white">

@@ -1,7 +1,7 @@
 import React from "react";
 import Head from "next/head";
-import Layout from "../../../../components/Layout";
 import CourseChapters from "../../../../components/Dashboard/CourseChapters";
+import Layout from "../../../../components/Dashboard/Layout";
 
 const Index = () => {
   return (
@@ -13,7 +13,6 @@ const Index = () => {
 
       <Layout>
         <CourseChapters />
-        <div className="flex flex-row mx-auto"></div>
       </Layout>
     </div>
   );
